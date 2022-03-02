@@ -4081,7 +4081,8 @@ i {
     color: #777 !important;
 }
 
-.seat-wrapper .left-side, .seat-wrapper .right-side {
+.seat-wrapper .left-side,
+.seat-wrapper .right-side {
     display: flex;
 }
 
@@ -4354,6 +4355,112 @@ i {
     left: 0;
     top: 7px;
     color: #1B273D;
+}
+
+.mfp-close {
+    background: transparent !important;
+}
+
+.gallery-wrapper div[class*=col] {
+    max-height: 350px;
+}
+
+@media (max-width: 991px) {
+    .gallery-wrapper div[class*=col] {
+        max-height: 250px;
+    }
+}
+
+.gallery-item {
+    height: 100%;
+}
+
+.gallery-item .gallery-inner {
+    height: 100%;
+    position: relative;
+}
+
+.gallery-item .gallery-inner::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 70%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8) 100%);
+    transform-origin: bottom;
+    transition: all ease-in 0.3s;
+}
+
+.gallery-item .gallery-inner:hover::before {
+    height: 80%;
+}
+
+.gallery-item .gallery-inner:hover .view-img {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
+
+.gallery-item .gallery-inner:hover .thumb img {
+    transform: scale(1);
+}
+
+.gallery-item .content {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 20px;
+    z-index: 1;
+    transition: all ease-in 0.3s;
+}
+
+@media (max-width: 991px) {
+    .gallery-item .content {
+        padding: 15px;
+    }
+}
+
+.gallery-item .content .title {
+    color: #fff;
+}
+
+@media (max-width: 991px) {
+    .gallery-item .content .title {
+        font-size: 15px;
+    }
+}
+
+.gallery-item .content .bus {
+    color: #0e9e4d;
+    font-weight: 700;
+}
+
+@media (max-width: 991px) {
+    .gallery-item .content .bus {
+        font-size: 13px;
+    }
+}
+
+.gallery-item .view-img {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-item .thumb {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-item .thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
 }
 
 .ratting, .header-trigger-wrapper, .header-top-area, .header-top-area .left-content, .header-top-area .right-content, .header-top-area .right-content .header-login, .social-icons, .banner-wrapper, .inner-banner .inner-banner-content .breadcums, .footer-widget .footer-links li a, .ticket-form-wrapper .ticket-header, .ticket-form-wrapper .ticket-type, .filter-header, .account-header, .contact-wrapper, .contact-info-wrapper .info-item, .route-inner .route-content .route-to, .package-content .package-price, .testimonial-item .thumb-wrapper, .bus-search-header .route-info, .bus-search-header .search-result .wrapper, .ticket-item, .travel-time, .ticket-item-footer .info-list, .ticket-item-footer .amenities-details .list, .bus-seat-management .all-seats {
