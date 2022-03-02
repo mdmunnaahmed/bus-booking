@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- BootStrap Link -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- Icon Link -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css//flaticon.css">
+
+    <!-- Plugings Link -->
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/nice-select.css">
+    <link rel="stylesheet" href="./assets/css/jquery-ui.css">
+
+    <!-- Custom Link -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+    <title>Online Bus Ticket Booking HTML Template</title>
+
+</head>
+<body>
+    <div class="overlay"></div>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-wrapper">
+            <div class="truck-wrapper">
+              <div class="truck">
+                <div class="truck-container"></div>
+                <div class="glases"></div>
+                <div class="bonet"></div>
+            
+                <div class="base"></div>
+            
+                <div class="base-aux"></div>
+                <div class="wheel-back"></div>
+                <div class="wheel-front"></div>
+            
+                <div class="smoke"></div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader -->
+    <!-- Header Section Starts Here -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-area">
+                    <ul class="left-content">
+                        <li>
+                            <i class="las la-phone"></i>
+                            <a href="tel:012839">
+                                +880 2483 03940
+                            </a>
+                        </li>
+                        <li>
+                            <i class="las la-envelope-open"></i>
+                            <a href="mailto:msdmuntoa@gmail.com">
+                                shohanuahman@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="right-content">
+                        <a class="cancel-ticket" href="cancel-ticket.html">Cancel Ticket</a>
+                        <div>
+                            <select>
+                                <option value="lang1">English</option>
+                                <option value="lang2">Bangla</option>
+                            </select>
+                        </div>
+                        <ul class="header-login">
+                            <li><a class="sign-in" href="sign-in.html"><i class="fas fa-sign-in-alt"></i>Sign In</a></li>
+                            <li>/</li>
+                            <li><a class="sign-up" href="sign-up.html"><i class="fas fa-user-plus"></i>Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-bottom-area">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./assets/images/logo.png" alt="logo">
+                        </a>
+                    </div>  <!-- Logo End -->
+                   
+                    <div class="header-trigger-wrapper d-flex d-lg-none">
+                        <div class="header-trigger d-block d-lg-none">
+                            <span></span>
+                        </div>
+                        <div class="top-bar-trigger">
+                            <i class="las la-ellipsis-v"></i>
+                        </div>
+                    </div><!-- Trigger End-->
+                    
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#0">Booking</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="bus-ticket.html">Bus Ticket</a>
+                                </li>
+                                <li>
+                                    <a href="reserve.html">Reserve Bus</a>
+                                </li>
+                                <li>
+                                    <a href="cancel-ticket.html">Cancel Ticket</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="faq.html">Faq</a>
+                        </li>
+                        <li>
+                            <a href="#0">Pages</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="user-dashboard.html">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="sign-in.html">Sign In</a>
+                                </li>
+                                <li>
+                                    <a href="sign-up.html">Sign Up</a>
+                                </li>
+                                <li>
+                                    <a href="packages.html">Packages</a>
+                                </li>
+                                <li>
+                                    <a href="terms-condition.html">Terms & Conditions</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#0">Blog</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="blog.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="blog-details.html">Blog Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="bus-ticket.html" class="cmn--btn btn--sm">Buy Tickets</a><!-- Menu End -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section Ends Here -->
+
+
+    <!-- Inner Banner Section Starts Here -->
+    <section class="inner-banner bg_img" style="background: url(./assets/images/bg/inner.jpg) center">
+        <div class="container">
+            <div class="inner-banner-content">
+                <h2 class="title">Blog Details</h2>
+                <ul class="breadcums">
+                    <li>
+                        <a href="index.html" class="home">Home</a>
+                    </li>
+                    <li>
+                        Blog Details
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Inner Banner Section Ends Here -->
+
+
+    <!-- Blog Details Section Starts Here -->
+    <section class="blog-details padding-top padding-bottom">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-8">
+                    <div class="post-thumb">
+                        <img src="./assets/images/blog/details-thumb.jpg" alt="blog">
+                    </div>
+                        <div class="post-details-content">
+                            <div class="content-inner">
+                                <ul class="meta-post">
+                                    <li>
+                                        <i class="las la-calendar-check"></i>
+                                        <span>19 Jun 20</span>
+                                    </li>
+                                    <li>
+                                        <i class="las la-tags"></i>
+                                        <span><a href="#0">Travel</a></span>
+                                    </li>
+                                </ul>
+                                <h4 class="title">A wonderful bus journy by autobus.</h4>
+                                <p class="blog-details-pera">
+                                    In most legal cases there are one or more accusers and one or more defendants. A legal case is typically based on either civil or criminal law. In most legal cases there are one or mor
+                                </p>
+                                <p class="blog-details-pera">
+                                    A consectetur adipisicing elit. Debitis quidem, architecto nulla tempore modi, aliquam sunt corporis beatae ipsam quia sed quae odit adipisci tempora repellendus explicabo voluptate labore minus?
+                                </p>
+                                <p class="blog-details-pera">
+                                    A consectetur adipisicing elit. Debitis quidem, architecto nulla tempore modi, aliquam sunt corporis beatae ipsam quia sed quae odit adipisci tempora repellendus explicabo voluptate labore minus?
+                                </p>
+                                <p class="blog-details-pera">
+                                    A consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsa incidunt dolores est doloremque quae numquam consequuntur, rerum, earum ipsam ad aperiam, pariatur soluta accusantium nesciunt aliquid voluptatem temporibus magnam.lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis magnam, provident atque et est perferendis eum rem voluptas reprehenderit, sed dolor eaque itaque dicta nam fugit. Molestiae alias consequatur nostrum? Debitis quidem, architecto nulla tempore modi, aliquam sunt corporis beatae ipsam quia sed quae odit adipisci tempora repellendus explicabo voluptate labore minus?
+                                </p>
+                                <ul class="info">
+                                    <li> Some people do not understand why you should have to</li>
+                                    <li>tempora repellendus explicabo voluptate labore minus?</li>
+                                    <li>A consectetur adipisicing elit. Debitis quidem,</li>
+                                </ul>
+                                <div class="quote-wrapper">
+                                    <p>
+                                        <i class="las la-quote-left"></i>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto veritatis quos aspernatur facere officiis. Odit, maiores voluptatum alias eaque exercitationem perspiciatis beatae soluta explicabo! Doloribus a saepe molestiae, minima unde consectetur ipsum non possimus quo corrupti id illum earum architecto veniam? Magni labore nesciunt 
+                                    </p>
+                                </div>
+                                <ul class="meta-content">
+                                    <li><i class="las la-heart"></i>34k People Like this</li>
+                                    <li>
+                                        <h5 class="title">Share On</h5>
+                                        <ul class="social-icons">
+                                            <li>
+                                                <a href="#0" class="facebook"><i class="lab la-facebook-f"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#0" class="twitter"><i class="lab la-twitter"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#0" class="vimeo"><i class="lab la-vimeo"></i></a>
+                                            </li>
+                                            <li>
+                                                <a href="#0" class="instagram"><i class="lab la-instagram"></i></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="post-author-area">
+                                <div class="author-thumb">
+                                    <img src="./assets/images/blog/item1.jpg" alt="lawyers">
+                                </div>
+                                <div class="author-content">
+                                    <h5 class="name">Jihadul Alam</h5>
+                                    <p>
+                                        Potatu ipsum dolor sit amet consectetur adipisicing elit. Animi ipsa, quo, ducimus nemo dolorum non possimus, veniam earum 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="blog-sidebar">
+                       <div class="sidebar-item">
+                           <div class="latest-post-wrapper item-inner">
+                               <h5 class="title">Latest Post</h5>
+                               <div class="lastest-post-item">
+                                   <div class="thumb">
+                                       <img src="./assets/images/blog/item3.jpg" alt="blog">
+                                   </div>
+                                   <div class="content">
+                                       <h6 class="title"><a href="#0">France Prepares toding Stake Its Place in World </a></h6>
+                                       <ul class="meta-post">
+                                           <li>
+                                               <span>Post by</span>
+                                               <a href="#0">Admin</a>
+                                           </li>
+                                           <li>
+                                               <span>25 May 2020</span>
+                                           </li>
+                                       </ul>
+                                   </div>
+                               </div>
+                               <div class="lastest-post-item">
+                                   <div class="thumb">
+                                       <img src="./assets/images/blog/item2.jpg" alt="blog">
+                                   </div>
+                                   <div class="content">
+                                       <h6 class="title"><a href="#0">France Prepares toding Stake Its Place in World </a></h6>
+                                       <ul class="meta-post">
+                                           <li>
+                                               <span>Post by</span>
+                                               <a href="#0">Admin</a>
+                                           </li>
+                                           <li>
+                                               <span>25 May 2020</span>
+                                           </li>
+                                       </ul>
+                                   </div>
+                               </div>
+                               <div class="lastest-post-item">
+                                   <div class="thumb">
+                                       <img src="./assets/images/blog/item1.jpg" alt="blog">
+                                   </div>
+                                   <div class="content">
+                                       <h6 class="title"><a href="#0">France Prepares toding Stake Its Place in World </a></h6>
+                                       <ul class="meta-post">
+                                           <li>
+                                               <span>Post by</span>
+                                               <a href="#0">Admin</a>
+                                           </li>
+                                           <li>
+                                               <span>25 May 2020</span>
+                                           </li>
+                                       </ul>
+                                   </div>
+                               </div>
+                               <div class="lastest-post-item">
+                                   <div class="thumb">
+                                       <img src="./assets/images/blog/item2.jpg" alt="blog">
+                                   </div>
+                                   <div class="content">
+                                       <h6 class="title"><a href="#0">France Prepares toding Stake Its Place in World </a></h6>
+                                       <ul class="meta-post">
+                                           <li>
+                                               <span>Post by</span>
+                                               <a href="#0">Admin</a>
+                                           </li>
+                                           <li>
+                                               <span>25 May 2020</span>
+                                           </li>
+                                       </ul>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Details Section Ends Here -->
+    
+
+    <!-- Footer Section Starts Here -->
+    <section class="footer-seciton">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row footer-wrapper gy-sm-5 gy-4">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer-widget">
+                            <div class="logo">
+                                <img src="./assets/images/logo.png" alt="logo">
+                            </div>
+                            <p>Delectus culpa laboriosam debitis saepe. Commodi earum minus ut obcaecati  veniam deserunt est!</p>
+                            <ul class="social-icons">
+                                <li>
+                                    <a href="#0"><i class="lab la-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><i class="lab la-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><i class="lab la-vimeo"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><i class="lab la-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                        <div class="footer-widget">
+                            <h4 class="widget-title">Popular Routes</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#0"><span>Dhaka</span><i class="las la-arrow-right"></i><span>Syhlet</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Chittagong</span><i class="las la-arrow-right"></i><span>Kushtia</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Dhaka</span><i class="las la-arrow-right"></i><span>Chittagong</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Syhlet</span><i class="las la-arrow-right"></i><span>Kushtia</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Chittagong</span><i class="las la-arrow-right"></i><span>Kushtia</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                        <div class="footer-widget">
+                            <h4 class="widget-title">New Routes</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#0"><span>Dhaka</span><i class="las la-arrow-right"></i><span>Syhlet</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Chittagong</span><i class="las la-arrow-right"></i><span>Kushtia</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Dhaka</span><i class="las la-arrow-right"></i><span>Chittagong</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Syhlet</span><i class="las la-arrow-right"></i><span>Kushtia</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Chittagong</span><i class="las la-arrow-right"></i><span>Kushtia</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                        <div class="footer-widget">
+                            <h4 class="widget-title">Useful Links</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#0">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#0">About</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Cancel Ticket</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Bus Reservation</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Home</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                        <div class="footer-widget">
+                            <h4 class="widget-title">Support</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#0">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Support</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Need Help?</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section Ends Here -->
+
+    <a href="#0" class="scrollToTop active"><i class="las la-chevron-up"></i></a>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/nice-select.js"></script>
+    <script src="./assets/js/jquery-ui.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

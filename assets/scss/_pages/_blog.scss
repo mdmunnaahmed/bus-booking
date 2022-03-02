@@ -1,0 +1,61 @@
+// Blog Post
+.post-item {
+    &:hover {
+        .post-thumb {
+            img {
+                transform: scale(1.1);
+            }
+        }
+        .post-meta  {
+            border-top-color: rgba($base-color,.3) ;
+        }
+    }
+}
+.post-thumb {
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
+.post-content {
+    padding: 25px 20px;
+    box-shadow: 0 0 10px 1px rgba($primary-color,.1);
+    border-radius: 0 0 5px 5px;
+    .date {
+        margin-bottom: 10px;
+        font-size: 14px;
+        i {
+            font-size: 16px;
+            color: $base-color;
+            margin-right: 4px;
+        }
+    }
+    .title {
+        margin-bottom: 10px;
+        a {
+            @include text-wrap;
+        }
+    }
+    p {
+        @include text-wrap;
+    }
+    .post-meta {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid rgba($primary-color,.1);
+        margin-top: 15px;
+        padding-top: 5px;
+        @include transition;
+        li {
+            display: flex;
+            align-items: center;
+            div {
+                margin-right: 25px;
+            }
+            i {
+                margin-right: 5px;
+                color: $base-color;
+            }
+        }
+    }
+}

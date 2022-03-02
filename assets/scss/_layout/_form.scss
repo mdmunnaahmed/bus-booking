@@ -1,0 +1,169 @@
+// Ticket Buy Form
+.ticket-form-wrapper {
+    width: 550px;
+    border-radius: 10px;
+    @include breakpoint(max-xl) {
+        width: 430px
+    }
+    @include breakpoint(max-lg) {
+        width: 500px;
+        margin-left: auto;
+    }
+    @include breakpoint(max-md) {
+        width: 500px;
+        margin-left: 0;
+    }
+    .ticket-header {
+        @extend %flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+    .ticket-type {
+        @extend %flex;
+        @include breakpoint(max-sm) {
+            margin-top: 5px;
+        }
+        li {
+            a {
+                font-size: 14px;
+                background: $white;
+                color: $base-color;
+                padding: 5px 15px;
+                &.active {
+                    background: $base-color;
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+.ticket-form {
+    background: $white;
+    box-shadow: 0 0 15px 3px rgba($primary-color,.1);
+    padding: 30px 15px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 2;
+    .form--group {
+        position: relative;
+        i {
+            position: absolute;
+            padding: 5px;
+            left: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: $base-color;
+        }
+        .form--control {
+            border-color: rgba($base-color,.25);
+            padding-left: 35px;
+            height: 40px;
+            &:focus {
+                border-color: rgba($base-color,.95);
+            }
+        }
+        button {
+            height: 40px;
+        }
+    }
+}
+
+
+// Ticket Cancellation Form
+.ticket-cancellation {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.ticket-cancellation-wrapper {
+    max-width: 740px;
+    padding: 40px 35px;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 15px 3px rgba($primary-color,.1);
+    background: $white;
+    @include breakpoint(max-sm) {
+        padding: 20px 15px;
+    }
+    .title {
+        margin-bottom: 10px;
+    }
+    p {
+        margin-bottom: 35px;
+    }
+}
+.ticket-cancellation-form {
+    text-align: left;
+    .form--group {
+        position: relative;
+        label {
+            span {
+                color: $red;
+            }
+        }
+        .otp-btn {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: auto;
+        }
+    }
+    .otp-btn {
+        height: 40px;
+        margin: 0;
+        line-height: 1;
+        padding: 0 18px;
+        font-size: 13px;
+    }
+    button {
+        margin-top: 10px;
+    }
+}
+.cancellation-notice {
+    text-align: center;
+    background: $white;
+    padding: 35px 30px;
+    border-radius: 5px;
+    @include breakpoint(max-sm) {
+        padding: 25px 15px;
+    }
+    .title {
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 8px;
+    }
+}
+
+
+// Bus Reservation
+.bus-reservation-wrapper {
+    background: $white;
+    padding: 35px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba($primary-color,.07);
+    @include breakpoint(max-sm) {
+        padding: 20px 15px;
+    }
+    .title {
+        margin-bottom: 15px;
+        border-bottom: 1px solid rgba($primary-color,.1);
+        padding-bottom: 10px;
+        &.contact {
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+    }
+}
+.bus-reservation-form {
+    .form--group {
+        label {
+            font-weight: 600;
+            font-family: 14px;
+        }
+    }
+}

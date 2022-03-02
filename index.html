@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BootStrap Link -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- Icon Link -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css//flaticon.css">
+
+    <!-- Plugings Link -->
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/nice-select.css">
+    <link rel="stylesheet" href="./assets/css/jquery-ui.css">
+
+    <!-- Custom Link -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+    <title>Online Bus Ticket Booking HTML Template</title>
+
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-wrapper">
+            <div class="truck-wrapper">
+                <div class="truck">
+                    <div class="truck-container"></div>
+                    <div class="glases"></div>
+                    <div class="bonet"></div>
+
+                    <div class="base"></div>
+
+                    <div class="base-aux"></div>
+                    <div class="wheel-back"></div>
+                    <div class="wheel-front"></div>
+
+                    <div class="smoke"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader -->
+
+    <!-- Header Section Starts Here -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-area">
+                    <ul class="left-content">
+                        <li>
+                            <i class="las la-phone"></i>
+                            <a href="tel:012839">
+                                +880 2483 03940
+                            </a>
+                        </li>
+                        <li>
+                            <i class="las la-envelope-open"></i>
+                            <a href="mailto:msdmuntoa@gmail.com">
+                                shohanuahman@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="right-content">
+                        <a class="cancel-ticket" href="cancel-ticket.html">Cancel Ticket</a>
+                        <div>
+                            <select>
+                                <option value="lang1">English</option>
+                                <option value="lang2">Bangla</option>
+                            </select>
+                        </div>
+                        <ul class="header-login">
+                            <li><a class="sign-in" href="sign-in.html"><i class="fas fa-sign-in-alt"></i>Sign In</a>
+                            </li>
+                            <li>/</li>
+                            <li><a class="sign-up" href="sign-up.html"><i class="fas fa-user-plus"></i>Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-bottom-area">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./assets/images/logo.png" alt="logo">
+                        </a>
+                    </div> <!-- Logo End -->
+
+                    <div class="header-trigger-wrapper d-flex d-lg-none">
+                        <div class="header-trigger d-block d-lg-none">
+                            <span></span>
+                        </div>
+                        <div class="top-bar-trigger">
+                            <i class="las la-ellipsis-v"></i>
+                        </div>
+                    </div><!-- Trigger End-->
+
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#0">Booking</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="bus-ticket.html">Bus Ticket</a>
+                                </li>
+                                <li>
+                                    <a href="reserve.html">Reserve Bus</a>
+                                </li>
+                                <li>
+                                    <a href="cancel-ticket.html">Cancel Ticket</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="faq.html">Faq</a>
+                        </li>
+                        <li>
+                            <a href="#0">Pages</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="user-dashboard.html">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="sign-in.html">Sign In</a>
+                                </li>
+                                <li>
+                                    <a href="sign-up.html">Sign Up</a>
+                                </li>
+                                <li>
+                                    <a href="packages.html">Packages</a>
+                                </li>
+                                <li>
+                                    <a href="terms-condition.html">Terms & Conditions</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#0">Blog</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="blog.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="blog-details.html">Blog Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="bus-ticket.html" class="cmn--btn btn--sm">Buy Tickets</a><!-- Menu End -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section Ends Here -->
+
+
+    <!-- Banner Section Starts Here -->
+    <section class="banner-section" style="background: url(./assets/images/bg/banner3.png) repeat-x bottom;">
+        <div class="container">
+            <div class="banner-wrapper">
+                <div class="banner-content">
+                    <h1 class="title">Get Your Ticket Online, Easy & Safely</h1>
+                    <a href="#0" class="cmn--btn">Get Ticket Now</a>
+                </div>
+                <div class="ticket-form-wrapper">
+                    <div class="ticket-header nav-tabs nav border-0">
+                        <h4 class="title">Choose Your Ticket</h4>
+                        <ul class="ticket-type">
+                            <li>
+                                <a class="active" href="#one-way" data-bs-toggle="tab">One Way</a>
+                            </li>
+                            <li>
+                                <a href="#round-trip" data-bs-toggle="tab">Round Trip</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="one-way">
+                            <form class="ticket-form row g-3 justify-content-center m-0">
+                                <div class="col-md-6">
+                                    <div class="form--group">
+                                        <i class="las la-location-arrow"></i>
+                                        <input type="text" class="form--control" placeholder="Enter Pickup City">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form--group">
+                                        <i class="las la-map-marker"></i>
+                                        <input type="text" class="form--control" placeholder="Enter Destination City">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form--group">
+                                        <i class="las la-calendar-check"></i>
+                                        <input type="text" id="start-date" class="form--control"
+                                            placeholder="Departure Date">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form--group">
+                                        <i class="las la-calendar-check"></i>
+                                        <input type="text" id="end-date" class="form--control" placeholder="Return Date"
+                                            disabled>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form--group">
+                                        <button>Find Tickets</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="round-trip">
+                            <form class="ticket-form row g-3 justify-content-center m-0">
+                                <div class="col-md-6">
+                                    <div class="form--group">
+                                        <i class="las la-location-arrow"></i>
+                                        <input type="text" class="form--control" placeholder="Enter Pickup City">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form--group">
+                                        <i class="las la-map-marker"></i>
+                                        <input type="text" class="form--control" placeholder="Enter Destination City">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form--group">
+                                        <i class="las la-calendar-check"></i>
+                                        <input type="text" id="start-date2" class="form--control"
+                                            placeholder="Departure Date">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form--group">
+                                        <i class="las la-calendar-check"></i>
+                                        <input type="text" id="end-date2" class="form--control"
+                                            placeholder="Return Date">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form--group">
+                                        <button>Find Tickets</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape">
+            <img src="./assets/images/bg/bus.png" alt="bg">
+        </div>
+    </section>
+    <!-- Banner Section Ends Here -->
+
+
+    <!-- Working Process Section Starts Here -->
+    <section class="working-process padding-top">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-header text-center">
+                        <h2 class="title">Get Your Tickets With <span> Just 3 Steps</span></h2>
+                        <p>Have a look at our popular reason. why you should choose you bus. Just a Bus and get a ticket
+                            for your great journey. !</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 gy-md-5 justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <div class="working-process-item">
+                        <div class="thumb-wrapper">
+                            <span>01</span>
+                            <div class="thumb">
+                                <i class="las la-search"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h4 class="title">Search Your Bus</h4>
+                            <p>Choose your origin, destination,Just choose a Bus journey dates and search for buses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <div class="working-process-item">
+                        <div class="thumb-wrapper">
+                            <span>02</span>
+                            <div class="thumb">
+                                <i class="las la-ticket-alt"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h4 class="title">Choose The Ticket</h4>
+                            <p>Choose your origin, destination,Just a Bus for your great journey dates and search for
+                                buses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <div class="working-process-item">
+                        <div class="thumb-wrapper">
+                            <span>03</span>
+                            <div class="thumb">
+                                <i class="las la-money-bill-wave-alt"></i>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h4 class="title">Pay Bill</h4>
+                            <p>Choose your origin, destination,choose a Bus for your great journey dates and search for
+                                buses</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Working Process Section Ends Here -->
+
+
+    <!-- Route Section Starts Here -->
+    <section class="route-section padding-top padding-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-header">
+                        <h2 class="title">Our Popular <span> Bus Routes</span></h2>
+                        <p>Have a look at our popular bus route. where your want to go? Just choose a Bus and get a
+                            ticket for your great journey. laboriosam molestiae vol!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between gy-4">
+                <div class="col-xl-6 col-lg-4 col-md-6 col-sm-6">
+                    <a href="#0" class="route-item">
+                        <div class="route-inner">
+                            <div class="route-icon">
+                                <i class="las la-map-marker"></i>
+                            </div>
+                            <div class="route-content">
+                                <h5 class="title">Dhaka Buses</h5>
+                                <ul class="route-to">
+                                    <li>Gazipur,</li>
+                                    <li>Mirpur,</li>
+                                    <li>Gabtoli</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <i class="las la-exchange-alt"></i>
+                        </div>
+                        <div class="route-inner">
+                            <div class="route-icon">
+                                <i class="lar la-dot-circle"></i>
+                            </div>
+                            <div class="route-content">
+                                <h5 class="title">To :</h5>
+                                <ul class="route-to">
+                                    <li>Rajbari,</li>
+                                    <li>Kushtia,</li>
+                                    <li>Jinaidah</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-6 col-lg-4 col-md-6 col-sm-6">
+                    <a href="#0" class="route-item">
+                        <div class="route-inner">
+                            <div class="route-icon">
+                                <i class="las la-map-marker"></i>
+                            </div>
+                            <div class="route-content">
+                                <h5 class="title">Kushtia Buses</h5>
+                                <ul class="route-to">
+                                    <li>Gazipur,</li>
+                                    <li>Mirpur,</li>
+                                    <li>Gabtoli</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <i class="las la-exchange-alt"></i>
+                        </div>
+                        <div class="route-inner">
+                            <div class="route-icon">
+                                <i class="lar la-dot-circle"></i>
+                            </div>
+                            <div class="route-content">
+                                <h5 class="title">To :</h5>
+                                <ul class="route-to">
+                                    <li>Rajbari,</li>
+                                    <li>Kushtia,</li>
+                                    <li>Jinaidah</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-6 col-lg-4 col-md-6 col-sm-6">
+                    <a href="#0" class="route-item">
+                        <div class="route-inner">
+                            <div class="route-icon">
+                                <i class="las la-map-marker"></i>
+                            </div>
+                            <div class="route-content">
+                                <h5 class="title">Khulna Buses</h5>
+                                <ul class="route-to">
+                                    <li>Gazipur,</li>
+                                    <li>Mirpur,</li>
+                                    <li>Gabtoli</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <i class="las la-exchange-alt"></i>
+                        </div>
+                        <div class="route-inner">
+                            <div class="route-icon">
+                                <i class="lar la-dot-circle"></i>
+                            </div>
+                            <div class="route-content">
+                                <h5 class="title">To :</h5>
+                                <ul class="route-to">
+                                    <li>Rajbari,</li>
+                                    <li>Kushtia,</li>
+                                    <li>Jinaidah</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xl-6 col-lg-4 col-md-6 col-sm-6">
+                    <a href="#0" class="route-item">
+                        <div class="route-inner">
+                            <div class="route-icon">
+                                <i class="las la-map-marker"></i>
+                            </div>
+                            <div class="route-content">
+                                <h5 class="title">Chittagong Buses</h5>
+                                <ul class="route-to">
+                                    <li>Gazipur,</li>
+                                    <li>Mirpur,</li>
+                                    <li>Gabtoli</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="icon">
+                            <i class="las la-exchange-alt"></i>
+                        </div>
+                        <div class="route-inner">
+                            <div class="route-icon">
+                                <i class="lar la-dot-circle"></i>
+                            </div>
+                            <div class="route-content">
+                                <h5 class="title">To :</h5>
+                                <ul class="route-to">
+                                    <li>Rajbari,</li>
+                                    <li>Kushtia,</li>
+                                    <li>Jinaidah</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Route Section Ends Here -->
+
+
+    <!-- Our Ameninies Section Starts Here -->
+    <section class="amenities-section padding-bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-header text-center">
+                        <h2 class="title">Our <span>Amenities</span></h2>
+                        <p>Have a look at our popular reason. why you should choose you bus.Just choose a Bus and get a
+                            ticket for your great journey!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="amenities-wrapper">
+                <div class="amenities-slider">
+                    <div class="single-slider">
+                        <div class="amenities-item">
+                            <div class="thumb">
+                                <i class="flaticon-hairstyle"></i>
+                            </div>
+                            <h6 class="title">Ladies Seats</h6>
+                        </div>
+                    </div>
+                    <div class="single-slider">
+                        <div class="amenities-item">
+                            <div class="thumb">
+                                <i class="flaticon-popcorn"></i>
+                            </div>
+                            <h6 class="title">Snakes</h6>
+                        </div>
+                    </div>
+                    <div class="single-slider">
+                        <div class="amenities-item">
+                            <div class="thumb">
+                                <i class="flaticon-pillow"></i>
+                            </div>
+                            <h6 class="title">Pillow</h6>
+                        </div>
+                    </div>
+                    <div class="single-slider">
+                        <div class="amenities-item">
+                            <div class="thumb">
+                                <i class="flaticon-water-bottle"></i>
+                            </div>
+                            <h6 class="title">Water Bottle</h6>
+                        </div>
+                    </div>
+                    <div class="single-slider">
+                        <div class="amenities-item">
+                            <div class="thumb">
+                                <i class="flaticon-location"></i>
+                            </div>
+                            <h6 class="title">Bus Tracking</h6>
+                        </div>
+                    </div>
+                    <div class="single-slider">
+                        <div class="amenities-item">
+                            <div class="thumb">
+                                <i class="flaticon-plug"></i>
+                            </div>
+                            <h6 class="title">Charging Port</h6>
+                        </div>
+                    </div>
+                    <div class="single-slider">
+                        <div class="amenities-item">
+                            <div class="thumb">
+                                <i class="flaticon-pillow"></i>
+                            </div>
+                            <h6 class="title">Pillow</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Ameninies Section Ends Here -->
+
+
+    <!-- Packages Section Starts Here -->
+    <section class="packages-section padding-bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-header text-center">
+                        <h2 class="title">Our Popular <span>Tour Packages</span></h2>
+                        <p>Have a look at our popular reason. why you should choose you bus. Just choose a Bus and get a
+                            ticket for your great journey. !</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                    <div class="package-item">
+                        <div class="package-thumb">
+                            <img src="./assets/images/packages/item7.jpg" alt="packages">
+                            <span class="discount">
+                                Discount -25%
+                            </span>
+                        </div>
+                        <div class="package-content">
+                            <h5 class="tour">Dhaka to Cox's Bazar Tour</h5>
+                            <span class="location"><i class="las la-map-marked-alt"></i>Foy's Lake Amusement
+                                Park.</span>
+                            <ul class="ratting">
+                                <li class="rate">4.8/5</li>
+                                <li class="txt">Avarage</li>
+                                <li class="total-reviews">(30 Reviews)</li>
+                            </ul>
+                            <div class="package-price">
+                                <div class="price">
+                                    <p class="fare">From <span>$ 425</span></p>
+                                    <p class="per">Per Day</p>
+                                </div>
+                                <a href="#0" class="buy-package-btn">Buy Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                    <div class="package-item">
+                        <div class="package-thumb">
+                            <img src="./assets/images/packages/item5.jpg" alt="packages">
+                            <span class="discount">
+                                Discount -25%
+                            </span>
+                        </div>
+                        <div class="package-content">
+                            <h5 class="tour">Dhaka to Cox's Bazar Tour</h5>
+                            <span class="location"><i class="las la-map-marked-alt"></i>Foy's Lake Amusement
+                                Park.</span>
+                            <ul class="ratting">
+                                <li class="rate">4.8/5</li>
+                                <li class="txt">Avarage</li>
+                                <li class="total-reviews">(30 Reviews)</li>
+                            </ul>
+                            <div class="package-price">
+                                <div class="price">
+                                    <p class="fare">From <span>$ 425</span></p>
+                                    <p class="per">Per Day</p>
+                                </div>
+                                <a href="#0" class="buy-package-btn">Buy Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                    <div class="package-item">
+                        <div class="package-thumb">
+                            <img src="./assets/images/packages/item8.jpg" alt="packages">
+                            <span class="discount">
+                                Discount -25%
+                            </span>
+                        </div>
+                        <div class="package-content">
+                            <h5 class="tour">Dhaka to Cox's Bazar Tour</h5>
+                            <span class="location"><i class="las la-map-marked-alt"></i>Foy's Lake Amusement
+                                Park.</span>
+                            <ul class="ratting">
+                                <li class="rate">4.8/5</li>
+                                <li class="txt">Avarage</li>
+                                <li class="total-reviews">(30 Reviews)</li>
+                            </ul>
+                            <div class="package-price">
+                                <div class="price">
+                                    <p class="fare">From <span>$ 425</span></p>
+                                    <p class="per">Per Day</p>
+                                </div>
+                                <a href="#0" class="buy-package-btn">Buy Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                    <div class="package-item">
+                        <div class="package-thumb">
+                            <img src="./assets/images/packages/item6.jpg" alt="packages">
+                            <span class="discount">
+                                Discount -25%
+                            </span>
+                        </div>
+                        <div class="package-content">
+                            <h5 class="tour">Dhaka to Cox's Bazar Tour</h5>
+                            <span class="location"><i class="las la-map-marked-alt"></i>Foy's Lake Amusement
+                                Park.</span>
+                            <ul class="ratting">
+                                <li class="rate">4.8/5</li>
+                                <li class="txt">Avarage</li>
+                                <li class="total-reviews">(30 Reviews)</li>
+                            </ul>
+                            <div class="package-price">
+                                <div class="price">
+                                    <p class="fare">From <span>$ 425</span></p>
+                                    <p class="per">Per Day</p>
+                                </div>
+                                <a href="#0" class="buy-package-btn">Buy Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                    <div class="package-item">
+                        <div class="package-thumb">
+                            <img src="./assets/images/packages/item4.jpg" alt="packages">
+                            <span class="discount">
+                                Discount -25%
+                            </span>
+                        </div>
+                        <div class="package-content">
+                            <h5 class="tour">Dhaka to Cox's Bazar Tour</h5>
+                            <span class="location"><i class="las la-map-marked-alt"></i>Foy's Lake Amusement
+                                Park.</span>
+                            <ul class="ratting">
+                                <li class="rate">4.8/5</li>
+                                <li class="txt">Avarage</li>
+                                <li class="total-reviews">(30 Reviews)</li>
+                            </ul>
+                            <div class="package-price">
+                                <div class="price">
+                                    <p class="fare">From <span>$ 425</span></p>
+                                    <p class="per">Per Day</p>
+                                </div>
+                                <a href="#0" class="buy-package-btn">Buy Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                    <div class="package-item">
+                        <div class="package-thumb">
+                            <img src="./assets/images/packages/item3.jpg" alt="packages">
+                            <span class="discount">
+                                Discount -25%
+                            </span>
+                        </div>
+                        <div class="package-content">
+                            <h5 class="tour">Dhaka to Cox's Bazar Tour</h5>
+                            <span class="location"><i class="las la-map-marked-alt"></i>Foy's Lake Amusement
+                                Park.</span>
+                            <ul class="ratting">
+                                <li class="rate">4.8/5</li>
+                                <li class="txt">Avarage</li>
+                                <li class="total-reviews">(30 Reviews)</li>
+                            </ul>
+                            <div class="package-price">
+                                <div class="price">
+                                    <p class="fare">From <span>$ 425</span></p>
+                                    <p class="per">Per Day</p>
+                                </div>
+                                <a href="#0" class="buy-package-btn">Buy Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                    <div class="package-item">
+                        <div class="package-thumb">
+                            <img src="./assets/images/packages/item2.jpg" alt="packages">
+                            <span class="discount">
+                                Discount -25%
+                            </span>
+                        </div>
+                        <div class="package-content">
+                            <h5 class="tour">Dhaka to Cox's Bazar Tour</h5>
+                            <span class="location"><i class="las la-map-marked-alt"></i>Foy's Lake Amusement
+                                Park.</span>
+                            <ul class="ratting">
+                                <li class="rate">4.8/5</li>
+                                <li class="txt">Avarage</li>
+                                <li class="total-reviews">(30 Reviews)</li>
+                            </ul>
+                            <div class="package-price">
+                                <div class="price">
+                                    <p class="fare">From <span>$ 425</span></p>
+                                    <p class="per">Per Day</p>
+                                </div>
+                                <a href="#0" class="buy-package-btn">Buy Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                    <div class="package-item">
+                        <div class="package-thumb">
+                            <img src="./assets/images/packages/item1.jpg" alt="packages">
+                            <span class="discount">
+                                Discount -25%
+                            </span>
+                        </div>
+                        <div class="package-content">
+                            <h5 class="tour">Dhaka to Cox's Bazar Tour</h5>
+                            <span class="location"><i class="las la-map-marked-alt"></i>Foy's Lake Amusement
+                                Park.</span>
+                            <ul class="ratting">
+                                <li class="rate">4.8/5</li>
+                                <li class="txt">Avarage</li>
+                                <li class="total-reviews">(30 Reviews)</li>
+                            </ul>
+                            <div class="package-price">
+                                <div class="price">
+                                    <p class="fare">From <span>$ 425</span></p>
+                                    <p class="per">Per Day</p>
+                                </div>
+                                <a href="#0" class="buy-package-btn">Buy Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Packages Section Ends Here -->
+
+
+    <!-- Bus Gallery Section Starts Here -->
+    <section class="bus-gallery">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-header text-center">
+                        <h2 class="title">Our Popular <span>Tour Packages</span></h2>
+                        <p>Have a look at our popular reason. why you should choose you bus. Just choose a Bus and get a
+                            ticket for your great journey. !</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gallery-wrapper">
+                <div class="col-lg-4">
+                    <div class="gallery-item">
+                        <div class="gallery-inner">
+                            <div class="thumb"><img src="" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Bus Gallery Section Ends Here -->
+
+
+    <!-- Section Starts Here -->
+    <section class="padding-bottom">
+        <div class="container">
+            <div class="row justify-content-center gy-5">
+                <div class="col-lg-6">
+                    <div class="faq-wrapper">
+                        <div class="section-header">
+                            <h2 class="title">Frequently Asked <span>Questions</span></h2>
+                            <p>Nobis minus earum perferendis nemo cupiditate optio, rem neque incidunt quia laborum ut
+                                praesentium corporis quam exercitationem, atque illo aut excepturi cum.</p>
+                        </div>
+                        <div class="faq-item active open">
+                            <div class="faq-title">
+                                <span class="icon"></span>
+                                <h5 class="title">Can we choose corporation buses from anywhere?</h5>
+                            </div>
+                            <div class="faq-content">
+                                <p>Orangu ipsum dolor sit amet consectetur adipisicing elit. Sed minima porro aliquid
+                                    eius laudantium ad quod a corrupti impedit, reiciendis iusto ut aperiam tenetur fuga
+                                    repellendus tempore necessitatibus omnis libero?</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-title">
+                                <span class="icon"></span>
+                                <h5 class="title">Can we choose corporation buses from anywhere?</h5>
+                            </div>
+                            <div class="faq-content">
+                                <p>Orangu ipsum dolor sit amet consectetur adipisicing elit. Sed minima porro aliquid
+                                    eius laudantium ad quod a corrupti impedit, reiciendis iusto ut aperiam tenetur fuga
+                                    repellendus tempore necessitatibus omnis libero?</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-title">
+                                <span class="icon"></span>
+                                <h5 class="title">Can we choose corporation buses from anywhere?</h5>
+                            </div>
+                            <div class="faq-content">
+                                <p>Orangu ipsum dolor sit amet consectetur adipisicing elit. Sed minima porro aliquid
+                                    eius laudantium ad quod a corrupti impedit, reiciendis iusto ut aperiam tenetur fuga
+                                    repellendus tempore necessitatibus omnis libero?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="testimonial-wrapper">
+                        <div class="section-header">
+                            <h2 class="title">Our <span>Testimonials</span></h2>
+                            <p>Have a look at our popular reason. why you should choose you bus. Just choose a Bus and
+                                get a ticket for your great journey!</p>
+                        </div>
+                        <div class="testimonial-slider">
+                            <div class="single-slider">
+                                <div class="testimonial-item">
+                                    <div class="content">
+                                        <p><i class="las la-quote-left"></i>Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Ullam iusto mollitia facere accusantium deleniti odit
+                                            eius, amet doloribus fugit delectus doloremque! In, corrupti? Est, autem
+                                            suscipit voluptatem rerum deserunt laudantium.</p>
+                                    </div>
+                                    <div class="thumb-wrapper">
+                                        <div class="thumb">
+                                            <img src="./assets/images/testimonials/item1.jpg" alt="testimonials">
+                                        </div>
+                                        <h5 class="name">Sharmin Sultana</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-slider">
+                                <div class="testimonial-item">
+                                    <div class="content">
+                                        <p><i class="las la-quote-left"></i>Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Ullam iusto mollitia facere accusantium deleniti odit
+                                            eius, amet doloribus fugit delectus doloremque! In, corrupti? Est, autem
+                                            suscipit voluptatem rerum deserunt laudantium.</p>
+                                    </div>
+                                    <div class="thumb-wrapper">
+                                        <div class="thumb">
+                                            <img src="./assets/images/testimonials/item2.jpg" alt="testimonials">
+                                        </div>
+                                        <h5 class="name">Sharmin Sultana</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Ends Here -->
+
+
+    <!-- Blog Section Starts Here -->
+    <section class="blog-section padding-bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-10">
+                    <div class="section-header text-center">
+                        <h2 class="title">Recent <span>Blog Post</span></h2>
+                        <p>Have a look at our popular reason. why you should choose you bus. Just choose a Bus and get a
+                            ticket for your great journey. !</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center g-4">
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <div class="post-item">
+                        <div class="post-thumb">
+                            <img src="./assets/images/blog/item1.jpg" alt="blog">
+                        </div>
+                        <div class="post-content">
+                            <span class="date"><i class="las la-calendar-check"></i>16 May 2021</span>
+                            <h4 class="title"><a href="blog-details.html">What to do if your bus has met with an
+                                    accident</a></h4>
+                            <p>Expedita reprehenderit assumenda cum, id accusamus ad obcaecati fugit volupta Dolore?</p>
+                            <ul class="post-meta">
+                                <li>
+                                    <div>
+                                        <i class="las la-comments"></i>
+                                        00
+                                    </div>
+                                    <div>
+                                        <i class="las la-eye"></i>
+                                        144
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#0"><i class="las la-share"></i>
+                                        Share
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <div class="post-item">
+                        <div class="post-thumb">
+                            <img src="./assets/images/blog/item2.jpg" alt="blog">
+                        </div>
+                        <div class="post-content">
+                            <span class="date"><i class="las la-calendar-check"></i>16 May 2021</span>
+                            <h4 class="title"><a href="blog-details.html">What to do if your bus has met with an
+                                    accident</a></h4>
+                            <p>Expedita reprehenderit assumenda cum, id accusamus ad obcaecati fugit volupta Dolore?</p>
+                            <ul class="post-meta">
+                                <li>
+                                    <div>
+                                        <i class="las la-comments"></i>
+                                        00
+                                    </div>
+                                    <div>
+                                        <i class="las la-eye"></i>
+                                        144
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#0"><i class="las la-share"></i>
+                                        Share
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-10">
+                    <div class="post-item">
+                        <div class="post-thumb">
+                            <img src="./assets/images/blog/item3.jpg" alt="blog">
+                        </div>
+                        <div class="post-content">
+                            <span class="date"><i class="las la-calendar-check"></i>16 May 2021</span>
+                            <h4 class="title"><a href="blog-details.html">What to do if your bus has met with an
+                                    accident</a></h4>
+                            <p>Expedita reprehenderit assumenda cum, id accusamus ad obcaecati fugit volupt Dolore?</p>
+                            <ul class="post-meta">
+                                <li>
+                                    <div>
+                                        <i class="las la-comments"></i>
+                                        00
+                                    </div>
+                                    <div>
+                                        <i class="las la-eye"></i>
+                                        144
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#0"><i class="las la-share"></i>
+                                        Share
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section Ends Here -->
+
+
+    <!-- Footer Section Starts Here -->
+    <section class="footer-seciton">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row footer-wrapper gy-sm-5 gy-4">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer-widget">
+                            <div class="logo">
+                                <img src="./assets/images/logo.png" alt="logo">
+                            </div>
+                            <p>Delectus culpa laboriosam debitis saepe. Commodi earum minus ut obcaecati veniam deserunt
+                                est!</p>
+                            <ul class="social-icons">
+                                <li>
+                                    <a href="#0"><i class="lab la-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><i class="lab la-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><i class="lab la-vimeo"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><i class="lab la-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                        <div class="footer-widget">
+                            <h4 class="widget-title">Popular Routes</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#0"><span>Dhaka</span><i
+                                            class="las la-arrow-right"></i><span>Syhlet</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Chittagong</span><i
+                                            class="las la-arrow-right"></i><span>Kushtia</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Dhaka</span><i
+                                            class="las la-arrow-right"></i><span>Chittagong</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Syhlet</span><i
+                                            class="las la-arrow-right"></i><span>Kushtia</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Chittagong</span><i
+                                            class="las la-arrow-right"></i><span>Kushtia</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                        <div class="footer-widget">
+                            <h4 class="widget-title">New Routes</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#0"><span>Dhaka</span><i
+                                            class="las la-arrow-right"></i><span>Syhlet</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Chittagong</span><i
+                                            class="las la-arrow-right"></i><span>Kushtia</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Dhaka</span><i
+                                            class="las la-arrow-right"></i><span>Chittagong</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Syhlet</span><i
+                                            class="las la-arrow-right"></i><span>Kushtia</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Chittagong</span><i
+                                            class="las la-arrow-right"></i><span>Kushtia</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                        <div class="footer-widget">
+                            <h4 class="widget-title">Useful Links</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#0">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#0">About</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Cancel Ticket</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Bus Reservation</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Home</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                        <div class="footer-widget">
+                            <h4 class="widget-title">Support</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#0">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Support</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Need Help?</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section Ends Here -->
+
+
+
+    <a href="#0" class="scrollToTop active"><i class="las la-chevron-up"></i></a>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/nice-select.js"></script>
+    <script src="./assets/js/jquery-ui.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

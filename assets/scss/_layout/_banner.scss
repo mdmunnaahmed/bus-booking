@@ -1,0 +1,198 @@
+.banner-section {
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    @include breakpoint(max-xl) {
+        padding: 90px 0;
+        padding-top: 100px;
+    }
+    @include breakpoint(max-lg) {
+        padding: 80px 0;
+        padding-top: 70px;
+    }
+    @include breakpoint(max-sm) {
+        padding: 70px 0;
+    }
+    &::before {
+        content: '';
+        background-color: rgba($base-color,.3);
+        position: absolute;
+        transform: translate(50%);
+        border-radius: 50%;
+        width: 900px;
+        height: 800px;
+        right:100px;
+        top: -500px;
+        @include breakpoint(max-md) {
+            top: -570px;
+        }
+        @include breakpoint(max-sm) {
+            top: -640px;
+            right: 0px;
+        }
+    }
+    &::after {
+        content: '';
+        background-color: rgba($base-color,.4);
+        position: absolute;
+        transform: translate(50%);
+        border-radius: 50%;
+        width: 900px;
+        height: 800px;
+        right: 100px;
+        top: -520px;
+        @include breakpoint(max-md) {
+            top: -600px;
+        }
+        @include breakpoint(max-sm) {
+            top: -660px;
+            right: -20px;
+        }
+    }
+    .container {
+        position: relative;
+        z-index: 3;
+    }
+    .shape  {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 200px;
+        animation: run 20s linear infinite;
+        @include breakpoint(max-lg) {
+            width: 150px;
+        }
+        @include breakpoint(max-md) {
+            width: 130px;
+        }
+        img {
+            width: 100%;
+        };
+        @keyframes run {
+            0% {
+                right: 0;
+            }
+            100% {
+                right: 100%;
+                transform: scale(1)
+            }
+        }
+    }
+}
+.banner-wrapper {
+    @extend %flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-content {
+    width: 600px;
+    margin-top: -10px;
+    @include breakpoint(max-xl) {
+        width: 480px;
+    }
+    @include breakpoint(max-lg) {
+        margin-bottom: 20px;
+    }
+    @include breakpoint(max-sm) {
+        margin-bottom: 20px;
+    }
+    .title {
+        @include breakpoint(max-xl) {
+            font-size: 42px;
+        }
+        @include breakpoint(max-md) {
+            font-size: 38px;
+        }
+        @include breakpoint(max-sm) {
+            font-size: 30px;
+        }
+    }
+    .cmn--btn {
+        margin-top: 35px;
+        word-spacing: 2px;
+        font-weight: 600;
+        @include breakpoint(max-sm) {
+            margin-top: 25px;
+        }
+    }
+}
+
+// Inner Banner
+.inner-banner {
+    position: relative;
+    padding: 70px 0;
+    &::before {
+        @include before;
+        left: 0;
+        top: 0;
+        background: rgba($primary-color,.4);
+    }
+    .inner-banner-content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        .title {
+            font-size: 40px;
+            color: $white;
+            @include breakpoint(max-md) {
+                font-size: 34px;
+            }
+            @include breakpoint(max-md) {
+                font-size: 30px;
+            }
+        }
+        .breadcums {
+            margin-top: 15px;
+            @extend %flex;
+            justify-content: center;
+            margin-right: -30px;
+            li {
+                padding: 0;
+                padding-right:30px;
+                color: $white;
+                a {
+                    position: relative;
+                    font-size: 18px;
+                    color: $white;
+                    &:hover {
+                        color: $base-color;
+                    }
+                }
+                .home {
+                    padding-right: 10px;
+                    &::before {
+                        @include line-ico;
+                        content: '\f061';
+                        left: 100%;
+                        top: 2px;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// Date Picker
+.ui-widget-header {
+    background: rgba($base-color,.9);
+    color: $white !important;
+}
+.ui-state-default {
+    border: 0 !important;
+    background: rgba($primary-color,.06) !important;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.ui-state-active {
+    background: $base-color !important;
+    color: $white !important;
+}

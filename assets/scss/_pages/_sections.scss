@@ -1,0 +1,1251 @@
+// Working Process Section Strts Here
+.working-process-item {
+    text-align: center;
+    padding: 30px 25px 15px;
+    position: relative;
+    box-shadow: 0 0 15px 3px rgba($primary-color, .05);
+    border-radius: 5px;
+    &:hover {
+        box-shadow: 0 0 18px 3px rgba($primary-color, .08);
+
+    }
+    @include breakpoint(xl) {
+        padding: 35px 30px 25px;
+    }
+    .thumb-wrapper {
+        display: inline-block;
+        position: relative;
+        span {
+            position: absolute;
+            @include before;
+            width: 35px;
+            height: 35px;
+            right: -15px;
+            top: -15px;
+            border-radius: 50%;
+            background: $base-color;
+            font-size: 14px;
+            color: $white;
+            @extend %flex-center;
+        }
+    }
+    .thumb {
+        width: 80px;
+        height: 80px;
+        box-shadow: 0 0 0 8px rgba($base-color,.1);
+        margin: 0 auto 20px;
+        border-radius: 50%;
+        @extend %flex-center;
+        font-size: 32px;
+        color: $base-color;
+        background: rgba($base-color,.25);
+        @include breakpoint(max-xl) {
+            width: 70px;
+            height: 70px;
+            font-size: 30px;
+        }
+    }
+    .content {
+        .title {
+            margin-bottom: 10px;
+            @include breakpoint(max-xl) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+// Working Process Section Ends Here
+
+
+// Route Section Starts Here
+.route-item {
+    display: flex;
+    align-items: center;
+    &:hover {
+        .route-content {
+            .title {
+                color: $base-color;
+            }
+        }
+    }
+    .icon {
+        width: 20px;
+        font-size: 20px;
+        margin: 0 10px;
+        img {
+            width: 100%;
+        }
+        @include breakpoint(max-xl) {
+            margin: 10px auto;
+            transform: rotate(90deg);
+        }
+    }
+    @include breakpoint(max-xl) {
+        display: block;
+    }
+}
+.route-inner {
+    display: flex;
+    padding: 15px 25px;
+    border: 1px solid rgba($base-color,.25);
+    border-radius: 5px;
+    height: 100%;
+    .route-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 34px;
+        color: $base-color;
+        border-radius: 5px;
+        line-height: 1;
+        margin-left: -10px;
+    }
+    .route-content {
+        width: calc(100% - 35px);
+        padding-left: 15px;
+        .route-to {
+            @extend %flex;
+            margin-top: 7px;
+            li {
+                padding: 2px 3px;
+                line-height: 1.3;
+                color: $body-color;
+            }
+        }
+    }
+}
+// Route Section Ends Here
+
+
+// Why Choose Us Section Starts Here
+.choose-us {
+    .section-header {
+        margin-bottom: 70px;
+    }
+}
+.choose-item {
+    text-align: center;
+    padding: 15px 20px;
+    @include breakpoint(max-xl) {
+        padding: 15px 0;
+    }
+}
+.choose-item-thumb {
+    width: 100%;
+    margin: 0 auto 25px;
+    position: relative;
+    &::before, &::after {
+        position: absolute;
+        content: '';
+        width: 120px;
+        height: 120px;
+        background: rgba($secondary-color,.1);
+        top: -20px;
+        border-radius: 62% 20% 40% 40% / 56% 19% 73% 42% ;
+        @include breakpoint(max-lg) {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    &::before {
+        top: -20%;
+        left: 25%;
+        border-radius: 23% 78% 27% 70% / 56% 56% 41% 42% ;
+    }
+    &::after {
+        left: 40%;
+    }
+    img {
+        max-width: 120px;
+        max-width: 100px;
+        position: relative;
+        z-index: 1;
+        @include breakpoint(max-lg) {
+            max-width: 100px;
+        }
+    }
+}
+.choose-item-content {
+    position: relative;
+    z-index: 1;
+    .title {
+        margin-bottom: 5px;
+    }
+}
+// Why Choose Us Section Ends Here
+
+
+// Amenities Section Starts Here
+.slick-list {
+    padding: 10px 0 !important;
+}
+.amenities-item {
+    box-shadow: 0 0 7px rgba($primary-color,.25);
+    padding: 25px 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 10px;
+    @include breakpoint(max-xl) {
+        padding: 30px;
+    }
+    @include breakpoint(max-lg) {
+        padding: 25px 30px;
+    }
+    @include breakpoint(max-sm) {
+        padding: 15px 20px;
+        margin: 0 5px;
+    }
+    &:hover {
+        box-shadow: 0 0 10px 1px rgba($base-color,.25);
+        .thumb {
+            color: rgba($base-color,.8);
+            border-color: rgba($base-color,.6);
+        }
+    }
+    .thumb {
+        display: inline-block;
+        font-size: 60px;
+        color: rgba($primary-color,.5);
+        border-bottom: 2px solid rgba($primary-color,.2);
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        @include breakpoint(max-xl) {
+            font-size: 56px;
+        }
+        @include breakpoint(max-lg) {
+            font-size: 48px;
+            padding-bottom: 6px;
+            margin-bottom: 10px;
+        }
+        @include breakpoint(max-sm) {
+            font-size: 42px;
+        }
+    }
+    .title {
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba($primary-color,.5);
+        @include breakpoint(max-xl) {
+            font-size: 16px;
+        }
+        @include breakpoint(max-lg) {
+            font-size: 15px;
+        }
+        @include breakpoint(max-sm) {
+            font-size: 14px;
+        }
+    }
+}
+// Amenities Section Ends Here
+
+.cmn--btn.btn--sm {
+    padding: 5px 13px !important;
+    font-size: 13px !important;
+    font-weight: 600;
+    word-spacing: 4px;
+}
+// Packages Section Starts Here
+.package-item {
+    box-shadow: 0 0 15px 3px rgba($primary-color,.1);
+    border-radius: 5px;
+    overflow: hidden;
+    @include transition;
+    &:hover {
+        box-shadow: 0 0 15px 3px rgba($primary-color,.2);
+        .package-thumb {
+            overflow: hidden;
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.package-thumb {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    .discount {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: $base-color;
+        color: $white;
+        padding: 8px;
+        padding-left: 20px;
+        border-radius: 0 3px 3px 0;
+        line-height: 1;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 08% 50%);
+        font-size: 14px;
+    }
+    img {
+        width: 100%;
+    }
+}
+.package-content {
+    padding: 20px 15px;
+    border-radius: 0 0 5px 5px;
+    .tour {
+        font-weight: 500 !important;
+    }
+    .location {
+        margin-bottom: 15px;
+        font-size: 14px;
+        i {
+            color: $base-color;
+            font-size: 16px;
+            margin-right: 5px;
+        }
+    }
+    .ratting {
+        margin: 0;
+        li {
+            line-height: 1;
+            margin-right: 5px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .rate {
+            padding: 4px 6px;
+            border-radius: 3px;
+            color: $white;
+            background: $base-color;
+        }
+        .txt {
+            color: $base-color;
+        }
+        .total-reviews {
+            color: $body-color;
+        }
+    }
+    .package-price {
+        margin-top: 12px;
+        @extend %flex;
+        align-items: center;
+        justify-content: space-between;
+        .price {
+            .fare {
+                span {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: $base-color;
+                }
+            }
+        }
+        .per {
+            font-size: 14px;
+            line-height: 1;
+        }
+        .buy-package-btn {
+            border-bottom: 1px solid rgba($primary-color,.3);
+            line-height: 1.2;
+            &:hover {
+                border-color: $base-color;
+            }
+        }
+    }
+}
+// Packages Section Ends Here
+
+
+// Faq & Testimonails Section Starts Here
+
+.faq-wrapper {
+    padding-right: 40px;
+    @include breakpoint(max-lg) {
+        padding-right: 0;
+    }
+    @include breakpoint(max-xl) {
+        padding-right: 10px;
+    }
+}
+.testimonial-wrapper {
+    padding-left: 40px;
+    border-left: 2px solid rgba($base-color,.9);
+    @include breakpoint(max-lg) {
+        padding-left: 0;
+        border: none;
+    }
+    .slick-dots {
+        bottom: -50px;
+        button {
+            &::before {
+                background: $base-color;
+                height: 5px;
+                font-size: 0;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+.faq-item {
+    margin-bottom: 15px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &.open {
+        .faq-title {
+            .icon {
+                &::after {
+                    transform: translateY(-50%) rotate(90deg);
+                }
+            }
+        }
+    }
+    &.active {
+        .faq-content {
+            display: block;
+        }
+    }
+    .faq-title {
+        display: flex;
+        align-items: center;
+        padding: 15px 20px;
+        border: 1px solid rgba($base-color,.25);
+        cursor: pointer;
+        .icon {
+            position: relative;
+            &::after, &::before {
+                position: absolute;
+                content: '';
+                background: rgba($base-color,.9);
+            }
+            &::before {
+                width: 20px;
+                height: 2px; 
+                left: -50%;
+                top: 50%;
+                transform: translateX(-50%);
+                @include transition;
+                @include breakpoint(max-md) {
+                    width: 20px;
+                }
+            }
+            &::after {
+                height: 20px;
+                width: 2px;
+                left: 0;
+                transform: translateY(-49%);
+                @include transition;
+                @include breakpoint(max-md) {
+                    height: 20px;
+                }
+            }
+        }
+        .title {
+            padding-left: 25px;
+            margin: 0;
+            @include breakpoint(max-xl) {
+                font-size: 18px;
+            }
+            @include breakpoint(max-md) {
+                padding-left: 20px;
+            }
+        }
+    }
+    .faq-content {
+        padding: 15px;
+        display: none;
+    }
+}
+.testimonial-item {
+    .thumb-wrapper {
+        @extend %flex;
+        .name {
+            padding-left: 15px;
+        }
+    }
+    .thumb {
+        width: 70px;
+        img {
+            width: 100%;
+        }
+    }
+    .content {
+        margin-bottom: 25px;
+        p {
+            margin-top: -10px;
+            font-size: 15px;
+            i {
+                font-size: 42px;
+                color: $base-color;
+            }
+        }
+    }
+}
+// Faq & Testimonails Section Ends Here
+
+
+// Faq Two Section Starts Here
+.faq-section.two {
+    .title {
+        margin-bottom: 15px;
+    }
+}
+.faq-wrapper-two {
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 1px rgba($primary-color,.07);
+    border: 1px solid rgba($primary-color,.1);
+    @include breakpoint(xxl) {
+        padding: 35px 30px;
+    }
+    @include breakpoint(max-sm) {
+        padding: 20px 15px;
+    }
+    .faq-item-two  {
+        margin-bottom: 25px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .title {
+            margin-bottom: 5px;
+        }
+        span {
+            color: $dark;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}
+// Faq Two Section Ends Here
+
+
+// About Us Section Starts Here
+.about-thumb {
+    img {
+        width: 100%;
+    }
+}
+.about-content {
+    padding-right: 40px;
+    @include breakpoint(max-xl) {
+        padding-right: 10px;
+    }
+    @include breakpoint(max-lg) {
+        padding-right: 0px;
+    }
+    .section-header {
+        margin-bottom: 20px;
+        p {
+            font-size: 18px;
+            color: $title-color;
+            @include breakpoint(max-xl) {
+                font-size: 16px;
+            }
+        }
+    }
+}
+.about-wrapper {
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 35px 25px;
+    box-shadow: 0 0 20px 2px rgba($primary-color,.07);
+    border: 1px solid rgba($primary-color,.1);
+    @include breakpoint(xxl) {
+        padding: 40px 35px;
+    }
+    @include breakpoint(max-md) {
+        padding: 0;
+        border: 0;
+        box-shadow: none;
+    }
+    .item {
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .title {
+            margin-bottom: 10px;
+        }
+        .info {
+            margin-top: 15px;
+            margin-left: 15px;
+            li {
+                padding: 3px 0;
+                list-style-type: disc;
+            }
+        }
+        p {
+            margin-bottom: 10px;
+        }
+    }
+}
+// About Us Section Ends Here
+
+
+// How Reserve Section Starts Here
+.how-reserve-item {
+    padding: 20px 15px;
+    background: $white;
+    border-radius: 5px;
+    @include breakpoint(xxl) {
+        padding: 30px 25px;
+    }
+    text-align: center;
+    .thumb {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 22px;
+        font-size: 30px;
+        background: $white;
+        @extend %flex-center;
+        color: $base-color;
+        border: 1px solid rgba($base-color,.7);
+        border-radius: 50%;
+        box-shadow: 0 0 0 7px rgba($base-color,.3);
+        background: rgba($base-color,.9);
+        color: $white;
+        @include breakpoint(max-xl) {
+            width: 70px;
+            height: 70px;
+        }
+    }
+    .content {
+        .title {
+            margin-bottom: 5px;
+        }
+    }
+}
+// How Reserve Section Ends Here
+
+
+// Bus Search Section Starts Here
+.ticket-search-bar {
+    position: relative;
+    &::before {
+        @include before;
+        left: 0;
+        top: 0;
+        background: $primary-color;
+        opacity: .45;
+    }
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+}
+.bus-search-header {
+    padding: 40px 30px;
+    border-radius: 10px 10px 0 0;
+    background: $white;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    align-items: center;
+    @include breakpoint(max-md) {
+        padding: 30px 20px
+    }
+    @include breakpoint(max-sm) {
+        padding: 20px 15px
+    }
+    .route-info {
+        @extend %flex;
+        align-items: center;
+        .thumb {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .content {
+            padding-left: 15px;
+            .title {
+                color: $dark;
+                margin-bottom: 0;
+            }
+            .date {
+                font-size: 14px;
+            }
+        }
+    }
+    .search-result {
+        .title {
+            margin-bottom: 7px;
+        }
+        .wrapper {
+            @extend %flex;
+            .icon {
+                font-size: 26px;
+                color: $base-color;
+                margin-right: 5px;
+            }
+            .result-info {
+                font-size: 15px;
+            }
+        }
+    }
+    .route-date-changer {
+        .button-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            width: auto;
+            height: auto;
+            padding: 12px 18px;
+            font-weight: 500;
+            font-size: 15px;
+            @include breakpoint(max-xl) {
+                margin-bottom: 10px;
+            }
+        }
+        .result-info {
+            margin-bottom: 10px;
+            line-height: 1.3;
+            display: block;
+        }
+    }
+    .ticket-form-two {
+        padding: 0;
+        background: transparent;
+        margin-bottom: 30px;
+        box-shadow: none;
+    }
+}
+.ticket-item {
+    padding: 25px;
+    background: $white;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    @extend %flex;
+    align-items: center;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @include breakpoint(max-sm) {
+        padding: 20px 15px;
+        align-items: start;
+    }
+    
+}
+.ticket-item-inner {
+    flex-grow: 1;
+    @include breakpoint(max-md) {
+        width: 100%;
+        text-align: left;
+    }
+    .bus-info {
+        font-size: 13px;
+    }
+    .ratting {
+        display: flex;
+        align-items: center;
+        color: $star;
+        i {
+            margin-right: 4px;
+        }
+    }
+    .bus-time {
+        i {
+            font-size: 24px;
+            color: $base-color;
+        }
+        .time {
+            font-size: 18px;
+            color: $dark;
+            font-weight: 600;
+        }
+        text-align: center;
+        @include breakpoint(max-md) {
+            text-align: left;
+        }
+    }
+    button {
+        height: auto;
+        width: auto;
+        padding: 10px 15px;
+        margin: 0;
+        line-height: 1;
+        font-weight: 600;
+        word-spacing: 3px;
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    
+}
+.travel-time {
+    @extend %flex;
+    align-items: center;
+    @include breakpoint(max-md) {
+        text-align: left;
+        margin-left: -15px;
+        margin-right: -15px;
+        align-items: start;
+        justify-content: start;
+        margin-top: 25px;
+    }
+    div {
+        padding: 0 15px;
+        @include breakpoint(max-sm) {
+            padding: 0 10px;
+        }
+    }
+}
+.book-ticket {
+    text-align: center;
+    @include breakpoint(max-md) {
+        text-align: left;
+        margin-top: 25px;
+    }
+    .rent {
+        font-size: 20px;
+        color: $base-color;
+        margin-bottom: 5px;
+    }
+    .seats-left {
+        color: rgba($primary-color, 1);
+    }
+
+}
+.ticket-item-footer {
+    padding-top: 10px;
+    margin-top: 15px;
+    width: 100%;
+    border-top: 1px solid rgba($primary-color, .1);
+    position: relative;
+    .info-list {
+        @extend %flex;
+        justify-content: space-between;
+        li {
+            padding: 3px 10px;
+            cursor: pointer;
+            a.active {
+                color: $base-color;
+            }
+            @include breakpoint(max-md) {
+                width: 50%;
+            }
+            @include breakpoint(max-sm) {
+                width: 100%;
+            }
+        }
+    }
+    .info-details {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        padding: 25px;
+        padding-right: 60px;
+        background: $white;
+        border: 1px solid rgba($primary-color, .15);
+        left: 0;
+        top:50px;
+        box-shadow: 0 10px 25px rgba($primary-color,.15);
+        @include breakpoint(max-sm) {
+            padding: 15px;
+        }
+        .list {
+            margin-top: 15px;
+            li {
+                list-style-type: none;
+                margin-left: 15px;
+                @include breakpoint(max-md) {
+                    margin-left: 0 !important;
+                }
+            }
+        }
+        
+    }
+    .bor-drop-lsit {
+        max-height: 400px;
+        overflow-y: auto;
+        li {
+            list-style: none !important;
+            border-bottom: 1px solid rgba($primary-color,.1);
+            &:last-child {
+                border-bottom: none;
+            }
+            .time {
+                font-size: 17px;
+                color: $secondary-color;
+                font-weight: 600;
+            }
+            .bor-point {
+                font-weight: 600;
+                color: $title-color;
+            }
+            
+        }
+    }
+    .amenities-details {
+        .list {
+            @extend %flex;
+            li {
+                width: 30%;
+                list-style-type: none;
+                @include breakpoint(max-md) {
+                    width: 50%;
+                }
+                @include breakpoint(max-sm) {
+                    width: 100%;
+                }
+                i {
+                    color: $base-color;
+                    margin-right: 5px;
+                }
+            }
+
+        }
+    }
+
+}
+.tab-pane {
+    .close-btn {
+        padding: 5px 10px;
+        border-radius: 3px;
+        background: rgba($primary-color, .2);
+        color: $white;
+        font-size: 20px;
+        position: absolute;
+        display: inline-block;
+        right: 10px;
+        top: 60px;
+        cursor: pointer;
+        z-index: 5;
+        &:hover {
+            background: $primary-color;
+        }
+    }
+}
+.bus-seat-management {
+    padding: 30px;
+    border-radius: 10px;
+    background: $white;
+    box-shadow: 0 0 15px 3px rgba($primary-color, .05);
+    width: 100%;
+    .all-seats {
+        @extend %flex;
+        li {
+            font-size: 24px;
+            padding: 5px;
+        }
+    }
+}
+.seat-plan-wrapper {
+    width: 100%;
+    margin-top: 40px;
+    display: none;
+    position: relative;
+    z-index: 1;
+    background: $white;
+    &.selected {
+        display: block;
+    }
+}
+.seat-plan-inner {
+    margin-top: 25px;
+    .single {
+        position: relative;
+        border: .5px solid #979797;
+        min-height: 150px;
+        max-width: 100%;
+        padding: 80px 25px 30px;
+        margin-bottom: 55px;
+        @include breakpoint(max-xl) {
+            padding-top: 60px;
+        }
+    }
+    .front {
+        position: absolute;
+        width: 60px;
+        height: 25px;
+        top: -13px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 600;
+        z-index: 23;
+        color: #9b9b9b;
+        background: #f1f1f1;
+        letter-spacing: 1px;
+    }
+    .rear {
+        position: absolute;
+        width: 60px;
+        height: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -13px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 600;
+        z-index: 23;
+        color: #9b9b9b;
+        background: #f1f1f1;
+        letter-spacing: 1px;
+    }
+    .lower {
+        width: 50px;
+        height: 40px;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        color: $body-color;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    .driver {
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+}
+.seat-wrapper {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    .reserve-for-ladies {
+        .seat {
+            color: $body-color !important;
+        }
+    }
+    .left-side,.right-side {
+        display: flex;
+    }
+    .seat {
+        height: 50px;
+        width: 35px;
+        color: $body-color;
+        border: 1px solid #979797;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        margin-right: 10px;
+        cursor: pointer;
+        position: relative;
+        font-weight: 100;
+        font-size: 15px;
+        @extend %flex-center;
+        @include breakpoint(max-sm) {
+            height: 45px;
+            width: 30px;
+            font-size: 14px;
+        }
+        span {
+            position: absolute;
+            left: 2px;
+            right: 2px;
+            height: 4px;
+            border: 1px solid rgba($primary-color, .25);
+            border-radius: 2px;
+            bottom: 6px;
+        }
+        &.selected {
+            border-color: $base-color;
+            background: $base-color;
+            color: $white;
+            span {
+                background: $white;
+                border-color: $white;
+            }
+        }
+    }
+}
+.seat-for-reserved {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 15px;
+    .seat-condition {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        width: 50%;
+        padding-bottom: 20px;
+        @include breakpoint(max-sm) {
+            width: 100%;
+        }
+    }
+    .seat {
+        width: 50px;
+        height: 18px;
+        border: 1px solid #979797;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        cursor: pointer;
+        position: relative;
+        margin-right: 10px;
+        span {
+            position: absolute;
+            top: 2px;
+            bottom: 2px;
+            width: 4px;
+            border: 1px solid rgba($primary-color, .25);
+            right: 7px;
+            border-radius: 2px;
+        }
+        
+    }
+    p {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 1.25;
+    }
+    .selected-by-you {
+        .seat {
+            border-color: $base-color;
+            background: $base-color;
+            span {
+                background: $white;
+                border-color: $white;
+            }
+        }
+    }
+    .selected-by-ladies {
+        .seat {
+            border-color: $pink;
+            background: $pink;
+            color: $body-color !important;
+            span {
+                background: $white;
+                border-color: $white;
+            }
+        }
+    }
+    .reserve-for-ladies {
+        .seat {
+            border-color: $pink;
+            background: $white;
+            span {
+                background: $pink;
+                border-color: $pink;
+            }
+        }
+    }
+}
+.selected-by-you {
+    .seat {
+        border-color: $base-color;
+        background: $base-color;
+        span {
+            background: $white;
+            border-color: $white;
+        }
+    }
+}
+.selected-by-ladies {
+    .seat {
+        border-color: $pink !important;
+        background: $pink !important;
+        span {
+            background: $white !important;
+            border-color: $white !important;
+        }
+    }
+}
+.reserve-for-ladies {
+    .seat {
+        border-color: $pink !important;
+        background: $white !important;
+        span {
+            background: $pink !important;
+            border-color: $pink !important;
+        }
+    }
+}
+.seat-overview-wrapper {
+    border: 1px solid rgba($primary-color, .35);
+    border-radius: 5px;
+    padding: 20px 15px;
+    @include breakpoint(xl) {
+        padding: 30px;
+    }
+    .boarding-point {
+        margin-bottom: 15px;
+        height: 40px;
+    }
+    .destination-point {
+        margin-top: 15px;
+        height: 40px;
+    }
+    .seat-info {
+        margin-top: 15px;
+        li {
+            display: flex;
+            justify-content: space-between;
+            .title {
+                display: inline-block;
+            }
+            .value {
+                display: inline-block;
+            }
+        }
+    }
+    .book-bus-btn {
+        height: 40px;
+        margin-top: 25px;
+    }
+}
+// Bus Search Section End Here
+
+
+// Privacy Policy Section Starts Here
+.privacy-policy {
+    overflow: initial !important;
+}
+.privacy-policy-sidebar-menu {
+    position: sticky;
+    top: 120px;
+    li {
+        width: 100%;
+        margin-bottom: 5px;
+        a {
+            padding: 15px 20px;
+            box-shadow: 0 2px 10px 1px rgba($primary-color, .05);
+            display: block;
+            border-radius: 5px;
+            &.active {
+                border-right: 3px solid $base-color;
+                color: $base-color;
+            }
+            &:hover {
+                box-shadow: 0 2px 12px 2px rgba($primary-color, .08);
+                
+            }
+        }
+    }
+}
+.privacy-policy-content {
+    padding-left: 40px;
+    @include breakpoint(max-xl) {
+        padding-left: 20px;
+    }
+    @include breakpoint(max-lg) {
+        padding-left: 0px;
+    }
+    .content-item {
+        margin-bottom: 40px;
+        .title {
+            margin-bottom: 15px;
+        }
+        .info-list {
+            margin-top: 15px;
+            li {
+                padding-left: 25px;
+                position: relative;
+                &::before {
+                    @include line-ico;
+                    content: "\f101";
+                    left: 0;
+                    top: 7px;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+// Privacy Policy Section Ends Here

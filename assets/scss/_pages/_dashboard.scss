@@ -1,0 +1,172 @@
+.dashboard-wrapper {
+    .title {
+        margin-bottom: 25px;
+    }
+}
+.dashboard-section {
+    background: rgba($primary-color,.06);
+    .pagination {
+        margin-top: 30px;
+        @include breakpoint(max-sm) {
+            margin-top: 20px;
+        }
+        li {
+            a {
+                background: $white;
+                &.active,&:hover {
+                    background: $base-color;
+                }
+            }
+        }
+    }
+}
+.booking-table {
+    margin: 0;
+    border: none;
+    width: 100%;
+    text-align: center;
+    thead {
+        tr {
+            background: $white;
+            &:nth-child(even) {
+                background: transparent;
+                th {
+                    padding: 6px 0 !important;
+                }
+            }
+            th {
+                padding: 20px 15px;
+                font-family: $heading;
+                color: $dark;
+                border: none;
+                font-size: 18px;
+                font-weight: 500;
+                &:first-child {
+                    border-radius: 15px 0 0 15px;
+                }
+                &:last-child {
+                    border-radius: 0px 15px 15px 0px;
+                }
+            }
+        }
+    }
+    tbody {
+        font-size: 14px;
+        tr {
+            &:nth-child(even) {
+            background: transparent;
+            td {
+                padding: 6px 0 !important;
+            }
+        }
+            &:nth-child(even) {
+                background: transparent;
+            }
+            background: $white;
+            @include transition;
+            .action-button-wrapper {
+                display: flex;
+                justify-content: center;
+                max-width: 200px;
+                margin-left: auto;
+                a {
+                    width: 35px;
+                    height: 35px;
+                    text-align: center;
+                    line-height: 35px;
+                    border-radius: 3px;
+                }
+                .print {
+                    font-size: 18px;
+                    color: $base-color;
+                    background: rgba($base-color,.1);
+                }
+                .del {
+                    font-size: 18px;
+                    color: $red;
+                    margin-left:10px;
+                    background: rgba($red,.1);
+                }
+            }
+            .serial {
+                font-size: 18px;
+                font-weight: 500;
+                color: $dark;
+            }
+            .ticket-no {
+                color: $secondary-color;
+                font-size: 16px;
+            }
+            .route {
+                color: $base-color;
+            }
+            .date {
+                font-size: 14px;
+            }
+            .time {
+                color: $secondary-color;
+            }
+            .seats {
+                color: rgba($base-color,1);
+            }
+            .fare {
+                font-size: 18px;
+                font-weight: 500;
+                color: $secondary-color;
+            }
+            td {
+                &:first-child {
+                    border-radius: 5px 0 0 5px;
+                }
+                &:last-child {
+                    border-radius: 0px 5px 5px 0px;
+                }
+                .badge {
+                    text-transform: capitalize;
+                }
+                color: $body-color;
+                vertical-align: middle;
+                padding: 12px 15px;
+                @include breakpoint(max-lg) {
+                    border: none;
+                    border-bottom: 1px solid rgba($primary-color,.1);
+                    &:last-child {
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+    .details {
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    @include breakpoint(max-lg) {
+        thead {
+            display: none;
+        }
+        tbody {
+            tr {
+                display: block;
+                td {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-collapse: collapse;
+                    padding: 10px 15px;
+                    border-radius: 0 !important;
+                    &::before {
+                        content: attr(data-label);
+                        font-family: $heading;
+                        font-size: 17px;
+                        color: $title-color;
+                        font-weight: 500;
+                    }
+                }
+                &:nth-child(even) {
+                    background: rgba($color:$white,$alpha:.3);
+                }
+            }
+        }
+    }
+}

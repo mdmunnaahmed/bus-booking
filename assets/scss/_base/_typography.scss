@@ -1,0 +1,377 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: $body-color;
+    line-height: $lh-p;
+    overflow-x: hidden !important;
+    font-family: $body;
+    background: $body-bg;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.2;
+    color: $title-color;
+    font-family: $heading;
+    a {
+        color: $title-color;
+        &:hover {
+            color: $base-color;
+        }
+    }
+}
+h1 {
+    font-size: $fs-h1;
+}
+h2 {
+    font-size: $fs-h2;
+    margin-top: -10px;
+}
+h3 {
+    font-size: $fs-h3;
+    margin-top: -6px;
+}
+h4 {
+    font-size: $fs-h4;
+}
+h5 {
+    font-size: $fs-h5;
+}
+h6 {
+    font-size: $fs-h6;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    @include transition;
+    text-decoration: none;
+    color: $body-color;
+    &:hover {
+        color: $base-color;
+    }
+}
+span {
+    display: inline-block;
+}
+ul {
+    margin: -7px 0;
+    padding: 0;
+    li {
+        list-style: none;
+        padding: 7px 0;
+    }
+}
+
+.bg_img {
+    background-size: cover !important;
+    background-position: center center;
+    background-repeat: no-repeat !important;
+}
+.bg_fixed {
+    background-attachment: fixed !important;
+}
+input, textarea, button {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+button {
+    height: 50px;
+    padding: 13px 30px;
+    cursor: pointer;
+    background: $base-color;
+    color: $white;
+    font-weight: 600;
+    text-transform: capitalize;
+    border-radius: 5px;
+    transition: all ease .4s;
+    line-height: 1;
+    &:hover {
+        background: $base-color;
+    }
+}
+label {
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+.form--control {
+    width: 100%;
+    height: 40px;
+    color: $dark;
+    padding: 0 20px;
+    border-radius: 5px;
+    transition: all ease .2s;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    box-shadow: 3px 3px 10px 3px rgba($color:$primary-color,$alpha:.04);
+    border: 1px solid rgba($primary-color,.1);
+    line-height: 1;
+    &:focus {
+      background-color: $white;
+      box-shadow: 1px 1px 10px 3px rgba($color:$base-color,$alpha:.1);
+      border: 1px solid rgba($base-color,.9);
+    }
+}
+::-webkit-input-placeholder {
+    color: $dark;
+    line-height: 1;
+}
+
+textarea {
+    width: 100%;
+    height: 130px;
+    resize: vertical;
+    background: $white; 
+    padding: 20px;
+    border-radius: 5px;
+    padding-top: 25px;
+    overflow: hidden;
+    font-weight: 400;
+    @include transition;
+}
+textarea.form--control {
+    height: 100px;
+    padding-top: 10px;
+}
+
+img {
+    @include transition;
+}
+.title,.name {
+    @include transition;
+}
+.section-bg {
+    background: $section-bg;
+}
+section {
+    ::-webkit-scrollbar {
+        width: 5px !important;
+        height: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgba($primary-color,.35) !important;
+        border-radius: 5px !important;
+    }
+}
+.nice-select {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+    box-shadow: 3px 3px 10px 3px rgba($color:$primary-color,$alpha:.05);
+    ::-webkit-scrollbar {
+        width: 5px !important;
+        height: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgba($primary-color,.35) !important;
+        border-radius: 5px !important;
+    }
+    .list {
+        max-height: 150px;
+        overflow-y: auto;
+        overflow-x: auto;
+        li {
+            min-height: 20px;
+            max-height: 35px;
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+.custom--checkbox {
+    display: flex;
+    label {
+        margin-bottom: -2px;
+        padding-left: 7px;
+    }
+    input[type="checkbox"] {
+        appearance: none;
+        @include center;
+        height: 15px;
+        width: 15px;
+        cursor: pointer;
+        background: $white;
+        border: 1px solid rgba($primary-color, $alpha:.4);
+        border-radius: 2px;
+        margin-top: 8px;
+        border-radius: 2px;
+    }
+    input[type="checkbox"]:checked {
+        background: $white;
+        border-color: $white;
+        
+    }
+    input[type="checkbox"]::after {
+        @include line-ico;
+        content: '\f14a';
+        font-size: 20px;
+        color: $base-color;
+        visibility: hidden;
+        opacity: 0;
+    }
+    // input[type="checkbox"]::before {
+    //     content: "";
+    //     width: 7px;
+    //     height: 7px;
+    //     color: $white;
+    //     visibility: hidden;
+    //     opacity: 0;
+    //     background: $white;
+    //     border-radius: 50%;
+    // }
+    input[type="checkbox"]:checked::after {
+        visibility: visible;
+        opacity: 1;
+    }
+    // input[type="checkbox"]:checked::before {
+    //     visibility: visible;
+    //     opacity: 1;
+    // }
+}
+
+.scrollToTop {
+    width: 40px;
+    height: 40px;
+    @include center;
+    color: $white;
+    z-index: 9999;
+    bottom: 30px;
+    right: 30px;
+    font-size: 18px;
+    position: fixed;
+    -webkit-transform: translateY(150px);
+    -ms-transform: translateY(150px);
+    transform: translateY(150px);
+    background: $base-color;
+    border-radius: 3px;
+}
+.scrollToTop:hover {
+    color: $white;
+}
+.scrollToTop.active {
+    transform: translateY(0);
+    animation: bounceInDown 2s;
+}
+.pos-rel {
+    position: relative !important;
+}
+.slick-list {
+    padding: 0 !important;
+}
+i {
+    line-height: 1;
+}
+
+
+
+
+
+// Responsive Fonts 
+@include breakpoint(xl) {
+    .padding-top {
+        padding-top: 80px;
+    }
+    .padding-bottom {
+        padding-bottom: 80px;
+    }
+}
+@include breakpoint(max-xl) {
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    h6 {
+        font-size: 18px;
+    }
+    .padding-top {
+        padding-top: 90px;
+    }
+    .padding-bottom {
+        padding-bottom: 90px;
+    }
+}
+@include breakpoint(max-lg) {
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    .padding-top {
+        padding-top: 80px;
+    }
+    .padding-bottom {
+        padding-bottom: 80px;
+    }
+}
+@include breakpoint(max-md) {
+    h2 {
+        font-size: 32px;
+    }
+    h4 {
+        font-size: 22px;
+    }
+    h6 {
+        font-size: 18px;
+    }
+    .padding-top {
+        padding-top: 70px;
+    }
+    .padding-bottom {
+        padding-bottom: 70px;
+    }
+}
+@include breakpoint(max-sm) {
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 26px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h5 {
+        font-size: 18px;
+    }
+    h6 {
+        font-size: 16px;
+    }
+    .padding-top {
+        padding-top: 60px;
+    }
+    .padding-bottom {
+        padding-bottom: 60px;
+    }
+    .container, .container-fluid {
+        max-width: 460px !important;
+    }
+}

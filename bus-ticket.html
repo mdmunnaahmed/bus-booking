@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- BootStrap Link -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
+    <!-- Icon Link -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css//flaticon.css">
+
+    <!-- Plugings Link -->
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/nice-select.css">
+    <link rel="stylesheet" href="./assets/css/jquery-ui.css">
+
+    <!-- Custom Link -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+
+    <title>Online Bus Ticket Booking HTML Template</title>
+
+</head>
+<body>
+    <div class="overlay"></div>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-wrapper">
+            <div class="truck-wrapper">
+              <div class="truck">
+                <div class="truck-container"></div>
+                <div class="glases"></div>
+                <div class="bonet"></div>
+            
+                <div class="base"></div>
+            
+                <div class="base-aux"></div>
+                <div class="wheel-back"></div>
+                <div class="wheel-front"></div>
+            
+                <div class="smoke"></div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader -->
+    <!-- Header Section Starts Here -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top-area">
+                    <ul class="left-content">
+                        <li>
+                            <i class="las la-phone"></i>
+                            <a href="tel:012839">
+                                +880 2483 03940
+                            </a>
+                        </li>
+                        <li>
+                            <i class="las la-envelope-open"></i>
+                            <a href="mailto:msdmuntoa@gmail.com">
+                                shohanuahman@gmail.com
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="right-content">
+                        <a class="cancel-ticket" href="cancel-ticket.html">Cancel Ticket</a>
+                        <div>
+                            <select>
+                                <option value="lang1">English</option>
+                                <option value="lang2">Bangla</option>
+                            </select>
+                        </div>
+                        <ul class="header-login">
+                            <li><a class="sign-in" href="sign-in.html"><i class="fas fa-sign-in-alt"></i>Sign In</a></li>
+                            <li>/</li>
+                            <li><a class="sign-up" href="sign-up.html"><i class="fas fa-user-plus"></i>Sign Up</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-bottom-area">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./assets/images/logo.png" alt="logo">
+                        </a>
+                    </div>  <!-- Logo End -->
+                   
+                    <div class="header-trigger-wrapper d-flex d-lg-none">
+                        <div class="header-trigger d-block d-lg-none">
+                            <span></span>
+                        </div>
+                        <div class="top-bar-trigger">
+                            <i class="las la-ellipsis-v"></i>
+                        </div>
+                    </div><!-- Trigger End-->
+                    
+                    <ul class="menu">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="#0">Booking</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="bus-ticket.html">Bus Ticket</a>
+                                </li>
+                                <li>
+                                    <a href="reserve.html">Reserve Bus</a>
+                                </li>
+                                <li>
+                                    <a href="cancel-ticket.html">Cancel Ticket</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="faq.html">Faq</a>
+                        </li>
+                        <li>
+                            <a href="#0">Pages</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="user-dashboard.html">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="sign-in.html">Sign In</a>
+                                </li>
+                                <li>
+                                    <a href="sign-up.html">Sign Up</a>
+                                </li>
+                                <li>
+                                    <a href="packages.html">Packages</a>
+                                </li>
+                                <li>
+                                    <a href="terms-condition.html">Terms & Conditions</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#0">Blog</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="blog.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="blog-details.html">Blog Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <a href="bus-ticket.html" class="cmn--btn btn--sm">Buy Tickets</a><!-- Menu End -->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section Ends Here -->
+
+    <!-- Ticket Search Starts -->
+    <div class="ticket-search-bar bg_img padding-top" style="background: url(./assets/images/bg/inner.jpg) left center;">
+        <div class="container">
+            <div class="bus-search-header">
+                <form class="ticket-form ticket-form-two row g-3 justify-content-center">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="form--group">
+                            <i class="las la-location-arrow"></i>
+                            <input type="text" class="form--control" placeholder="Enter Pickup City">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="form--group">
+                            <i class="las la-map-marker"></i>
+                            <input type="text" class="form--control" placeholder="Enter Destination City">
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="form--group">
+                            <i class="las la-calendar-check"></i>
+                            <input type="text" id="start-date" class="form--control" placeholder="Departure Date">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="form--group">
+                            <button>Find Tickets</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="row gy-4 justify-content-between">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="route-info">
+                            <div class="thumb">
+                                <img src="./assets/images/thumb/bus.jpg" alt="bg">
+                            </div>
+                            <div class="content">
+                                <h5 class="title">Dhaka - Kushtia</h5>
+                                <span class="date">16 May, 21</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="search-result">
+                            <h6 class="title">Showing Results :</h6>
+                            <div class="wrapper">
+                                <div class="icon">
+                                    <i class="las la-bus"></i>
+                                </div>
+                                <span class="result-info">32 Buses Found</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-4 col-xl-3">
+                        <div class="route-date-changer">
+                            <div class="button-wrapper">
+                                <button type="button" class="date-btn"> <i class="las la-arrow-left"></i> Prev. Day</button>
+                                <button type="button" class="date-btn">Next Day <i class="las la-arrow-right"></i> </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ticket Search Starts -->
+
+
+    <!-- Ticket Section Starts Here -->
+    <section class="ticket-section padding-bottom section-bg">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-3">
+                    <div class="ticket-filter">
+                        <div class="filter-header filter-item">
+                            <h4 class="title">Filter</h4>
+                            <button type="reset" class="reset-button">Reset All</button>
+                        </div>
+                        <div class="filter-item">
+                            <h5 class="title">Bus Type</h5>
+                            <ul class="bus-type">
+                                <li class="custom--checkbox">
+                                    <input id="ac" type="checkbox">
+                                    <label for="ac"><span><i class="las la-snowflake"></i>Ac</span></label>
+                                </li>
+                                <li class="custom--checkbox">
+                                    <input  id="non-ac"  type="checkbox">
+                                    <label for="non-ac"><span><i class="las la-snowflake"></i>Non-Ac</span></label>
+                                </li>
+                                <li class="custom--checkbox">
+                                    <input id="seater" type="checkbox">
+                                    <label for="seater"><span><i class="las la-chair"></i>Seater</span></label>
+                                </li>
+                                <li class="custom--checkbox">
+                                    <input id="sleeper" type="checkbox">
+                                    <label for="sleeper"><span><i class="las la-bed"></i>Sleeper</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-item">
+                            <h5 class="title">Departure Time</h5>
+                            <ul class="bus-type">
+                                <li class="custom--checkbox">
+                                    <input id="01" type="checkbox">
+                                    <label for="01"><span><i class="las la-stopwatch"></i>Before 6 am</span></label>
+                                </li>
+                                <li class="custom--checkbox">
+                                    <input  id="02"  type="checkbox">
+                                    <label for="02"><span><i class="las la-stopwatch"></i>Before 8 am</span></label>
+                                </li>
+                                <li class="custom--checkbox">
+                                    <input id="03" type="checkbox">
+                                    <label for="03"><span><i class="las la-stopwatch"></i>Before 10 am</span></label>
+                                </li>
+                                <li class="custom--checkbox">
+                                    <input id="04" type="checkbox">
+                                    <label for="04"><span><i class="las la-stopwatch"></i>Before 11:30 am</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-item">
+                            <h5 class="title">Arrival Time</h5>
+                            <ul class="bus-type">
+                                <li class="custom--checkbox">
+                                    <input id="05" type="checkbox">
+                                    <label for="05"><span><i class="las la-stopwatch"></i>Before 6 am</span></label>
+                                </li>
+                                <li class="custom--checkbox">
+                                    <input  id="06"  type="checkbox">
+                                    <label for="06"><span><i class="las la-stopwatch"></i>Before 8 am</span></label>
+                                </li>
+                                <li class="custom--checkbox">
+                                    <input id="07" type="checkbox">
+                                    <label for="07"><span><i class="las la-stopwatch"></i>Before 10 am</span></label>
+                                </li>
+                                <li class="custom--checkbox">
+                                    <input id="08" type="checkbox">
+                                    <label for="08"><span><i class="las la-stopwatch"></i>Before 11:30 am</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="filter-item">
+                            <h5 class="title">Amenities</h5>
+                            <ul class="bus-type">
+                                <li class="custom--checkbox">
+                                    <input id="wifi" type="checkbox">
+                                    <label for="wifi"><span><i class="las la-wifi"></i>Wifi</span></label>
+                                </li>
+                                <li class="custom--checkbox">
+                                    <input  id="charging-port"  type="checkbox">
+                                    <label for="charging-port"><span><i class="las la-battery-quarter"></i>Chargin Port </span></label>
+                                </li>
+                                <li class="custom--checkbox">
+                                    <input id="sleeper2" type="checkbox">
+                                    <label for="sleeper2"><span><i class="las la-battery-quarter"></i>Sleeper</span></label>
+                                </li>
+                                <li class="custom--checkbox">
+                                    <input id="tv" type="checkbox">
+                                    <label for="tv"><span><i class="las la-tv"></i>TV </span></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="ticket-wrapper">
+                        <div class="ticket-item">
+                            <div class="ticket-item-inner">
+                                <h5 class="bus-name">Volvo Super Travel</h5>
+                                <span class="bus-info">AC Sleeper 2 + 1</span>
+                                <span class="ratting"><i class="las la-star"></i>4.6/5</span>
+                            </div>
+                            <div class="ticket-item-inner travel-time">
+                                <div class=" bus-time">
+                                    <p class="time">09:25 AM</p>
+                                    <p class="place">Dhaka</p>
+                                </div>
+                                <div class=" bus-time">
+                                    <i class="las la-arrow-right"></i>
+                                    <p>03:35 min</p>
+                                </div>
+                                <div class=" bus-time">
+                                    <p class="time">12:25 PM</p>
+                                    <p class="place">Kushtia</p>
+                                </div>
+                            </div>
+                            <div class="ticket-item-inner book-ticket">
+                                <p class="rent">$ 110</p>
+                                <p class="seats-left">Only 15 Seats Left</p>
+                                <button class="select-seat-btn">Select Seat</button>
+                            </div>
+                            <div class="ticket-item-footer">
+                                <ul class="info-list nav-tabs nav border-0">
+                                    <li class="cancellation">
+                                        <a href="#cancel" data-bs-toggle="tab" class="info-list-btn">Calcellation Policy</a>
+                                    </li>
+                                    <li class="boading-point">
+                                        <a href="#boarding" data-bs-toggle="tab" class="info-list-btn">Boading Point</a>
+                                    </li>
+                                    <li class="dropping-point">
+                                        <a href="#dropping" data-bs-toggle="tab" class="info-list-btn">Dropping Point</a>
+                                    </li>
+                                    <li class="amenities">
+                                        <a href="#amenities" data-bs-toggle="tab" class="info-list-btn">Amenities & Bus Details</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane show fade" id="cancel">
+                                        <div class="cancellation-details info-details">
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis labore illum porro, odit sit perspiciatis rerum consequatur autem, quidem possimus libero dolorem repellat! Necessitatibus beatae modi perspiciatis animi reiciendis dolores.
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis labore illum porro, odit sit perspiciatis rerum consequatur autem, quidem possimus libero dolorem repellat! Necessitatibus beatae modi perspiciatis animi reiciendis dolores.
+                                            </p>
+                                            <ul class="list">
+                                                <li> amet consectetur adipisicing elit. Omnis</li>
+                                                <li> Necessitatibus beatae modi Omnis</li>
+                                                <li> amet consectetur adipisicing elit. Omnis</li>
+                                                <li> perspiciatis animi reiciendis doloresOmnis</li>
+                                            </ul>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class="las la-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane show fade" id="boarding">
+                                        <div class="info-details bor-drop-lsit">
+                                            <h6 class="title">Boarding Points</h6>
+                                            <ul class="list">
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">10:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">11:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">12:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class="las la-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane show fade" id="dropping">
+                                        <div class="info-details bor-drop-lsit">
+                                            <h6 class="title">Dropping Points</h6>
+                                            <ul class="list">
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class="las la-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane show fade" id="amenities">
+                                        <div class="amenities-details info-details">
+                                            <h6 class="bus-details">Bus Details</h6>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis labore illum porro, odit sit perspiciatis rerum consequatur autem, quidem possimus libero dolorem repellat! Necessitatibus beatae modi perspiciatis animi reiciendis dolores.
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus, praesentium asperiores odit ratione sunt ipsam, neque dolorum libero blanditiis magnam deleniti molestias, vel in repellendus molestiae velit laudantium aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quidem tempore tempora reiciendis quaerat modi repellat voluptate perferendis labore facilis, harum laudantium voluptatum cum, nesciunt nostrum perspiciatis dolore quam cupiditate?
+                                            </p>
+                                            <p>
+                                                Necessitatibus beatae modi perspiciatis animi reiciendis dolores.
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus, praesentium asperiores odit ratione sunt ipsam, neque dolorum libero blanditiis magnam deleniti molestias, vel in repellendus molestiae velit laudantium aliquid?odi repellat voluptate perferendis labore facilis, harum laudantium voluptatum cum, nesciunt nostrum perspiciatis dolore quam cupiditate?
+                                            </p>
+                                            <h6 class="mt-4">Bus Amenities</h6>
+                                            <ul class="list">
+                                                <li><i class="las la-wifi"></i> Wifi</li>
+                                                <li><i class="las la-snowflake"></i> Tv</li>
+                                                <li><i class="las la-tv"></i> Charging Port</li>
+                                                <li><i class="las la-chair"></i> Sleeper</li>
+                                                <li><i class="las la-wifi"></i> Ladies Toilet</li>
+                                                <li><i class="las la-wifi"></i> Premium Seats</li>
+                                                <li><i class="las la-wifi"></i> Wifi</li>
+                                                <li><i class="las la-wifi"></i> Wifi</li>
+                                            </ul>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class="las la-times"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seat-plan-wrapper">
+                                <h6 class="title">17 Available Seats</h6>
+                                <span>Click on Seat to select or deselect</span>
+                                <div class="row gx-lg-0 gx-lg-4 gy-4 justify-content-between">
+                                    <div class="col-lg-6 col-xl-5 col-md-7">
+                                        <div class="seat-plan-inner">
+                                            <div class="single">
+                                                <span class="front">Front</span>
+                                                <span class="rear">Rear</span>
+                                                <span class="lower">Door</span>
+                                                <span class="driver"><img src="./assets/images/icon/wheel.svg" alt="icon"></span>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">A1<span></span></span></div>
+                                                        <div><span class="seat">A2<span></span></span></div>
+                                                        <div><span class="seat">A3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">A4<span></span></span></div>
+                                                        <div><span class="seat">A5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">B1<span></span></span></div>
+                                                        <div><span class="seat">B2<span></span></span></div>
+                                                        <div><span class="seat">B3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">B4<span></span></span></div>
+                                                        <div><span class="seat">B5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">AC<span></span></span></div>
+                                                        <div><span class="seat">AC<span></span></span></div>
+                                                        <div><span class="seat">AC<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">C4<span></span></span></div>
+                                                        <div><span class="seat">C5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">E1<span></span></span></div>
+                                                        <div><span class="seat">E2<span></span></span></div>
+                                                        <div><span class="seat">E3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">E4<span></span></span></div>
+                                                        <div><span class="seat">E5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">E1<span></span></span></div>
+                                                        <div><span class="seat">A2<span></span></span></div>
+                                                        <div><span class="seat">E3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">E4<span></span></span></div>
+                                                        <div><span class="seat">E5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">F1<span></span></span></div>
+                                                        <div><span class="seat">F2<span></span></span></div>
+                                                        <div><span class="seat">F3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">F4<span></span></span></div>
+                                                        <div><span class="seat">F5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="seat-for-reserved">
+                                                <div class="seat-condition available-seat">
+                                                    <span class="seat"><span></span></span>
+                                                    <p>Available Seats</p>
+                                                </div>
+                                                <div class="seat-condition selected-by-you">
+                                                    <span class="seat"><span></span></span>
+                                                    <p>Selected by You</p>
+                                                </div>
+                                                <div class="seat-condition selected-by-ladies">
+                                                    <div class="seat"><span></span></div>
+                                                    <p>Booked By Ladies</p>
+                                                </div>
+                                                <div class="seat-condition reserve-for-ladies">
+                                                    <span class="seat"><span></span></span>
+                                                    <p>Reserved for Ladies</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-5">
+                                        <div class="seat-overview-wrapper">
+                                            <div class="boarding-point">
+                                                <select >
+                                                    <option value="01">Boarding Point</option>
+                                                    <option value="01">Mon, 16 May Gaptoli (08:30am)</option>
+                                                    <option value="01">Mon, 16 May Mohakhali (09:30am)</option>
+                                                    <option value="01">Mon, 16 May Jatrabari (08:00am)</option>
+                                                </select>
+                                            </div>
+                                           <div class="destination-point">
+                                                <select >
+                                                    <option value="01">Destination Point</option>
+                                                    <option value="01">Mon, 16 May Gaptoli (08:30am)</option>
+                                                    <option value="01">Mon, 16 May Mohakhali (09:30am)</option>
+                                                    <option value="01">Mon, 16 May Jatrabari (08:00am)</option>
+                                                </select>
+                                           </div>
+                                            <ul class="seat-info">
+                                                <li class="seat-no">
+                                                    <h6 class="title">Seat No</h6>
+                                                    <span class="value">E-3</span>
+                                                </li>
+                                                <li class="fare">
+                                                   <h6 class="title">Fare</h6>
+                                                   <span class="value">$ 445</span>
+                                                </li>
+                                                <li class="fare">
+                                                   <h6 class="title">Total</h6>
+                                                   <span class="value">$ 445</span>
+                                                </li>
+                                            </ul>
+                                            <button class="book-bus-btn">Continue</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ticket-item">
+                            <div class="ticket-item-inner">
+                                <h5 class="bus-name">Volvo Super Travel</h5>
+                                <span class="bus-info">AC Sleeper 2 + 1</span>
+                                <span class="ratting"><i class="las la-star"></i>4.6/5</span>
+                            </div>
+                            <div class="ticket-item-inner travel-time">
+                                <div class=" bus-time">
+                                    <p class="time">09:25 AM</p>
+                                    <p class="place">Dhaka</p>
+                                </div>
+                                <div class=" bus-time">
+                                    <i class="las la-arrow-right"></i>
+                                    <p>03:35 min</p>
+                                </div>
+                                <div class=" bus-time">
+                                    <p class="time">12:25 PM</p>
+                                    <p class="place">Kushtia</p>
+                                </div>
+                            </div>
+                            <div class="ticket-item-inner book-ticket">
+                                <p class="rent">$ 110</p>
+                                <p class="seats-left">Only 15 Seats Left</p>
+                                <button class="select-seat-btn">Select Seat</button>
+                            </div>
+                            <div class="ticket-item-footer">
+                                <ul class="info-list nav-tabs nav border-0">
+                                    <li class="cancellation">
+                                        <a href="#cancel2" data-bs-toggle="tab" class="info-list-btn">Calcellation Policy</a>
+                                    </li>
+                                    <li class="boading-point">
+                                        <a href="#boarding2" data-bs-toggle="tab" class="info-list-btn">Boading Point</a>
+                                    </li>
+                                    <li class="dropping-point">
+                                        <a href="#dropping2" data-bs-toggle="tab" class="info-list-btn">Dropping Point</a>
+                                    </li>
+                                    <li class="amenities">
+                                        <a href="#amenities2" data-bs-toggle="tab" class="info-list-btn">Amenities & Bus Details</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane show fade" id="cancel2">
+                                        <div class="cancellation-details info-details">
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis labore illum porro, odit sit perspiciatis rerum consequatur autem, quidem possimus libero dolorem repellat! Necessitatibus beatae modi perspiciatis animi reiciendis dolores.
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis labore illum porro, odit sit perspiciatis rerum consequatur autem, quidem possimus libero dolorem repellat! Necessitatibus beatae modi perspiciatis animi reiciendis dolores.
+                                            </p>
+                                            <ul class="list">
+                                                <li> amet consectetur adipisicing elit. Omnis</li>
+                                                <li> Necessitatibus beatae modi Omnis</li>
+                                                <li> amet consectetur adipisicing elit. Omnis</li>
+                                                <li> perspiciatis animi reiciendis doloresOmnis</li>
+                                            </ul>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class="las la-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane show fade" id="boarding2">
+                                        <div class="info-details bor-drop-lsit">
+                                            <h6 class="title">Boarding Points</h6>
+                                            <ul class="list">
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">10:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">11:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">12:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class="las la-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane show fade" id="dropping2">
+                                        <div class="info-details bor-drop-lsit">
+                                            <h6 class="title">Dropping Points</h6>
+                                            <ul class="list">
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class="las la-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane show fade" id="amenities2">
+                                        <div class="amenities-details info-details">
+                                            <h6 class="bus-details">Bus Details</h6>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis labore illum porro, odit sit perspiciatis rerum consequatur autem, quidem possimus libero dolorem repellat! Necessitatibus beatae modi perspiciatis animi reiciendis dolores.
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus, praesentium asperiores odit ratione sunt ipsam, neque dolorum libero blanditiis magnam deleniti molestias, vel in repellendus molestiae velit laudantium aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quidem tempore tempora reiciendis quaerat modi repellat voluptate perferendis labore facilis, harum laudantium voluptatum cum, nesciunt nostrum perspiciatis dolore quam cupiditate?
+                                            </p>
+                                            <p>
+                                                Necessitatibus beatae modi perspiciatis animi reiciendis dolores.
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus, praesentium asperiores odit ratione sunt ipsam, neque dolorum libero blanditiis magnam deleniti molestias, vel in repellendus molestiae velit laudantium aliquid?odi repellat voluptate perferendis labore facilis, harum laudantium voluptatum cum, nesciunt nostrum perspiciatis dolore quam cupiditate?
+                                            </p>
+                                            <h6 class="mt-4">Bus Amenities</h6>
+                                            <ul class="list">
+                                                <li><i class="las la-wifi"></i> Wifi</li>
+                                                <li><i class="las la-snowflake"></i> Tv</li>
+                                                <li><i class="las la-tv"></i> Charging Port</li>
+                                                <li><i class="las la-chair"></i> Sleeper</li>
+                                                <li><i class="las la-wifi"></i> Ladies Toilet</li>
+                                                <li><i class="las la-wifi"></i> Premium Seats</li>
+                                                <li><i class="las la-wifi"></i> Wifi</li>
+                                                <li><i class="las la-wifi"></i> Wifi</li>
+                                            </ul>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class="las la-times"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seat-plan-wrapper">
+                                <h6 class="title">17 Available Seats</h6>
+                                <span>Click on Seat to select or deselect</span>
+                                <div class="row gx-lg-0 gx-lg-4 gy-4 justify-content-between">
+                                    <div class="col-lg-6 col-xl-5 col-md-7">
+                                        <div class="seat-plan-inner">
+                                            <div class="single">
+                                                <span class="front">Front</span>
+                                                <span class="rear">Rear</span>
+                                                <span class="lower">Door</span>
+                                                <span class="driver"><img src="./assets/images/icon/wheel.svg" alt="icon"></span>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">A1<span></span></span></div>
+                                                        <div><span class="seat">A2<span></span></span></div>
+                                                        <div><span class="seat">A3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">A4<span></span></span></div>
+                                                        <div><span class="seat">A5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">B1<span></span></span></div>
+                                                        <div><span class="seat">B2<span></span></span></div>
+                                                        <div><span class="seat">B3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">B4<span></span></span></div>
+                                                        <div><span class="seat">B5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">AC<span></span></span></div>
+                                                        <div><span class="seat">AC<span></span></span></div>
+                                                        <div><span class="seat">AC<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">C4<span></span></span></div>
+                                                        <div><span class="seat">C5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">E1<span></span></span></div>
+                                                        <div><span class="seat">E2<span></span></span></div>
+                                                        <div><span class="seat">E3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">E4<span></span></span></div>
+                                                        <div><span class="seat">E5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">E1<span></span></span></div>
+                                                        <div><span class="seat">A2<span></span></span></div>
+                                                        <div><span class="seat">E3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">E4<span></span></span></div>
+                                                        <div><span class="seat">E5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">F1<span></span></span></div>
+                                                        <div><span class="seat">F2<span></span></span></div>
+                                                        <div><span class="seat">F3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">F4<span></span></span></div>
+                                                        <div><span class="seat">F5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="seat-for-reserved">
+                                                <div class="seat-condition available-seat">
+                                                    <span class="seat"><span></span></span>
+                                                    <p>Available Seats</p>
+                                                </div>
+                                                <div class="seat-condition selected-by-you">
+                                                    <span class="seat"><span></span></span>
+                                                    <p>Selected by You</p>
+                                                </div>
+                                                <div class="seat-condition selected-by-ladies">
+                                                    <div class="seat"><span></span></div>
+                                                    <p>Booked By Ladies</p>
+                                                </div>
+                                                <div class="seat-condition reserve-for-ladies">
+                                                    <span class="seat"><span></span></span>
+                                                    <p>Reserved for Ladies</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-5">
+                                        <div class="seat-overview-wrapper">
+                                            <div class="boarding-point">
+                                                <select >
+                                                    <option value="01">Boarding Point</option>
+                                                    <option value="01">Mon, 16 May Gaptoli (08:30am)</option>
+                                                    <option value="01">Mon, 16 May Mohakhali (09:30am)</option>
+                                                    <option value="01">Mon, 16 May Jatrabari (08:00am)</option>
+                                                </select>
+                                            </div>
+                                           <div class="destination-point">
+                                                <select >
+                                                    <option value="01">Destination Point</option>
+                                                    <option value="01">Mon, 16 May Gaptoli (08:30am)</option>
+                                                    <option value="01">Mon, 16 May Mohakhali (09:30am)</option>
+                                                    <option value="01">Mon, 16 May Jatrabari (08:00am)</option>
+                                                </select>
+                                           </div>
+                                            <ul class="seat-info">
+                                                <li class="seat-no">
+                                                    <h6 class="title">Seat No</h6>
+                                                    <span class="value">E-3</span>
+                                                </li>
+                                                <li class="fare">
+                                                   <h6 class="title">Fare</h6>
+                                                   <span class="value">$ 445</span>
+                                                </li>
+                                                <li class="fare">
+                                                   <h6 class="title">Total</h6>
+                                                   <span class="value">$ 445</span>
+                                                </li>
+                                            </ul>
+                                            <button class="book-bus-btn">Continue</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ticket-item">
+                            <div class="ticket-item-inner">
+                                <h5 class="bus-name">Volvo Super Travel</h5>
+                                <span class="bus-info">AC Sleeper 2 + 1</span>
+                                <span class="ratting"><i class="las la-star"></i>4.6/5</span>
+                            </div>
+                            <div class="ticket-item-inner travel-time">
+                                <div class=" bus-time">
+                                    <p class="time">09:25 AM</p>
+                                    <p class="place">Dhaka</p>
+                                </div>
+                                <div class=" bus-time">
+                                    <i class="las la-arrow-right"></i>
+                                    <p>03:35 min</p>
+                                </div>
+                                <div class=" bus-time">
+                                    <p class="time">12:25 PM</p>
+                                    <p class="place">Kushtia</p>
+                                </div>
+                            </div>
+                            <div class="ticket-item-inner book-ticket">
+                                <p class="rent">$ 110</p>
+                                <p class="seats-left">Only 15 Seats Left</p>
+                                <button class="select-seat-btn">Select Seat</button>
+                            </div>
+                            <div class="ticket-item-footer">
+                                <ul class="info-list nav-tabs nav border-0">
+                                    <li class="cancellation">
+                                        <a href="#cancel3" data-bs-toggle="tab" class="info-list-btn">Calcellation Policy</a>
+                                    </li>
+                                    <li class="boading-point">
+                                        <a href="#boarding3" data-bs-toggle="tab" class="info-list-btn">Boading Point</a>
+                                    </li>
+                                    <li class="dropping-point">
+                                        <a href="#dropping3" data-bs-toggle="tab" class="info-list-btn">Dropping Point</a>
+                                    </li>
+                                    <li class="amenities">
+                                        <a href="#amenities3" data-bs-toggle="tab" class="info-list-btn">Amenities & Bus Details</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane show fade" id="cancel3">
+                                        <div class="cancellation-details info-details">
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis labore illum porro, odit sit perspiciatis rerum consequatur autem, quidem possimus libero dolorem repellat! Necessitatibus beatae modi perspiciatis animi reiciendis dolores.
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis labore illum porro, odit sit perspiciatis rerum consequatur autem, quidem possimus libero dolorem repellat! Necessitatibus beatae modi perspiciatis animi reiciendis dolores.
+                                            </p>
+                                            <ul class="list">
+                                                <li> amet consectetur adipisicing elit. Omnis</li>
+                                                <li> Necessitatibus beatae modi Omnis</li>
+                                                <li> amet consectetur adipisicing elit. Omnis</li>
+                                                <li> perspiciatis animi reiciendis doloresOmnis</li>
+                                            </ul>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class="las la-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane show fade" id="boarding3">
+                                        <div class="info-details bor-drop-lsit">
+                                            <h6 class="title">Boarding Points</h6>
+                                            <ul class="list">
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">10:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">11:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">12:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class="las la-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane show fade" id="dropping3">
+                                        <div class="info-details bor-drop-lsit">
+                                            <h6 class="title">Dropping Points</h6>
+                                            <ul class="list">
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class="las la-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane show fade" id="amenities3">
+                                        <div class="amenities-details info-details">
+                                            <h6 class="bus-details">Bus Details</h6>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis labore illum porro, odit sit perspiciatis rerum consequatur autem, quidem possimus libero dolorem repellat! Necessitatibus beatae modi perspiciatis animi reiciendis dolores.
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus, praesentium asperiores odit ratione sunt ipsam, neque dolorum libero blanditiis magnam deleniti molestias, vel in repellendus molestiae velit laudantium aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quidem tempore tempora reiciendis quaerat modi repellat voluptate perferendis labore facilis, harum laudantium voluptatum cum, nesciunt nostrum perspiciatis dolore quam cupiditate?
+                                            </p>
+                                            <p>
+                                                Necessitatibus beatae modi perspiciatis animi reiciendis dolores.
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus, praesentium asperiores odit ratione sunt ipsam, neque dolorum libero blanditiis magnam deleniti molestias, vel in repellendus molestiae velit laudantium aliquid?odi repellat voluptate perferendis labore facilis, harum laudantium voluptatum cum, nesciunt nostrum perspiciatis dolore quam cupiditate?
+                                            </p>
+                                            <h6 class="mt-4">Bus Amenities</h6>
+                                            <ul class="list">
+                                                <li><i class="las la-wifi"></i> Wifi</li>
+                                                <li><i class="las la-snowflake"></i> Tv</li>
+                                                <li><i class="las la-tv"></i> Charging Port</li>
+                                                <li><i class="las la-chair"></i> Sleeper</li>
+                                                <li><i class="las la-wifi"></i> Ladies Toilet</li>
+                                                <li><i class="las la-wifi"></i> Premium Seats</li>
+                                                <li><i class="las la-wifi"></i> Wifi</li>
+                                                <li><i class="las la-wifi"></i> Wifi</li>
+                                            </ul>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class="las la-times"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seat-plan-wrapper">
+                                <h6 class="title">17 Available Seats</h6>
+                                <span>Click on Seat to select or deselect</span>
+                                <div class="row gx-lg-0 gx-lg-4 gy-4 justify-content-between">
+                                    <div class="col-lg-6 col-xl-5 col-md-7">
+                                        <div class="seat-plan-inner">
+                                            <div class="single">
+                                                <span class="front">Front</span>
+                                                <span class="rear">Rear</span>
+                                                <span class="lower">Door</span>
+                                                <span class="driver"><img src="./assets/images/icon/wheel.svg" alt="icon"></span>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">A1<span></span></span></div>
+                                                        <div><span class="seat">A2<span></span></span></div>
+                                                        <div><span class="seat">A3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">A4<span></span></span></div>
+                                                        <div><span class="seat">A5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">B1<span></span></span></div>
+                                                        <div><span class="seat">B2<span></span></span></div>
+                                                        <div><span class="seat">B3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">B4<span></span></span></div>
+                                                        <div><span class="seat">B5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">AC<span></span></span></div>
+                                                        <div><span class="seat">AC<span></span></span></div>
+                                                        <div><span class="seat">AC<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">C4<span></span></span></div>
+                                                        <div><span class="seat">C5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">E1<span></span></span></div>
+                                                        <div><span class="seat">E2<span></span></span></div>
+                                                        <div><span class="seat">E3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">E4<span></span></span></div>
+                                                        <div><span class="seat">E5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">E1<span></span></span></div>
+                                                        <div><span class="seat">A2<span></span></span></div>
+                                                        <div><span class="seat">E3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">E4<span></span></span></div>
+                                                        <div><span class="seat">E5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">F1<span></span></span></div>
+                                                        <div><span class="seat">F2<span></span></span></div>
+                                                        <div><span class="seat">F3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">F4<span></span></span></div>
+                                                        <div><span class="seat">F5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="seat-for-reserved">
+                                                <div class="seat-condition available-seat">
+                                                    <span class="seat"><span></span></span>
+                                                    <p>Available Seats</p>
+                                                </div>
+                                                <div class="seat-condition selected-by-you">
+                                                    <span class="seat"><span></span></span>
+                                                    <p>Selected by You</p>
+                                                </div>
+                                                <div class="seat-condition selected-by-ladies">
+                                                    <div class="seat"><span></span></div>
+                                                    <p>Booked By Ladies</p>
+                                                </div>
+                                                <div class="seat-condition reserve-for-ladies">
+                                                    <span class="seat"><span></span></span>
+                                                    <p>Reserved for Ladies</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-5">
+                                        <div class="seat-overview-wrapper">
+                                            <div class="boarding-point">
+                                                <select >
+                                                    <option value="01">Boarding Point</option>
+                                                    <option value="01">Mon, 16 May Gaptoli (08:30am)</option>
+                                                    <option value="01">Mon, 16 May Mohakhali (09:30am)</option>
+                                                    <option value="01">Mon, 16 May Jatrabari (08:00am)</option>
+                                                </select>
+                                            </div>
+                                           <div class="destination-point">
+                                                <select >
+                                                    <option value="01">Destination Point</option>
+                                                    <option value="01">Mon, 16 May Gaptoli (08:30am)</option>
+                                                    <option value="01">Mon, 16 May Mohakhali (09:30am)</option>
+                                                    <option value="01">Mon, 16 May Jatrabari (08:00am)</option>
+                                                </select>
+                                           </div>
+                                            <ul class="seat-info">
+                                                <li class="seat-no">
+                                                    <h6 class="title">Seat No</h6>
+                                                    <span class="value">E-3</span>
+                                                </li>
+                                                <li class="fare">
+                                                   <h6 class="title">Fare</h6>
+                                                   <span class="value">$ 445</span>
+                                                </li>
+                                                <li class="fare">
+                                                   <h6 class="title">Total</h6>
+                                                   <span class="value">$ 445</span>
+                                                </li>
+                                            </ul>
+                                            <button class="book-bus-btn">Continue</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ticket-item">
+                            <div class="ticket-item-inner">
+                                <h5 class="bus-name">Volvo Super Travel</h5>
+                                <span class="bus-info">AC Sleeper 2 + 1</span>
+                                <span class="ratting"><i class="las la-star"></i>4.6/5</span>
+                            </div>
+                            <div class="ticket-item-inner travel-time">
+                                <div class=" bus-time">
+                                    <p class="time">09:25 AM</p>
+                                    <p class="place">Dhaka</p>
+                                </div>
+                                <div class=" bus-time">
+                                    <i class="las la-arrow-right"></i>
+                                    <p>03:35 min</p>
+                                </div>
+                                <div class=" bus-time">
+                                    <p class="time">12:25 PM</p>
+                                    <p class="place">Kushtia</p>
+                                </div>
+                            </div>
+                            <div class="ticket-item-inner book-ticket">
+                                <p class="rent">$ 110</p>
+                                <p class="seats-left">Only 15 Seats Left</p>
+                                <button class="select-seat-btn">Select Seat</button>
+                            </div>
+                            <div class="ticket-item-footer">
+                                <ul class="info-list nav-tabs nav border-0">
+                                    <li class="cancellation">
+                                        <a href="#cancel4" data-bs-toggle="tab" class="info-list-btn">Calcellation Policy</a>
+                                    </li>
+                                    <li class="boading-point">
+                                        <a href="#boarding4" data-bs-toggle="tab" class="info-list-btn">Boading Point</a>
+                                    </li>
+                                    <li class="dropping-point">
+                                        <a href="#dropping4" data-bs-toggle="tab" class="info-list-btn">Dropping Point</a>
+                                    </li>
+                                    <li class="amenities">
+                                        <a href="#amenities4" data-bs-toggle="tab" class="info-list-btn">Amenities & Bus Details</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane show fade" id="cancel4">
+                                        <div class="cancellation-details info-details">
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis labore illum porro, odit sit perspiciatis rerum consequatur autem, quidem possimus libero dolorem repellat! Necessitatibus beatae modi perspiciatis animi reiciendis dolores.
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis labore illum porro, odit sit perspiciatis rerum consequatur autem, quidem possimus libero dolorem repellat! Necessitatibus beatae modi perspiciatis animi reiciendis dolores.
+                                            </p>
+                                            <ul class="list">
+                                                <li> amet consectetur adipisicing elit. Omnis</li>
+                                                <li> Necessitatibus beatae modi Omnis</li>
+                                                <li> amet consectetur adipisicing elit. Omnis</li>
+                                                <li> perspiciatis animi reiciendis doloresOmnis</li>
+                                            </ul>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class="las la-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane show fade" id="boarding4">
+                                        <div class="info-details bor-drop-lsit">
+                                            <h6 class="title">Boarding Points</h6>
+                                            <ul class="list">
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">10:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">11:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">12:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class="las la-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane show fade" id="dropping4">
+                                        <div class="info-details bor-drop-lsit">
+                                            <h6 class="title">Dropping Points</h6>
+                                            <ul class="list">
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                                <li>
+                                                    <span class="time">09:15 am</span>
+                                                    <p class="bor-point">Khoksa Bus Stand, Kushtia</p>
+                                                    <p class="bor-info">Lalonsah Highway, Kushtia East</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class="las la-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane show fade" id="amenities4">
+                                        <div class="amenities-details info-details">
+                                            <h6 class="bus-details">Bus Details</h6>
+                                            <p>
+                                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis labore illum porro, odit sit perspiciatis rerum consequatur autem, quidem possimus libero dolorem repellat! Necessitatibus beatae modi perspiciatis animi reiciendis dolores.
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus, praesentium asperiores odit ratione sunt ipsam, neque dolorum libero blanditiis magnam deleniti molestias, vel in repellendus molestiae velit laudantium aliquid? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quidem tempore tempora reiciendis quaerat modi repellat voluptate perferendis labore facilis, harum laudantium voluptatum cum, nesciunt nostrum perspiciatis dolore quam cupiditate?
+                                            </p>
+                                            <p>
+                                                Necessitatibus beatae modi perspiciatis animi reiciendis dolores.
+                                               Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ducimus, praesentium asperiores odit ratione sunt ipsam, neque dolorum libero blanditiis magnam deleniti molestias, vel in repellendus molestiae velit laudantium aliquid?odi repellat voluptate perferendis labore facilis, harum laudantium voluptatum cum, nesciunt nostrum perspiciatis dolore quam cupiditate?
+                                            </p>
+                                            <h6 class="mt-4">Bus Amenities</h6>
+                                            <ul class="list">
+                                                <li><i class="las la-wifi"></i> Wifi</li>
+                                                <li><i class="las la-snowflake"></i> Tv</li>
+                                                <li><i class="las la-tv"></i> Charging Port</li>
+                                                <li><i class="las la-chair"></i> Sleeper</li>
+                                                <li><i class="las la-wifi"></i> Ladies Toilet</li>
+                                                <li><i class="las la-wifi"></i> Premium Seats</li>
+                                                <li><i class="las la-wifi"></i> Wifi</li>
+                                                <li><i class="las la-wifi"></i> Wifi</li>
+                                            </ul>
+                                        </div>
+                                        <div class="close-btn">
+                                            <i class="las la-times"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seat-plan-wrapper">
+                                <h6 class="title">17 Available Seats</h6>
+                                <span>Click on Seat to select or deselect</span>
+                                <div class="row gx-lg-0 gx-lg-4 gy-4 justify-content-between">
+                                    <div class="col-lg-6 col-xl-5 col-md-7">
+                                        <div class="seat-plan-inner">
+                                            <div class="single">
+                                                <span class="front">Front</span>
+                                                <span class="rear">Rear</span>
+                                                <span class="lower">Door</span>
+                                                <span class="driver"><img src="./assets/images/icon/wheel.svg" alt="icon"></span>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">A1<span></span></span></div>
+                                                        <div><span class="seat">A2<span></span></span></div>
+                                                        <div><span class="seat">A3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">A4<span></span></span></div>
+                                                        <div><span class="seat">A5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">B1<span></span></span></div>
+                                                        <div><span class="seat">B2<span></span></span></div>
+                                                        <div><span class="seat">B3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">B4<span></span></span></div>
+                                                        <div><span class="seat">B5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">AC<span></span></span></div>
+                                                        <div><span class="seat">AC<span></span></span></div>
+                                                        <div><span class="seat">AC<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">C4<span></span></span></div>
+                                                        <div><span class="seat">C5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">E1<span></span></span></div>
+                                                        <div><span class="seat">E2<span></span></span></div>
+                                                        <div><span class="seat">E3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">E4<span></span></span></div>
+                                                        <div><span class="seat">E5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">E1<span></span></span></div>
+                                                        <div><span class="seat">A2<span></span></span></div>
+                                                        <div><span class="seat">E3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">E4<span></span></span></div>
+                                                        <div><span class="seat">E5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="seat-wrapper">
+                                                    <div class="left-side">
+                                                        <div><span class="seat">F1<span></span></span></div>
+                                                        <div><span class="seat">F2<span></span></span></div>
+                                                        <div><span class="seat">F3<span></span></span></div>
+                                                    </div>
+                                                    <div class="right-side">
+                                                        <div class="reserve-for-ladies"><span class="seat">F4<span></span></span></div>
+                                                        <div><span class="seat">F5<span></span></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="seat-for-reserved">
+                                                <div class="seat-condition available-seat">
+                                                    <span class="seat"><span></span></span>
+                                                    <p>Available Seats</p>
+                                                </div>
+                                                <div class="seat-condition selected-by-you">
+                                                    <span class="seat"><span></span></span>
+                                                    <p>Selected by You</p>
+                                                </div>
+                                                <div class="seat-condition selected-by-ladies">
+                                                    <div class="seat"><span></span></div>
+                                                    <p>Booked By Ladies</p>
+                                                </div>
+                                                <div class="seat-condition reserve-for-ladies">
+                                                    <span class="seat"><span></span></span>
+                                                    <p>Reserved for Ladies</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-5">
+                                        <div class="seat-overview-wrapper">
+                                            <div class="boarding-point">
+                                                <select >
+                                                    <option value="01">Boarding Point</option>
+                                                    <option value="01">Mon, 16 May Gaptoli (08:30am)</option>
+                                                    <option value="01">Mon, 16 May Mohakhali (09:30am)</option>
+                                                    <option value="01">Mon, 16 May Jatrabari (08:00am)</option>
+                                                </select>
+                                            </div>
+                                           <div class="destination-point">
+                                                <select >
+                                                    <option value="01">Destination Point</option>
+                                                    <option value="01">Mon, 16 May Gaptoli (08:30am)</option>
+                                                    <option value="01">Mon, 16 May Mohakhali (09:30am)</option>
+                                                    <option value="01">Mon, 16 May Jatrabari (08:00am)</option>
+                                                </select>
+                                           </div>
+                                            <ul class="seat-info">
+                                                <li class="seat-no">
+                                                    <h6 class="title">Seat No</h6>
+                                                    <span class="value">E-3</span>
+                                                </li>
+                                                <li class="fare">
+                                                   <h6 class="title">Fare</h6>
+                                                   <span class="value">$ 445</span>
+                                                </li>
+                                                <li class="fare">
+                                                   <h6 class="title">Total</h6>
+                                                   <span class="value">$ 445</span>
+                                                </li>
+                                            </ul>
+                                            <button class="book-bus-btn">Continue</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Ticket Section Ends Here -->
+
+    
+    <!-- Footer Section Starts Here -->
+    <section class="footer-seciton">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row footer-wrapper gy-sm-5 gy-4">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                        <div class="footer-widget">
+                            <div class="logo">
+                                <img src="./assets/images/logo.png" alt="logo">
+                            </div>
+                            <p>Delectus culpa laboriosam debitis saepe. Commodi earum minus ut obcaecati  veniam deserunt est!</p>
+                            <ul class="social-icons">
+                                <li>
+                                    <a href="#0"><i class="lab la-facebook-f"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><i class="lab la-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><i class="lab la-vimeo"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><i class="lab la-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                        <div class="footer-widget">
+                            <h4 class="widget-title">Popular Routes</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#0"><span>Dhaka</span><i class="las la-arrow-right"></i><span>Syhlet</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Chittagong</span><i class="las la-arrow-right"></i><span>Kushtia</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Dhaka</span><i class="las la-arrow-right"></i><span>Chittagong</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Syhlet</span><i class="las la-arrow-right"></i><span>Kushtia</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Chittagong</span><i class="las la-arrow-right"></i><span>Kushtia</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                        <div class="footer-widget">
+                            <h4 class="widget-title">New Routes</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#0"><span>Dhaka</span><i class="las la-arrow-right"></i><span>Syhlet</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Chittagong</span><i class="las la-arrow-right"></i><span>Kushtia</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Dhaka</span><i class="las la-arrow-right"></i><span>Chittagong</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Syhlet</span><i class="las la-arrow-right"></i><span>Kushtia</span></a>
+                                </li>
+                                <li>
+                                    <a href="#0"><span>Chittagong</span><i class="las la-arrow-right"></i><span>Kushtia</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                        <div class="footer-widget">
+                            <h4 class="widget-title">Useful Links</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#0">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#0">About</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Cancel Ticket</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Bus Reservation</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Home</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                        <div class="footer-widget">
+                            <h4 class="widget-title">Support</h4>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="#0">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Support</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Need Help?</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section Ends Here -->
+
+    <a href="#0" class="scrollToTop active"><i class="las la-chevron-up"></i></a>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/nice-select.js"></script>
+    <script src="./assets/js/jquery-ui.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

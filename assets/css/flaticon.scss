@@ -1,0 +1,101 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?9fe7ef0ce68719ca4ebd2f8dd6390119") format("truetype"),
+url("./flaticon.woff?9fe7ef0ce68719ca4ebd2f8dd6390119") format("woff"),
+url("./flaticon.woff2?9fe7ef0ce68719ca4ebd2f8dd6390119") format("woff2"),
+url("./flaticon.eot?9fe7ef0ce68719ca4ebd2f8dd6390119#iefix") format("embedded-opentype"),
+url("./flaticon.svg?9fe7ef0ce68719ca4ebd2f8dd6390119#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "hairstyle": "\f101",
+    "popcorn": "\f102",
+    "pillow": "\f103",
+    "water-bottle": "\f104",
+    "location": "\f105",
+    "location-1": "\f106",
+    "plug": "\f107",
+    "mail": "\f108",
+    "envelope": "\f109",
+    "email": "\f10a",
+    "pin": "\f10b",
+    "pin-1": "\f10c",
+    "location-2": "\f10d",
+    "telephone": "\f10e",
+    "call": "\f10f",
+    "smartphone": "\f110",
+    "telephone-1": "\f111",
+    "mobile-phone": "\f112",
+    "phone-call": "\f113",
+);
+
+.flaticon-hairstyle:before {
+    content: map-get($flaticon-map, "hairstyle");
+}
+.flaticon-popcorn:before {
+    content: map-get($flaticon-map, "popcorn");
+}
+.flaticon-pillow:before {
+    content: map-get($flaticon-map, "pillow");
+}
+.flaticon-water-bottle:before {
+    content: map-get($flaticon-map, "water-bottle");
+}
+.flaticon-location:before {
+    content: map-get($flaticon-map, "location");
+}
+.flaticon-location-1:before {
+    content: map-get($flaticon-map, "location-1");
+}
+.flaticon-plug:before {
+    content: map-get($flaticon-map, "plug");
+}
+.flaticon-mail:before {
+    content: map-get($flaticon-map, "mail");
+}
+.flaticon-envelope:before {
+    content: map-get($flaticon-map, "envelope");
+}
+.flaticon-email:before {
+    content: map-get($flaticon-map, "email");
+}
+.flaticon-pin:before {
+    content: map-get($flaticon-map, "pin");
+}
+.flaticon-pin-1:before {
+    content: map-get($flaticon-map, "pin-1");
+}
+.flaticon-location-2:before {
+    content: map-get($flaticon-map, "location-2");
+}
+.flaticon-telephone:before {
+    content: map-get($flaticon-map, "telephone");
+}
+.flaticon-call:before {
+    content: map-get($flaticon-map, "call");
+}
+.flaticon-smartphone:before {
+    content: map-get($flaticon-map, "smartphone");
+}
+.flaticon-telephone-1:before {
+    content: map-get($flaticon-map, "telephone-1");
+}
+.flaticon-mobile-phone:before {
+    content: map-get($flaticon-map, "mobile-phone");
+}
+.flaticon-phone-call:before {
+    content: map-get($flaticon-map, "phone-call");
+}

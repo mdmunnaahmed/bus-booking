@@ -1,0 +1,67 @@
+.footer-top {
+    background: rgba($primary-color,.99);
+    padding: 80px 0;
+}
+.footer-wrapper {
+    justify-content: space-between;
+}
+.footer-widget {
+    * {
+        color: rgba($white,.85);
+    }
+    .logo {
+        margin-bottom: 15px;
+    }
+    .widget-title {
+        margin-bottom: 40px;
+        position: relative;
+        padding-bottom: 10px;
+        color: $base-color !important;
+        @include breakpoint(max-sm) {
+            margin-bottom: 20px;
+        }
+        &::before {
+            @include before;
+            width: 75px;
+            height: 1px;
+            background: rgba($base-color,.7);
+            bottom: 0;
+            left: 0;
+        }
+        &::after {
+            @include before;
+            width: 45px;
+            height: 1px;
+            background: rgba($base-color,.7);
+            bottom: -5px;
+            left: 0;
+        }
+    }
+    .footer-links {
+        font-size: 15px;
+        li {
+            @include breakpoint(max-sm) {
+                font-size: 14px;
+                border-bottom: 1px solid rgba($white,.1);
+                &:last-child {
+                    border-bottom: none;
+                }
+            }
+            @include transition;
+            a {
+                font-weight: 500;
+                @extend %flex;
+                align-items: center;
+                i {
+                    padding: 0 5px;
+                }
+            }
+            
+            :hover {
+                * {
+                    color: $base-color;
+                }
+            }
+        }
+    }
+}

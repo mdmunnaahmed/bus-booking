@@ -1,0 +1,259 @@
+// Blog Sidebar
+.blog-details {
+    overflow: initial !important;
+}
+.blog-sidebar {
+    position: sticky;
+    top: 20px;
+    padding-left: 10px;
+    @include breakpoint(max-lg) {
+        padding-left: 0;
+    }
+    .sidebar-item { 
+        background: rgba($primary-color, .05);
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+            position: relative;
+            @include breakpoint(max-sm) {
+                margin-bottom: 5px;
+            }
+            .form--control  {
+                padding-right: 60px;
+            }
+            .search-button {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: auto;
+                height: 100%;
+                padding: 10px 20px;
+                font-size: 22px;
+                background: $base-color;
+                color: $white;
+            }
+        }
+        .item-inner {
+            padding: 23px 0;
+            background: $white;
+            .title {
+                margin-bottom: 15px;
+            }
+        }
+        .lastest-post-item {
+            display: flex;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid $border-color;
+            &:last-child {
+                padding-bottom: 0;
+                margin-bottom: 0;
+                border: 0;
+            }
+            .thumb {
+                width: 80px;
+                height: 80px;
+                @include breakpoint(max-sm) {
+                    width: 60px;
+                    height: 60px;
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .content {
+                width: calc(100% - 80px);
+                padding-left: 15px;
+                .title {
+                    font-size: 16px !important;
+                    @include breakpoint(max-sm) {
+                        margin-bottom: 5px;
+                    }
+                    a {
+                        @include text-wrap;
+                    }
+                }
+                .meta-post {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 5px;
+                    justify-content: space-between;
+                    li {
+                        padding: 1px 0;
+                        font-size: 13px;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+        .category-wrapper {
+            ul {
+                .category-item {
+                    width: 100%;
+                    padding: 10px 0;
+                    border-bottom: 1px solid $border-color;
+                    &:last-child {
+                        border: 0;
+                    }
+                    a {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+        .archives {
+            padding-bottom: 80px;
+        }
+        .news-tags {
+            .tags {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .tag-item {
+                width: auto;
+                padding: 4px;
+                a {
+                    padding: 5px 13px;
+                    border-radius: 3px;
+                    border: 1px solid $border-color;
+                    &:hover {
+                        border-color: $base-color;
+                    }
+                }
+            }
+        }
+    }
+}
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    @include breakpoint(max-lg) {
+        margin-top: 40px;
+    }
+    li {
+        a {
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgba($dark, .12);
+            border-radius: 50%;
+            @include center;
+            margin: 5px;
+            font-weight: 500;
+            &.active, &:hover {
+                background: $base-color;
+                border-color: $base-color;
+                color: $white;
+            }
+        }
+    }
+}
+// Blog Sidebar
+
+
+// Filter Sidebar
+.filter-header {
+    @extend %flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100% !important;
+    .reset-button {
+        width: auto;
+        background: none;
+        color: $body-color;
+        padding: 3px 5px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+}
+.ticket-filter {
+    display: flex;
+    flex-wrap: wrap;
+}
+.filter-item {
+    padding: 15px 15px 25px;
+    background: $white;
+    border-radius: 5px;
+    border-bottom: 1px solid rgba($primary-color, .1);
+    width: 100%;
+    @include breakpoint(max-lg) {
+        width: 50%;
+    }
+    @include breakpoint(max-sm) {
+        width: 100%;
+    }
+    .title {
+        margin-bottom: 15px;
+    }
+    .bus-type {
+        li {
+            width: 100%;
+            padding: 5px 0px;
+            span {
+                display: block;
+                padding: 3px 8px;
+                background: $section-bg;
+                border-radius: 3px;
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+
+// Package Sidebar
+.package-sidebar {
+    .sidebar-item {
+        margin-bottom: 40px;
+        padding: 20px 15px 30px;
+        background: rgba($primary-color,.015);
+        border-radius: 3px;
+        &.sort-by {
+            padding-bottom: 80px;
+        }
+        .title {
+            margin-bottom: 15px;
+        }
+        .form--group {
+            position: relative;
+            .form--control {
+                height: 45px;
+            }
+            .search-btn {
+                position: absolute;
+                height: 100%;
+                width: auto;
+                right: 0;
+                top: 0;
+                font-size: 20px;
+            }
+        }
+        .package-cate {
+            margin: 0;
+            .cate-item {
+                padding: 4px !important;
+                display: inline-block;
+                a {
+                    padding: 10px 20px;
+                    line-height: 1;
+                    border: 1px solid rgba($primary-color, .1);
+                    background: $white;
+                    font-size: 14px;
+                    
+                }
+            }
+        }
+    
+    }
+}
