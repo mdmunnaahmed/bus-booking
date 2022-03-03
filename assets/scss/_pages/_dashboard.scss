@@ -4,7 +4,7 @@
     }
 }
 .dashboard-section {
-    background: rgba($primary-color,.06);
+    background: rgba($primary-color, 0.06);
     .pagination {
         margin-top: 30px;
         @include breakpoint(max-sm) {
@@ -13,7 +13,8 @@
         li {
             a {
                 background: $white;
-                &.active,&:hover {
+                &.active,
+                &:hover {
                     background: $base-color;
                 }
             }
@@ -25,148 +26,230 @@
     border: none;
     width: 100%;
     text-align: center;
-    thead {
-        tr {
-            background: $white;
-            &:nth-child(even) {
-                background: transparent;
-                th {
-                    padding: 6px 0 !important;
-                }
-            }
-            th {
-                padding: 20px 15px;
-                font-family: $heading;
-                color: $dark;
-                border: none;
-                font-size: 18px;
-                font-weight: 500;
-                &:first-child {
-                    border-radius: 15px 0 0 15px;
-                }
-                &:last-child {
-                    border-radius: 0px 15px 15px 0px;
-                }
-            }
-        }
+    box-shadow: 0 0 15px rgba(31, 31, 35, 0.1);
+}
+
+.booking-table thead tr {
+    background: $base-color;
+}
+
+.booking-table thead tr:nth-child(even) {
+    background: transparent;
+}
+
+.booking-table thead tr:nth-child(even) th {
+    padding: 6px 0 !important;
+}
+
+.booking-table thead tr th {
+    padding: 10px 15px;
+    font-family: "Georama", sans-serif;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.booking-table thead tr th:first-child {
+    border-radius: 15px 0 0 0;
+}
+
+.booking-table thead tr th:last-child {
+    border-radius: 0px 15px 0 0px;
+}
+
+.booking-table tbody {
+    font-size: 14px;
+}
+
+.booking-table tbody tr {
+    background: #fff;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+}
+.booking-table thead tr th:first-child {
+    text-align: left;
+}
+.booking-table thead tr th:last-child {
+    text-align: right;
+}
+.booking-table tbody tr td:first-child {
+    text-align: left;
+}
+.booking-table tbody tr td:last-child {
+    text-align: right;
+}
+.booking-table tbody tr:last-child {
+    border-bottom: 0;
+    border-radius: 0 0 15px 15px;
+}
+
+.booking-table tbody tr .action-button-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 200px;
+    margin-left: auto;
+}
+
+.booking-table tbody tr .action-button-wrapper a {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 3px;
+}
+
+.booking-table tbody tr .action-button-wrapper .print {
+    font-size: 18px;
+    color: $base-color;
+    background-color: rgba($base-color, .12);
+}
+
+.booking-table tbody tr .action-button-wrapper .checkinfo {
+    font-size: 18px;
+    color: #081a41;
+    background: rgba(7, 10, 185, 0.1);
+}
+.booking-table tbody tr .action-button-wrapper .del {
+    font-size: 18px;
+    color: #f53b57;
+    margin-left: 10px;
+    background: rgba(245, 59, 87, 0.1);
+}
+
+.booking-table tbody tr .serial {
+    font-weight: 500;
+    color: #1f1f1f;
+}
+
+.booking-table tbody tr .ticket-no {
+    color: #554bb9;
+}
+
+.booking-table tbody tr .pickup,
+.booking-table tbody tr .drop {
+    color: var(--main-color);
+}
+
+.booking-table tbody tr .date {
+    font-size: 14px;
+}
+
+.booking-table tbody tr .time {
+    color: #554bb9;
+}
+
+.booking-table tbody tr .seats {
+    color: var(--main-color);
+    word-break: break-all;
+}
+
+.booking-table tbody tr .fare {
+    font-weight: 600;
+    color: #554bb9;
+}
+
+.booking-table tbody tr td {
+    color: #777;
+    vertical-align: middle;
+    padding: 12px 15px;
+}
+
+.booking-table tbody tr:last-child td:first-child {
+    border-radius: 0 0 0 15px;
+}
+
+.booking-table tbody tr:last-child td:last-child {
+    border-radius: 0px 0 15px 0px;
+}
+
+
+@media (max-width: 991px) {
+    .booking-table tbody tr td {
+        border: none;
+        border-bottom: 1px solid rgba(27, 39, 61, 0.1);
     }
-    tbody {
+    .booking-table tbody tr td:last-child {
+        border: none;
+    }
+}
+
+.booking-table .details {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1199px) {
+    .booking-table thead {
+        display: none;
+    }
+    .booking-table tbody tr {
+        display: block;
+    }
+    .booking-table tbody tr td {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        border-collapse: collapse;
+        padding: 10px 15px;
+        border-radius: 0 !important;
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+    }
+    .booking-table tbody tr td::before {
+        content: attr(data-label);
+        font-family: "Georama", sans-serif;
         font-size: 14px;
-        tr {
-            &:nth-child(even) {
-            background: transparent;
-            td {
-                padding: 6px 0 !important;
-            }
-        }
-            &:nth-child(even) {
-                background: transparent;
-            }
-            background: $white;
-            @include transition;
-            .action-button-wrapper {
-                display: flex;
-                justify-content: center;
-                max-width: 200px;
-                margin-left: auto;
-                a {
-                    width: 35px;
-                    height: 35px;
-                    text-align: center;
-                    line-height: 35px;
-                    border-radius: 3px;
-                }
-                .print {
-                    font-size: 18px;
-                    color: $base-color;
-                    background: rgba($base-color,.1);
-                }
-                .del {
-                    font-size: 18px;
-                    color: $red;
-                    margin-left:10px;
-                    background: rgba($red,.1);
-                }
-            }
-            .serial {
-                font-size: 18px;
-                font-weight: 500;
-                color: $dark;
-            }
-            .ticket-no {
-                color: $secondary-color;
-                font-size: 16px;
-            }
-            .route {
-                color: $base-color;
-            }
-            .date {
-                font-size: 14px;
-            }
-            .time {
-                color: $secondary-color;
-            }
-            .seats {
-                color: rgba($base-color,1);
-            }
-            .fare {
-                font-size: 18px;
-                font-weight: 500;
-                color: $secondary-color;
-            }
-            td {
-                &:first-child {
-                    border-radius: 5px 0 0 5px;
-                }
-                &:last-child {
-                    border-radius: 0px 5px 5px 0px;
-                }
-                .badge {
-                    text-transform: capitalize;
-                }
-                color: $body-color;
-                vertical-align: middle;
-                padding: 12px 15px;
-                @include breakpoint(max-lg) {
-                    border: none;
-                    border-bottom: 1px solid rgba($primary-color,.1);
-                    &:last-child {
-                        border: none;
-                    }
-                }
-            }
-        }
+        color: #424248;
+        font-weight: 500;
     }
-    .details {
-        max-width: 250px;
-        margin: 0 auto;
+    .booking-table tbody tr:nth-child(even) {
+        background: rgba(255, 255, 255, 0.3);
     }
-    @include breakpoint(max-lg) {
-        thead {
-            display: none;
-        }
-        tbody {
-            tr {
-                display: block;
-                td {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    border-collapse: collapse;
-                    padding: 10px 15px;
-                    border-radius: 0 !important;
-                    &::before {
-                        content: attr(data-label);
-                        font-family: $heading;
-                        font-size: 17px;
-                        color: $title-color;
-                        font-weight: 500;
-                    }
-                }
-                &:nth-child(even) {
-                    background: rgba($color:$white,$alpha:.3);
-                }
-            }
-        }
-    }
+}
+
+
+
+.badge--secondary {
+    color: #78818a !important;
+    background: #78818a15 !important;
+    border-color: #78818a !important;
+}
+.badge--warning {
+    background-color: rgba(255, 159, 67, 0.15);
+    border: 1px solid #ff9f43;
+    color: #ff9f43;
+}
+
+.badge--success {
+    background-color: rgba(40, 199, 111, 0.15);
+    border: 1px solid #28c76f;
+    color: #28c76f;
+}
+
+.badge--danger {
+    background-color: rgba(234, 84, 85, 0.15);
+    border: 1px solid #ea5455;
+    color: #ea5455;
+}
+
+.badge--primary {
+    background-color: rgba(115, 103, 240, 0.15);
+    border: 1px solid #7367f0;
+    color: #7367f0;
+}
+.badge--base {
+    background-color: #0e9e4d26;
+    border: 1px solid $base-color;
+    color: $base-color;
 }

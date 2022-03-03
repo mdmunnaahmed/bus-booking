@@ -72,7 +72,7 @@ window.onscroll = function () {
 };
 
 // Nice Select
-$("select").niceSelect();
+$(".nice-select").niceSelect();
 
 // Scroll To Top
 var scrollTop = $(".scrollToTop");

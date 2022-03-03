@@ -30,10 +30,12 @@
 
 <body>
     <div class="overlay"></div>
+
     <!-- Preloader -->
     <div class="preloader">
         <div class="loader-wrapper">
             <div class="truck-wrapper">
+                <div class="preloader-content">ViserBus</div>
                 <div class="truck">
                     <div class="truck-container"></div>
                     <div class="glases"></div>
@@ -44,13 +46,14 @@
                     <div class="base-aux"></div>
                     <div class="wheel-back"></div>
                     <div class="wheel-front"></div>
-
                     <div class="smoke"></div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Preloader -->
+
+
     <!-- Header Section Starts Here -->
     <header class="header">
         <div class="header-top">
@@ -177,13 +180,13 @@
     <section class="inner-banner bg_img" style="background: url(./assets/images/bg/inner.jpg) center">
         <div class="container">
             <div class="inner-banner-content">
-                <h2 class="title">Frequently Asked Questions</h2>
+                <h2 class="title">Support Ticket</h2>
                 <ul class="breadcums">
                     <li>
                         <a href="index.html" class="home">Home</a>
                     </li>
                     <li>
-                        FAQs
+                        Support
                     </li>
                 </ul>
             </div>
@@ -191,163 +194,72 @@
     </section>
     <!-- Inner Banner Section Ends Here -->
 
-
-    <!-- Faq Section Starts Here -->
-    <section class="faq-section padding-top padding-bottom">
-        <div class="container">
-            <div class="row justify-content-center gy-5">
-                <div class="col-lg-6">
-                    <div class="faq-wrapper">
-                        <div class="faq-item active open">
-                            <div class="faq-title">
-                                <span class="icon"></span>
-                                <h5 class="title">Can we choose corporation buses from anywhere?</h5>
-                            </div>
-                            <div class="faq-content">
-                                <p>Orangu ipsum dolor sit amet consectetur adipisicing elit. Sed minima porro aliquid
-                                    eius laudantium ad quod a corrupti impedit, reiciendis iusto ut aperiam tenetur fuga
-                                    repellendus tempore necessitatibus omnis libero?</p>
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-title">
-                                <span class="icon"></span>
-                                <h5 class="title">Can we choose corporation buses from anywhere?</h5>
-                            </div>
-                            <div class="faq-content">
-                                <p>Orangu ipsum dolor sit amet consectetur adipisicing elit. Sed minima porro aliquid
-                                    eius laudantium ad quod a corrupti impedit, reiciendis iusto ut aperiam tenetur fuga
-                                    repellendus tempore necessitatibus omnis libero?</p>
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-title">
-                                <span class="icon"></span>
-                                <h5 class="title">Can we choose corporation buses from anywhere?</h5>
-                            </div>
-                            <div class="faq-content">
-                                <p>Orangu ipsum dolor sit amet consectetur adipisicing elit. Sed minima porro aliquid
-                                    eius laudantium ad quod a corrupti impedit, reiciendis iusto ut aperiam tenetur fuga
-                                    repellendus tempore necessitatibus omnis libero?</p>
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-title">
-                                <span class="icon"></span>
-                                <h5 class="title">Can we choose corporation buses from anywhere?</h5>
-                            </div>
-                            <div class="faq-content">
-                                <p>Orangu ipsum dolor sit amet consectetur adipisicing elit. Sed minima porro aliquid
-                                    eius laudantium ad quod a corrupti impedit, reiciendis iusto ut aperiam tenetur fuga
-                                    repellendus tempore necessitatibus omnis libero?</p>
-                            </div>
-                        </div>
+    <div class="container">
+        <div class="row justify-content-center padding-top padding-bottom">
+            <div class="col-md-12">
+                <div class="card cmn--card">
+                    <div class="card-header d-flex flex-wrap justify-content-between align-items-center"
+                        style="gap:7px">
+                        <h6 class="title my-0">Support Tickets</h6>
+                        <a href="#0" class="btn btn--sm bg-white text--base px-3 border-0"> My Tickets </a>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="faq-wrapper">
-                        <div class="faq-item active open">
-                            <div class="faq-title">
-                                <span class="icon"></span>
-                                <h5 class="title">Can we choose corporation buses from anywhere?</h5>
+
+                    <div class="card-body">
+                        <form action="#0">
+                            <div class="row gy-3">
+                                <div class="form-group col-md-6">
+                                    <label class="form-label" for="name">Name</label>
+                                    <input type="text" name="name" value="Victoria Garrett" class="form--control"
+                                        placeholder="Enter your name" readonly>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="form-label" for="email">Email address</label>
+                                    <input type="email" name="email" value="zobyho@mailinator.com" class="form--control"
+                                        placeholder="Enter your email" readonly>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label class="form-label" for="website">Subject</label>
+                                    <input type="text" name="subject" value="" class="form--control"
+                                        placeholder="Subject">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="form-label" for="priority">Priority</label>
+                                    <select name="priority" class="form--control form-select">
+                                        <option value="3">High</option>
+                                        <option value="2">Medium</option>
+                                        <option value="1">Low</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 form-group">
+                                    <label class="form-label" for="inputMessage">Message</label>
+                                    <textarea name="message" id="inputMessage" rows="6"
+                                        class="form--control"></textarea>
+                                </div>
+                                <div class="form-group col-sm-12">
+                                    <label class="form-label" for="inputAttachments"
+                                        class="form--label">Attachments</label>
+                                    <div class="form-group d-flex mb-2">
+                                        <input type="file" class=" form-control" name="attachments[]"
+                                            id="inputAttachments">
+                                        <button class="ms-3 btn btn--base btn--sm" type="button"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div id="fileUploadsContainer"></div>
+                                    <span class="info fs--14px">Allowed File Extensions: .jpg, .jpeg, .png, .pdf, .doc,
+                                        .docx</span>
+                                </div>
+                                <div class="col-md-12">
+                                    <button class="btn btn--base w-100" type="submit"><i
+                                            class="fa fa-paper-plane me-2"></i>Submit</button>
+                                </div>
                             </div>
-                            <div class="faq-content">
-                                <p>Orangu ipsum dolor sit amet consectetur adipisicing elit. Sed minima porro aliquid
-                                    eius laudantium ad quod a corrupti impedit, reiciendis iusto ut aperiam tenetur fuga
-                                    repellendus tempore necessitatibus omnis libero?</p>
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-title">
-                                <span class="icon"></span>
-                                <h5 class="title">Can we choose corporation buses from anywhere?</h5>
-                            </div>
-                            <div class="faq-content">
-                                <p>Orangu ipsum dolor sit amet consectetur adipisicing elit. Sed minima porro aliquid
-                                    eius laudantium ad quod a corrupti impedit, reiciendis iusto ut aperiam tenetur fuga
-                                    repellendus tempore necessitatibus omnis libero?</p>
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-title">
-                                <span class="icon"></span>
-                                <h5 class="title">Can we choose corporation buses from anywhere?</h5>
-                            </div>
-                            <div class="faq-content">
-                                <p>Orangu ipsum dolor sit amet consectetur adipisicing elit. Sed minima porro aliquid
-                                    eius laudantium ad quod a corrupti impedit, reiciendis iusto ut aperiam tenetur fuga
-                                    repellendus tempore necessitatibus omnis libero?</p>
-                            </div>
-                        </div>
-                        <div class="faq-item">
-                            <div class="faq-title">
-                                <span class="icon"></span>
-                                <h5 class="title">Can we choose corporation buses from anywhere?</h5>
-                            </div>
-                            <div class="faq-content">
-                                <p>Orangu ipsum dolor sit amet consectetur adipisicing elit. Sed minima porro aliquid
-                                    eius laudantium ad quod a corrupti impedit, reiciendis iusto ut aperiam tenetur fuga
-                                    repellendus tempore necessitatibus omnis libero?</p>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Faq Section Ends Here -->
-
-
-    <!-- Faq Section Two Starts Here -->
-    <section class="faq-section two padding-bottom">
-        <div class="container">
-            <h4 class="title">Common FAQs</h4>
-            <div class="faq-wrapper-two">
-                <div class="faq-item-two">
-                    <h6 class="title"><span>Que.</span> How can I check operator information for a particular route?
-                    </h6>
-                    <p><span>Ans:</span> To get information on a specific route buses, check for the buses on by
-                        entering the origin and the source destinations along with the preferred date of travel. On
-                        clicking search, you will be taken to the list of buses on the specified route for the searched
-                        date.</p>
-                </div>
-                <div class="faq-item-two">
-                    <h6 class="title"><span>Que.</span> What are the payment options to book bus tickets?</h6>
-                    <p><span>Ans:</span> autobus accept all major payment options like Debit/Credit card or Net banking.
-                        You can also pay using autobus wallet, making the travel booking easier and quicker. Make sure
-                        that you have enough balance in your autobus wallet, as it helps you in faster checkout. Having
-                        a registered autobus wallet can also offer you loads of benefits..</p>
-                </div>
-                <div class="faq-item-two">
-                    <h6 class="title"><span>Que.</span> I am unable to select a specific seat/operator/date/route. What
-                        do I do?</h6>
-                    <p><span>Ans:</span> To get information on a specific route buses, check for the buses onby entering
-                        the origin and the source destinations along with the preferred date of travel. On clicking
-                        search, you will be taken to the list of buses on the specified route for the searched date.</p>
-                </div>
-                <div class="faq-item-two">
-                    <h6 class="title"><span>Que.</span> What should I do if I’ve lost my ticket?</h6>
-                    <p><span>Ans:</span> To get information on a specific route buses, check for the busesby entering
-                        the origin and the source destinations along with the preferred date of travel. On clicking
-                        search, you will be taken to the list of buses on the specified route for the searched date.</p>
-                </div>
-                <div class="faq-item-two">
-                    <h6 class="title"><span>Que.</span> How can I check operator information for a particular route?
-                    </h6>
-                    <p><span>Ans:</span> To get information on a specific route buses, check for the busesy entering the
-                        origin and the source destinations along with the preferred date of travel. On clicking search,
-                        you will be taken to the list of buses on the specified route for the searched date.</p>
-                </div>
-                <div class="faq-item-two">
-                    <h6 class="title"><span>Que.</span> Will I get a refund in case of a failed transaction?</h6>
-                    <p><span>Ans:</span> To get information on a specific route buses, check for the buses by entering
-                        the origin and the source destinations along with the preferred date of travel. On clicking
-                        search, you will be taken to the list of buses on the specified route for the searched date.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Faq Section Two Ends Here -->
+    </div>
 
 
     <!-- Footer Section Starts Here -->
@@ -481,6 +393,7 @@
         </div>
     </section>
     <!-- Footer Section Ends Here -->
+
 
     <a href="#0" class="scrollToTop active"><i class="las la-chevron-up"></i></a>
     <script src="./assets/js/jquery-3.6.0.min.js"></script>

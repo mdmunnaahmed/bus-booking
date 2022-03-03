@@ -203,24 +203,3 @@
         }
     }
 }
-.custom--badge {
-    background: $theme-two;
-    padding: 4px 10px !important;
-    color: $white !important;
-    border-radius: 5px;
-    font-size: 14px;
-    &:hover {
-        color: $white;
-    }
-    &.badge--sm {
-        padding: 2px 6px !important;
-        font-size: 12px;
-    }
-    &.badge--lg {
-        padding: 7px 12px !important;
-        font-size: 15px;
-    }
-    .badge--cap {
-        border-radius: 15px;
-    }
-}

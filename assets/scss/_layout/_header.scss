@@ -70,10 +70,6 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    li > a {
-        &:hover {
-        }
-    }
     >.has-sub-menu {
         margin-right: 15px;
         &.open {
@@ -180,7 +176,7 @@
                 -webkit-line-clamp: 1;
                 &:hover {
                     padding-left: 20px;
-                    background: $primary-color;
+                    background: $base-color;
                     color: $white !important;
                 }
             }
