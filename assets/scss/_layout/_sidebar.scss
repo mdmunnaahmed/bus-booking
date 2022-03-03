@@ -9,8 +9,8 @@
     @include breakpoint(max-lg) {
         padding-left: 0;
     }
-    .sidebar-item { 
-        background: rgba($primary-color, .05);
+    .sidebar-item {
+        background: rgba($primary-color, 0.05);
         &:last-child {
             margin-bottom: 0;
         }
@@ -20,7 +20,7 @@
             @include breakpoint(max-sm) {
                 margin-bottom: 5px;
             }
-            .form--control  {
+            .form--control {
                 padding-right: 60px;
             }
             .search-button {
@@ -144,12 +144,13 @@
         a {
             width: 40px;
             height: 40px;
-            border: 1px solid rgba($dark, .12);
+            border: 1px solid rgba($dark, 0.12);
             border-radius: 50%;
             @include center;
             margin: 5px;
             font-weight: 500;
-            &.active, &:hover {
+            &.active,
+            &:hover {
                 background: $base-color;
                 border-color: $base-color;
                 color: $white;
@@ -159,21 +160,12 @@
 }
 // Blog Sidebar
 
-
 // Filter Sidebar
 .filter-header {
     @extend %flex;
     align-items: center;
     justify-content: space-between;
     width: 100% !important;
-    .reset-button {
-        width: auto;
-        background: none;
-        color: $body-color;
-        padding: 3px 5px;
-        font-weight: 500;
-        font-size: 14px;
-    }
 }
 .ticket-filter {
     display: flex;
@@ -183,7 +175,7 @@
     padding: 15px 15px 25px;
     background: $white;
     border-radius: 5px;
-    border-bottom: 1px solid rgba($primary-color, .1);
+    border-bottom: 1px solid rgba($primary-color, 0.1);
     width: 100%;
     @include breakpoint(max-lg) {
         width: 50%;
@@ -211,14 +203,13 @@
     }
 }
 
-
 // Package Sidebar
 .package-sidebar {
     .sidebar-item {
         margin-bottom: 40px;
         padding: 20px 15px 30px;
-        background: rgba($primary-color,.015);
-        border-radius: 3px;
+        background: rgba($dark, 0.05);
+        border-radius: 5px;
         &.sort-by {
             padding-bottom: 80px;
         }
@@ -247,13 +238,11 @@
                 a {
                     padding: 10px 20px;
                     line-height: 1;
-                    border: 1px solid rgba($primary-color, .1);
+                    border: 1px solid rgba($primary-color, 0.1);
                     background: $white;
                     font-size: 14px;
-                    
                 }
             }
         }
-    
     }
 }

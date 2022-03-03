@@ -347,16 +347,6 @@
 // Packages Section Ends Here
 
 // Faq & Testimonails Section Starts Here
-
-.faq-wrapper {
-    padding-right: 40px;
-    @include breakpoint(max-lg) {
-        padding-right: 0;
-    }
-    @include breakpoint(max-xl) {
-        padding-right: 10px;
-    }
-}
 .testimonial-wrapper {
     padding-left: 40px;
     border-left: 2px solid rgba($base-color, 0.9);
@@ -480,27 +470,18 @@
 // Faq Two Section Starts Here
 .faq-section.two {
     .title {
-        margin-bottom: 15px;
+        margin-bottom: 25px;
     }
 }
 .faq-wrapper-two {
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px 1px rgba($primary-color, 0.07);
-    border: 1px solid rgba($primary-color, 0.1);
-    @include breakpoint(xxl) {
-        padding: 35px 30px;
-    }
-    @include breakpoint(max-sm) {
-        padding: 20px 15px;
-    }
     .faq-item-two {
         margin-bottom: 25px;
         &:last-child {
             margin-bottom: 0;
         }
         .title {
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+            font-weight: 500;
         }
         span {
             color: $dark;
@@ -537,19 +518,6 @@
     }
 }
 .about-wrapper {
-    margin: 0 auto;
-    border-radius: 10px;
-    padding: 35px 25px;
-    box-shadow: 0 0 20px 2px rgba($primary-color, 0.07);
-    border: 1px solid rgba($primary-color, 0.1);
-    @include breakpoint(xxl) {
-        padding: 40px 35px;
-    }
-    @include breakpoint(max-md) {
-        padding: 0;
-        border: 0;
-        box-shadow: none;
-    }
     .item {
         margin-bottom: 30px;
         &:last-child {
@@ -681,16 +649,6 @@
         .button-wrapper {
             display: flex;
             justify-content: space-between;
-        }
-        button {
-            width: auto;
-            height: auto;
-            padding: 12px 18px;
-            font-weight: 500;
-            font-size: 15px;
-            @include breakpoint(max-xl) {
-                margin-bottom: 10px;
-            }
         }
         .result-info {
             margin-bottom: 10px;
@@ -1462,7 +1420,66 @@
 }
 // Bus Section Ends Here
 
-
 // Testimonial Section Starts Here
-
+.testimonial-slider {
+    .slick-list {
+        padding-top: 50px !important;
+    }
+}
+.testimonial-item {
+    padding: 40px 30px;
+    box-shadow: 0 2px 8px rgba($dark, 0.15);
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    margin: 0 10px;
+    @include breakpoint(max-xl) {
+        @include breakpoint(lg) {
+            padding: 30px 20px;
+        }
+        @include breakpoint(max-sm) {
+            padding: 25px 15px;
+        }
+    }
+    .quote-icon {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        transform: translateY(-50%);
+        font-size: 24px;
+        color: $base-color;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        box-shadow: 0 3px 35px rgba($base-color, 0.35);
+        background: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .testimonial-thumb {
+        width: 90px;
+        margin: 0 auto;
+        aspect-ratio: 1;
+        position: relative;
+        .quote-icon-thumb {
+            position: absolute;
+            left: -80%;
+            top: 0%;
+            font-size: 42px;
+            color: rgba($base-color, 0.4);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+    .testimonial-content {
+        .rating {
+            font-size: 13px;
+        }
+    }
+}
 // Testimonial Section Ends Here

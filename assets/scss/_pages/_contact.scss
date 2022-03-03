@@ -15,127 +15,78 @@
         z-index: 1;
     }
 }
-.contact-wrapper {
-    @extend %flex;
-    border-radius: 10px;
-    background: $white;
-    box-shadow: 0 3px 15px rgba($primary-color,.2);
-    overflow: hidden;
-    .title {
-        margin-top: 0;
-        margin-bottom: 25px;
-    }
-}
-.contact-form-wrapper {
-    width: 60%;
-    padding: 40px;
-    padding-left: 60px;
-    @include breakpoint(max-xl) {
-        padding-left: 40px;
-    }
-    @include breakpoint(max-lg) {
-        width: 100%;
-    }
-    @include breakpoint(max-md) {
-        padding: 30px 25px;
-    }
-    @include breakpoint(max-sm) {
-        padding: 25px 15px;
-    }
 
+.contact-wrapper {
+    border-radius: 10px;
+    background: #fff;
+    -webkit-box-shadow: 0 3px 15px rgba(27, 39, 61, 0.2);
+    box-shadow: 0 3px 15px rgba(27, 39, 61, 0.2);
+    overflow: hidden;
 }
-.contact-form {
-    .form--group {
-        label {
-            line-height: 1;
-            font-weight: 600;
-            color: $dark;
-            span {
-                color: $red;
-            }
-        }
-        .form--control {
-            box-shadow: none;
-            background: rgba($white,.1);
-            border: none;
-            border-bottom: 1px solid rgba($primary-color,.12);
-            border-radius: 0;
-            padding-left: 0;
-            &:focus {
-                border-color: rgba($base-color,.7);
-            }
-        }
-        ::-webkit-input-placeholder {
-            color: $body-color;
-        }
-    }
-    .contact-button {
-        height: 45px;
-        color: rgba($white,.95);
-        width: auto;
-    }
+
+.contact-wrapper .title {
+    margin-top: 0;
+    margin-bottom: 25px;
 }
-.contact-info-wrapper {
-    width: 40%;
-    padding: 40px;
-    background: url(./../images/bg/login3.jpg) center;
+
+.contact-form .form--group label {
+    line-height: 1;
+    font-weight: 600;
+    color: #1f1f1f;
+    font-size: 14px;
+}
+
+.contact-form .form--group label span {
+    color: #f53b57;
+}
+
+.contact-form .form--group ::-webkit-input-placeholder {
+    color: #777;
+}
+
+.contact-form .contact-button {
+    height: 45px;
+    color: rgba(255, 255, 255, 0.95);
+    width: auto;
+}
+
+.info-item {
     position: relative;
-    @include breakpoint(max-lg) {
-        width: 100%;
-    }
-    @include breakpoint(max-md) {
-        padding: 30px 25px;
-    }
-    @include breakpoint(max-sm) {
-        padding: 25px 15px;
-    }
-    &::before {
-        @include before;
-        left: 0;
-        top: 0;
-        background: rgba($primary-color,.4);
-    }
-    * {
-        color: rgba($white,.9);
-    }
-    .title {
-        position: relative;
-        color: $white;
-        margin-bottom: 15px;
-    }
-    >p {
-        position: relative;
-        max-width: 250px;
-        margin-bottom: 30px;
-    }
-    .info-item {
-        position: relative;
-        z-index: 1;
-        @extend %flex;
-        align-items: center;
-        margin-bottom: 25px;
-        .icon {
-            width: 55px;
-            height: 55px;
-            @extend %flex-center;
-            font-size: 24px;
-            border: 1px solid rgba($white,.3);
-            border-radius: 50%;
-        }
-        .content {
-            max-width: 250px;
-            width: calc(100% - 55px);
-            padding-left: 15px;
-            a {
-                word-break: break-all;
-            }
-        }
-    }
+    z-index: 1;
+    border: 1px solid #efefef;
+    transition: all ease-in 0.3s;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    padding: 25px 20px;
 }
+
+.info-item .icon {
+    width: 40px;
+    height: 40px;
+    font-size: 32px;
+    color: #0e9e4d;
+}
+.info-item .content {
+    width: calc(100% - 40px);
+    padding-left: 20px;
+}
+
+.info-item .content .title {
+    margin-bottom: 10px;
+}
+
+.info-item .content a {
+    word-break: break-all;
+    display: block;
+}
+
 .map-wrapper {
     margin-bottom: -8px;
-    .map {
-        width: 100%;
-        height: 450px;
-    }
+}
+
+.map-wrapper .map {
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
 }
