@@ -163,6 +163,51 @@ $(".amenities-slider").slick({
     ],
 });
 
+$(".brand-slider").slick({
+    fade: false,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    infinite: true,
+    autoplay: true,
+    pauseOnHover: true,
+    centerMode: false,
+    dots: false,
+    arrows: false,
+    // asNavFor: '.testimonial-img-slider',
+    nextArrow: '<i class="las la-arrow-right arrow-right"></i>',
+    prevArrow: '<i class="las la-arrow-left arrow-left"></i> ',
+    responsive: [
+        {
+            breakpoint: 1199,
+            settings: {
+                slidesToShow: 6,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 991,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 767,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 500,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            },
+        },
+    ],
+});
+
 //Faq
 $(".faq-wrapper .faq-title, .faq-wrapper-two .faq-title-two").on(
     "click",

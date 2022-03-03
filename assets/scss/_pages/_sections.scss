@@ -294,6 +294,8 @@
     }
     .ratting {
         margin: 0;
+        font-size: 15px;
+        align-items: center;
         li {
             line-height: 1;
             margin-right: 5px;
@@ -311,7 +313,8 @@
             color: $base-color;
         }
         .total-reviews {
-            color: $body-color;
+            color: $star;
+            font-size: 14px;
         }
     }
     .package-price {
@@ -375,6 +378,7 @@
 }
 .faq-item {
     margin-bottom: 15px;
+    box-shadow: 0 0px 5px rgba($base-color, 0.2);
     &:last-child {
         margin-bottom: 0;
     }
@@ -442,6 +446,8 @@
     .faq-content {
         padding: 15px;
         display: none;
+        border: 1px solid rgba($base-color, 0.25);
+        border-top: 0;
     }
 }
 .testimonial-item {
@@ -1325,3 +1331,138 @@
         }
     }
 }
+
+// Brand Section Starts Here
+.brand-slider {
+    .single-slide {
+        padding: 0 10px;
+    }
+}
+.brand-item {
+    background-color: rgba($base-color, 0.15);
+    border: 1px solid rgba($base-color, 0.25);
+    .thumb {
+        img {
+            width: 100%;
+        }
+    }
+}
+// Brand Section Ends Here
+
+// Bus Section Starts Here
+.rating-wrapper {
+    gap: 7px;
+    font-size: 13px;
+    align-items: center;
+    .rate-avg {
+        padding: 3px 5px;
+        background: $base-color;
+        line-height: 1;
+        border-radius: 3px;
+        color: $white;
+    }
+}
+.rating {
+    gap: 3px;
+    li {
+        line-height: 1;
+        color: $white;
+        padding: 2px;
+        border-radius: 3px;
+        position: relative;
+        background: #c8c8c9;
+        &.star-full {
+            &::before {
+                width: 100%;
+            }
+        }
+        &.star-half {
+            background: #ddd;
+            &::before {
+                width: 50%;
+            }
+        }
+        &::before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            left: 0px;
+            top: 0px;
+            background: linear-gradient(0deg, #f2571e, #f87b3f);
+            border-radius: 3px;
+        }
+        i {
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+.fs--14px {
+    font-size: 14px;
+}
+.bus-item {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 1px 8px rgba($dark, 0.15);
+    border-radius: 0 5px 5px 0;
+    transition: all ease-in 0.2s;
+    &:hover {
+        box-shadow: 0 1px 15px rgba($base-color, 0.4);
+    }
+    .bus-thumb {
+        width: 45%;
+        @include breakpoint(max-sm) {
+            width: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px 0 0 5px;
+        }
+    }
+    .bus-content {
+        width: calc(100% - 45%);
+        padding: 25px;
+        @include breakpoint(max-xl) {
+            @include breakpoint(lg) {
+                padding: 20px 15px;
+            }
+            .rating-wrapper {
+                font-size: 12px;
+            }
+        }
+        @include breakpoint(max-sm) {
+            width: 100%;
+        }
+        .title {
+            margin-bottom: 12px;
+            font-size: 20px;
+            a {
+                @include text-wrap;
+                -webkit-line-clamp: 1;
+            }
+            @include breakpoint(max-xl) {
+                font-size: 18px;
+            }
+        }
+        .contact-num {
+            font-size: 20px;
+            font-weight: 500;
+            color: #334;
+            margin: 12px 0 7px;
+        }
+        .service {
+            i {
+                font-size: 15px;
+                color: $base-color;
+            }
+        }
+    }
+}
+// Bus Section Ends Here
+
+
+// Testimonial Section Starts Here
+
+// Testimonial Section Ends Here

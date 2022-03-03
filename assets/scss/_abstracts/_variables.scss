@@ -1,24 +1,24 @@
 $bootstrap-sass-asset-helper: false !default;
 
 // font-family
-$body: 'Lato', sans-serif;
-$heading:  'Georama', sans-serif;
+$body: "Lato", sans-serif;
+$heading: "Georama", sans-serif;
 
 //Description line height
-$lh-p: 28px; 
+$lh-p: 28px;
 
 // Title Color
 $title-color: #424248;
 
 // Essential Colors
-$base-color: #0e9e4d; 
+$base-color: #3abef7;
 
-$primary-color: #1B273D;
-$secondary-color: #554BB9;
+$primary-color: #1b273d;
+$secondary-color: #554bb9;
 
-$body-color :#777;
-$body-bg : rgb(255, 255, 255);
-$section-bg : #f6f6f7;
+$body-color: #777;
+$body-bg: rgb(255, 255, 255);
+$section-bg: #f6f6f7;
 $border-color: #ebebeb;
 
 $theme-one: #3f58e3;
@@ -28,34 +28,33 @@ $theme-four: #7e2afc;
 $theme-five: #381087;
 
 .theme-one {
-   color: $theme-one !important;
+    color: $theme-one !important;
 }
 .theme-one-bg {
-   background: $theme-one !important;
+    background: $theme-one !important;
 }
 .theme-two {
-   color: $theme-two !important;
+    color: $theme-two !important;
 }
 .theme-two-bg {
-   background: $theme-two !important;
+    background: $theme-two !important;
 }
 .theme-three {
-   color: $theme-three !important;
+    color: $theme-three !important;
 }
 .theme-three-bg {
-   background: $theme-three !important;
+    background: $theme-three !important;
 }
 .theme-four {
-   color: $theme-four !important;
+    color: $theme-four !important;
 }
 .theme-four-bg {
-   background: $theme-four !important;
+    background: $theme-four !important;
 }
-
 
 // font-size
 $fs-base: 16px;
-$fs-large: 18px; 
+$fs-large: 18px;
 $fs-small: 14px;
 $fs-h1: 48px;
 $fs-h2: 36px;
@@ -67,28 +66,65 @@ $fs-h6: 18px;
 $white: #fff;
 $dark: rgb(31, 31, 31);
 
+$gradient-one: linear-gradient(
+    180deg,
+    rgb(64, 87, 227) 14%,
+    rgb(0, 145, 255) 73%
+);
+$gradient-two: linear-gradient(
+    180deg,
+    rgb(5, 185, 200) 19%,
+    rgb(21, 214, 176) 58%,
+    rgb(37, 243, 152) 81%
+);
+$gradient-three: linear-gradient(
+    180deg,
+    rgb(179, 29, 163) 9%,
+    rgb(214, 63, 135) 50%,
+    rgb(249, 96, 106) 88%
+);
+$gradient-four: linear-gradient(
+    180deg,
+    rgb(126, 42, 252) 39%,
+    rgb(144, 61, 247) 70%,
+    rgb(162, 80, 242) 88%
+);
 
-$gradient-one: linear-gradient( 180deg, rgb(64,87,227) 14%, rgb(0,145,255) 73%);
-$gradient-two: linear-gradient( 180deg, rgb(5,185,200) 19%, rgb(21,214,176) 58%, rgb(37,243,152) 81%);
-$gradient-three: linear-gradient( 180deg, rgb(179,29,163) 9%, rgb(214,63,135) 50%, rgb(249,96,106) 88%); 
-$gradient-four: linear-gradient( 180deg, rgb(126,42,252) 39%, rgb(144,61,247) 70%, rgb(162,80,242) 88%); 
- 
-$gradient-one-alt: linear-gradient( 45deg, rgb(64,87,227) 14%, rgb(0,145,255) 73%);
-$gradient-two-alt: linear-gradient( 45deg, rgb(5,185,200) 19%, rgb(21,214,176) 58%, rgb(37,243,152) 81%);
-$gradient-three-alt: linear-gradient( 45deg, rgb(179,29,163) 9%, rgb(214,63,135) 50%, rgb(249,96,106) 88%); 
-$gradient-four-alt: linear-gradient( 45deg, rgb(126,42,252) 39%, rgb(144,61,247) 70%, rgb(162,80,242) 88%); 
- 
+$gradient-one-alt: linear-gradient(
+    45deg,
+    rgb(64, 87, 227) 14%,
+    rgb(0, 145, 255) 73%
+);
+$gradient-two-alt: linear-gradient(
+    45deg,
+    rgb(5, 185, 200) 19%,
+    rgb(21, 214, 176) 58%,
+    rgb(37, 243, 152) 81%
+);
+$gradient-three-alt: linear-gradient(
+    45deg,
+    rgb(179, 29, 163) 9%,
+    rgb(214, 63, 135) 50%,
+    rgb(249, 96, 106) 88%
+);
+$gradient-four-alt: linear-gradient(
+    45deg,
+    rgb(126, 42, 252) 39%,
+    rgb(144, 61, 247) 70%,
+    rgb(162, 80, 242) 88%
+);
+
 .gradient-one {
-   background: $gradient-one !important;
+    background: $gradient-one !important;
 }
 .gradient-two {
-   background: $gradient-two !important;
+    background: $gradient-two !important;
 }
 .gradient-three {
-   background: $gradient-three !important;
+    background: $gradient-three !important;
 }
 .gradient-four {
-   background: $gradient-four !important;
+    background: $gradient-four !important;
 }
 
 // social-media icons color
@@ -104,16 +140,16 @@ $camera: #e4405f;
 $instagram: #e4405f;
 $tumblr: #34465d;
 $behance: #1769ff;
-$star: #e9ba11;
+$star: #e9c600;
 $green: #0be867;
 $green-h: #0fbcf9;
 $red: #f53b57;
-$pink: #F763C6;
+$pink: #f763c6;
 $yellow: #dec32b;
 $nell: #212fb4;
 $navy: #d8e0f3;
 $placeholder: #a1a1a2;
-$vimeo : #1ab7ea;
+$vimeo: #1ab7ea;
 
 /* Text Color */
 .text--primary {
@@ -126,127 +162,127 @@ $vimeo : #1ab7ea;
     color: $base-color !important;
 }
 .text--danger {
-   color: #DC3545 !important;
+    color: #dc3545 !important;
 }
 
 .text--warning {
-   color: #FFC107 !important;
+    color: #ffc107 !important;
 }
 
 .text--info {
-   color: #17A2B8 !important;
+    color: #17a2b8 !important;
 }
 
 .text--success {
-   color: #28A745 !important;
+    color: #28a745 !important;
 }
 
 .text--dark {
-   color: #343A40 !important;
+    color: #343a40 !important;
 }
 .text--white {
-   color: #fff !important;
+    color: #fff !important;
 }
 
 /* Btn Color */
 .btn--base {
-   color: #fff;
-   background: $base-color;
-   border-color: $base-color;
+    color: #fff;
+    background: $base-color;
+    border-color: $base-color;
+    &:hover {
+        color: $white;
+    }
 }
 
 .btn--danger {
-   color: #fff;
-   background: #DC3545;
-   border-color: #DC3545;
+    color: #fff;
+    background: #dc3545;
+    border-color: #dc3545;
 }
 
 .btn--warning {
-   color: #fff;
-   background: #FFC107;
-   border-color: #FFC107;
+    color: #fff;
+    background: #ffc107;
+    border-color: #ffc107;
 }
 
 .btn--info {
-   color: #fff;
-   background: #17A2B8;
-   border-color: #17A2B8;
+    color: #fff;
+    background: #17a2b8;
+    border-color: #17a2b8;
 }
 
 .btn--success {
-   color: #fff;
-   background: #28A745;
-   border-color: #28A745;
+    color: #fff;
+    background: #28a745;
+    border-color: #28a745;
 }
 
 .btn--dark {
-   color: #fff;
-   background: #343A40;
-   border-color: #343A40;
+    color: #fff;
+    background: #343a40;
+    border-color: #343a40;
 }
-
 
 /* Background Color */
 .bg--primary {
-   background: $primary-color !important;
+    background: $primary-color !important;
 }
 .bg--secondary {
-   background: $secondary-color !important;
+    background: $secondary-color !important;
 }
 .bg--base {
-   background: $base-color !important;
+    background: $base-color !important;
 }
 .bg--danger {
-   background: #DC3545 !important;
+    background: #dc3545 !important;
 }
 
 .bg--warning {
-   background: #FFC107 !important;
+    background: #ffc107 !important;
 }
 
 .bg--info {
-   background: #17A2B8 !important;
+    background: #17a2b8 !important;
 }
 
 .bg--success {
-   background: #28A745 !important;
+    background: #28a745 !important;
 }
 
 .bg--dark {
-   background: #343A40 !important;
+    background: #343a40 !important;
 }
 .bg--white {
-   background: #fff !important;
+    background: #fff !important;
 }
 .bg--none {
-   background: transparent !important;
+    background: transparent !important;
 }
-
-
 
 // Social Media Colors
 .facebook {
-   color: $facebook;
+    color: $facebook;
 }
 .twitter {
-   color: $twitter;
+    color: $twitter;
 }
 .vimeo {
-   color: $vimeo;
+    color: $vimeo;
 }
 .instagram {
-   color: $instagram;
+    color: $instagram;
 }
 
 .facebook-bg {
-   background: $facebook;
+    background: $facebook;
 }
 .twitter-bg {
-   background: $twitter;
+    background: $twitter;
 }
 .vimeo-bg {
-   background: $vimeo;
+    background: $vimeo;
 }
 .instagram-bg {
-   background: $instagram;
+    background: $instagram;
 }

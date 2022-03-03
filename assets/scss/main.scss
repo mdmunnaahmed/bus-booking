@@ -85,7 +85,7 @@
     bottom: 0px;
     text-align: center;
     width: 100%;
-    border-top: 1px solid #4caf50;
+    border-top: 1px solid $base-color;
     background: rgb(30, 252, 122);
     background: -moz-linear-gradient(
         left,
@@ -97,7 +97,11 @@
         rgba(30, 252, 200, 1) 0%,
         rgba(29, 211, 214, 1) 100%
     );
-    background: linear-gradient(to right, #4caf50 0%, #61c664 100%);
+    background: linear-gradient(
+        to right,
+        $base-color 0%,
+        rgba($base-color, 0.6) 100%
+    );
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1efcc8', endColorstr='#1dd3d6',GradientType=1 );
     color: white;
     padding-top: 8px;

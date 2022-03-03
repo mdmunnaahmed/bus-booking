@@ -1,8 +1,9 @@
-.cmn--btn {
+.cmn--btn,
+.btn {
     text-transform: uppercase;
     font-size: 14px;
-    padding: 12px 25px;
-    border-color: rgba($base-color, 0.6);
+    padding: 10px 35px;
+    border: 2px solid rgba($base-color, 0.6);
     background: $base-color;
     color: $white;
     position: relative;
@@ -16,7 +17,7 @@
         background: transparent;
     }
     @include breakpoint(max-sm) {
-        padding: 10px 15px;
+        padding: 8px 15px;
         font-size: 13px;
     }
     &.btn--sm {

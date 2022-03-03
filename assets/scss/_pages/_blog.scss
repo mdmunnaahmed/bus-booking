@@ -38,6 +38,7 @@
     }
     p {
         @include text-wrap;
+        -webkit-line-clamp: 3;
     }
     .post-meta {
         display: flex;

@@ -83,26 +83,12 @@ ul {
 .bg_fixed {
     background-attachment: fixed !important;
 }
-input, textarea, button {
+input,
+textarea {
     border: none;
     outline: none;
-    width: 100%;
 }
-button {
-    height: 50px;
-    padding: 13px 30px;
-    cursor: pointer;
-    background: $base-color;
-    color: $white;
-    font-weight: 600;
-    text-transform: capitalize;
-    border-radius: 5px;
-    transition: all ease .4s;
-    line-height: 1;
-    &:hover {
-        background: $base-color;
-    }
-}
+
 label {
     margin-bottom: 7px;
     cursor: pointer;
@@ -113,17 +99,17 @@ label {
     color: $dark;
     padding: 0 20px;
     border-radius: 5px;
-    transition: all ease .2s;
+    transition: all ease 0.2s;
     display: flex;
     align-items: center;
     font-size: 14px;
-    box-shadow: 3px 3px 10px 3px rgba($color:$primary-color,$alpha:.04);
-    border: 1px solid rgba($primary-color,.1);
+    box-shadow: 3px 3px 10px 3px rgba($color: $primary-color, $alpha: 0.04);
+    border: 1px solid rgba($primary-color, 0.1);
     line-height: 1;
     &:focus {
-      background-color: $white;
-      box-shadow: 1px 1px 10px 3px rgba($color:$base-color,$alpha:.1);
-      border: 1px solid rgba($base-color,.9);
+        background-color: $white;
+        box-shadow: 1px 1px 10px 3px rgba($color: $base-color, $alpha: 0.1);
+        border: 1px solid rgba($base-color, 0.9);
     }
 }
 ::-webkit-input-placeholder {
@@ -135,7 +121,7 @@ textarea {
     width: 100%;
     height: 130px;
     resize: vertical;
-    background: $white; 
+    background: $white;
     padding: 20px;
     border-radius: 5px;
     padding-top: 25px;
@@ -151,7 +137,8 @@ textarea.form--control {
 img {
     @include transition;
 }
-.title,.name {
+.title,
+.name {
     @include transition;
 }
 .section-bg {
@@ -163,7 +150,7 @@ section {
         height: 5px;
     }
     ::-webkit-scrollbar-thumb {
-        background: rgba($primary-color,.35) !important;
+        background: rgba($primary-color, 0.35) !important;
         border-radius: 5px !important;
     }
 }
@@ -173,13 +160,13 @@ section {
     display: flex;
     align-items: center;
     line-height: 1;
-    box-shadow: 3px 3px 10px 3px rgba($color:$primary-color,$alpha:.05);
+    box-shadow: 3px 3px 10px 3px rgba($color: $primary-color, $alpha: 0.05);
     ::-webkit-scrollbar {
         width: 5px !important;
         height: 5px;
     }
     ::-webkit-scrollbar-thumb {
-        background: rgba($primary-color,.35) !important;
+        background: rgba($primary-color, 0.35) !important;
         border-radius: 5px !important;
     }
     .list {
@@ -208,7 +195,7 @@ section {
         width: 15px;
         cursor: pointer;
         background: $white;
-        border: 1px solid rgba($primary-color, $alpha:.4);
+        border: 1px solid rgba($primary-color, $alpha: 0.4);
         border-radius: 2px;
         margin-top: 8px;
         border-radius: 2px;
@@ -216,11 +203,10 @@ section {
     input[type="checkbox"]:checked {
         background: $white;
         border-color: $white;
-        
     }
     input[type="checkbox"]::after {
         @include line-ico;
-        content: '\f14a';
+        content: "\f14a";
         font-size: 20px;
         color: $base-color;
         visibility: hidden;
@@ -279,11 +265,24 @@ i {
     line-height: 1;
 }
 
+*::selection {
+    background: $base-color;
+    color: $white;
+}
 
-
-
-
-// Responsive Fonts 
+.pt-40 {
+    padding-top: 40px;
+    @include breakpoint(max-lg) {
+        padding-top: 30px;
+    }
+}
+.pb-40 {
+    padding-bottom: 40px;
+    @include breakpoint(max-lg) {
+        padding-bottom: 30px;
+    }
+}
+// Responsive Fonts
 @include breakpoint(xl) {
     .padding-top {
         padding-top: 80px;
@@ -309,10 +308,10 @@ i {
         font-size: 18px;
     }
     .padding-top {
-        padding-top: 90px;
+        padding-top: 80px;
     }
     .padding-bottom {
-        padding-bottom: 90px;
+        padding-bottom: 80px;
     }
 }
 @include breakpoint(max-lg) {
@@ -324,12 +323,6 @@ i {
     }
     h5 {
         font-size: 18px;
-    }
-    .padding-top {
-        padding-top: 80px;
-    }
-    .padding-bottom {
-        padding-bottom: 80px;
     }
 }
 @include breakpoint(max-md) {
@@ -371,7 +364,8 @@ i {
     .padding-bottom {
         padding-bottom: 60px;
     }
-    .container, .container-fluid {
+    .container,
+    .container-fluid {
         max-width: 460px !important;
     }
 }
