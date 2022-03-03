@@ -74,7 +74,7 @@
                     <div class="right-content">
                         <a class="cancel-ticket" href="cancel-ticket.html">Cancel Ticket</a>
                         <div>
-                            <select>
+                            <select class="langSel">
                                 <option value="lang1">English</option>
                                 <option value="lang2">Bangla</option>
                             </select>
@@ -97,15 +97,6 @@
                             <img src="./assets/images/logo.png" alt="logo">
                         </a>
                     </div> <!-- Logo End -->
-
-                    <div class="header-trigger-wrapper d-flex d-lg-none">
-                        <div class="header-trigger d-block d-lg-none">
-                            <span></span>
-                        </div>
-                        <div class="top-bar-trigger">
-                            <i class="las la-ellipsis-v"></i>
-                        </div>
-                    </div><!-- Trigger End-->
 
                     <ul class="menu">
                         <li>
@@ -166,7 +157,18 @@
                             <a href="contact.html">Contact</a>
                         </li>
                     </ul>
-                    <a href="bus-ticket.html" class="cmn--btn btn--sm">Buy Tickets</a><!-- Menu End -->
+
+                    <div class="d-flex">
+                        <a href="bus-ticket.html" class="cmn--btn btn--sm me-4 me-lg-0">Buy Tickets</a><!-- Menu End -->
+                        <div class="header-trigger-wrapper d-flex d-lg-none">
+                            <div class="header-trigger d-block d-lg-none">
+                                <span></span>
+                            </div>
+                            <div class="top-bar-trigger">
+                                <i class="las la-ellipsis-v"></i>
+                            </div>
+                        </div><!-- Trigger End-->
+                    </div>
                 </div>
             </div>
         </div>
@@ -225,7 +227,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form--group">
-                                        <button class="cmn--btn btn--sm">Find Tickets</button>
+                                        <button class="cmn--btn btn--sm w-100">Find Tickets</button>
                                     </div>
                                 </div>
                             </form>
@@ -260,7 +262,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form--group">
-                                        <button class="cmn--btn btn--sm">Find Tickets</button>
+                                        <button class="cmn--btn btn--sm w-100">Find Tickets</button>
                                     </div>
                                 </div>
                             </form>

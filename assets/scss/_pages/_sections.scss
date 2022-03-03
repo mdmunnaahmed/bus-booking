@@ -1224,15 +1224,18 @@
                 180deg,
                 rgba(0, 0, 0, 0),
                 rgba(0, 0, 0, 0),
-                rgba(0, 0, 0, 0.3),
-                rgba(0, 0, 0, 0.8) 100%
+                rgba(0, 0, 0, 0),
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.6) 100%
             );
             transform-origin: bottom;
             transition: all ease-in 0.3s;
+            z-index: 1;
         }
         &:hover {
             &::before {
-                height: 80%;
+                height: 100%;
+                z-index: 1;
             }
             .view-img {
                 opacity: 1;
@@ -1486,8 +1489,10 @@
 
 /* New Css */
 .langSel {
-    padding: 0px 15px;
+    padding: 0px 5px;
     height: 35px;
+    border-color: $border-color;
+    outline: 0 !important;
 }
 .select2-container {
     width: 100% !important;

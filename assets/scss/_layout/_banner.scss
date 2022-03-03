@@ -92,6 +92,8 @@
     }
     @include breakpoint(max-lg) {
         margin-bottom: 20px;
+        text-align: center;
+        margin: 0 auto 50px;
     }
     @include breakpoint(max-sm) {
         margin-bottom: 20px;
