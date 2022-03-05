@@ -50,6 +50,7 @@
             transform: translateY(-50%);
             font-size: 20px;
             color: $base-color;
+            z-index: 1;
         }
         .form--control {
             border-color: rgba($base-color, 0.25);

@@ -324,7 +324,9 @@ label {
     margin-bottom: 7px;
 }
 
-.form--control {
+.form--control,
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-search--dropdown .select2-search__field {
     width: 100%;
     height: 40px;
     color: #1f1f1f;
@@ -335,14 +337,20 @@ label {
     align-items: center;
     font-size: 14px;
     box-shadow: 3px 3px 10px 3px rgba(27, 39, 61, 0.04);
-    border: 1px solid rgba(27, 39, 61, 0.1);
+    border: 1px solid rgba(58, 190, 247, 0.25);
     line-height: 1;
 }
 
-.form--control:focus {
+.form--control:focus,
+.select2-container--default .select2-selection--single:focus,
+.select2-container--default .select2-search--dropdown .select2-search__field:focus {
     background-color: #fff;
     box-shadow: 1px 1px 10px 3px rgba(58, 190, 247, 0.1);
     border: 1px solid rgba(58, 190, 247, 0.9);
+}
+
+.selection {
+    display: block !important;
 }
 
 ::-webkit-input-placeholder {
@@ -1712,6 +1720,7 @@ i {
     transform: translateY(-50%);
     font-size: 20px;
     color: #3abef7;
+    z-index: 1;
 }
 
 .ticket-form .form--group .form--control {
@@ -4893,6 +4902,84 @@ div[class*=col]:nth-child(3n+3) .dashboard-widget .dashboard-widget__icon {
     transform: translate(-50%, -50%);
     font-family: "Line Awesome Free";
     font-weight: 900;
+}
+
+.price-range {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.price-range label {
+    margin: 0;
+    font-weight: 500;
+    color: #171d1c;
+}
+
+.price-range input {
+    height: unset;
+    width: unset;
+    background: transparent;
+    border: none;
+    text-align: right;
+    font-weight: 500;
+    color: #171d1c;
+    padding-right: 0;
+}
+
+.ui-slider-range {
+    height: 3px;
+    background: #3abef7;
+    position: relative;
+    z-index: 1;
+}
+
+.widget .ui-state-default {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+    border: none;
+    border-radius: 50%;
+    background-color: #3abef7 !important;
+    box-shadow: 0 9px 20px 0 rgba(22, 26, 57, 0.36);
+    outline: none;
+    cursor: pointer;
+    top: -9px;
+    position: absolute;
+    z-index: 1;
+}
+
+.widget .ui-state-default::after {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #3abef7;
+    top: 3px;
+    left: 3px;
+    display: block;
+}
+
+.widget .ui-widget.ui-widget-content {
+    position: relative;
+    height: 3px;
+    border: none;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+
+.widget .ui-widget.ui-widget-content::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: rgba(58, 190, 247, 0.3);
+    width: calc(100% + 20px);
 }
 
 .ratting, .header-trigger-wrapper, .header-top-area, .header-top-area .left-content, .header-top-area .right-content, .header-top-area .right-content .header-login, .social-icons, .banner-wrapper, .inner-banner .inner-banner-content .breadcums, .footer-widget .footer-links li a, .ticket-form-wrapper .ticket-header, .ticket-form-wrapper .ticket-type, .filter-header, .account-header, .route-inner .route-content .route-to, .package-content .package-price, .testimonial-item .thumb-wrapper, .bus-search-header .route-info, .bus-search-header .search-result .wrapper, .ticket-item, .travel-time, .ticket-item-footer .info-list, .ticket-item-footer .amenities-details .list, .bus-seat-management .all-seats {

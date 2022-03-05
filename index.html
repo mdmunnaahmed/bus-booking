@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./assets/css/nice-select.css">
     <link rel="stylesheet" href="./assets/css/jquery-ui.css">
     <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="./assets/css/select2.css">
 
     <!-- Custom Link -->
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -202,26 +203,40 @@
                                 <div class="col-md-6">
                                     <div class="form--group">
                                         <i class="las la-location-arrow"></i>
-                                        <input type="text" class="form--control" placeholder="Enter Pickup City">
+                                        <select class="form--control form-control select2" name="pickup">
+                                            <option value="">Pickup Point</option>
+                                            <option value="1">Kansas</option>
+                                            <option value="2">Dallas</option>
+                                            <option value="3">Wichita</option>
+                                            <option value="4">Emi Davenport</option>
+                                            <option value="5">Echo Bass</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form--group">
                                         <i class="las la-map-marker"></i>
-                                        <input type="text" class="form--control" placeholder="Enter Destination City">
+                                        <select class="form--control form-control select2" name="pickup">
+                                            <option value="">Dropping Point</option>
+                                            <option value="1">Kansas</option>
+                                            <option value="2">Dallas</option>
+                                            <option value="3">Wichita</option>
+                                            <option value="4">Emi Davenport</option>
+                                            <option value="5">Echo Bass</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form--group">
                                         <i class="las la-calendar-check"></i>
-                                        <input type="text" id="start-date" class="form--control"
+                                        <input type="text" id="start-date" class="form--control form-control"
                                             placeholder="Departure Date">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form--group">
                                         <i class="las la-calendar-check"></i>
-                                        <input type="text" id="end-date" class="form--control" placeholder="Return Date"
+                                        <input type="text" id="end-date" class="form--control form-control" placeholder="Return Date"
                                             disabled>
                                     </div>
                                 </div>
@@ -1576,6 +1591,7 @@
     <script src="./assets/js/nice-select.js"></script>
     <script src="./assets/js/jquery-ui.min.js"></script>
     <script src="./assets/js/magnific-popup.min.js"></script>
+    <script src="./assets/js/select2.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 

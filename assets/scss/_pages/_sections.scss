@@ -1774,3 +1774,76 @@ div[class*="col"]:nth-child(3n + 3) .dashboard-widget .dashboard-widget__icon {
     font-family: "Line Awesome Free";
     font-weight: 900;
 }
+
+.price-range {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.price-range label {
+    margin: 0;
+    font-weight: 500;
+    color: #171d1c;
+}
+.price-range input {
+    height: unset;
+    width: unset;
+    background: transparent;
+    border: none;
+    text-align: right;
+    font-weight: 500;
+    color: #171d1c;
+    padding-right: 0;
+}
+
+.ui-slider-range {
+    height: 3px;
+    background: $base-color;
+    position: relative;
+    z-index: 1;
+}
+
+.widget .ui-state-default {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+    border: none;
+    border-radius: 50%;
+    background-color: $base-color !important;
+    box-shadow: 0 9px 20px 0 rgba(22, 26, 57, 0.36);
+    outline: none;
+    cursor: pointer;
+    top: -9px;
+    position: absolute;
+    z-index: 1;
+}
+.widget .ui-state-default::after {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: $base-color;
+    top: 3px;
+    left: 3px;
+    display: block;
+}
+.widget .ui-widget.ui-widget-content {
+    position: relative;
+    height: 3px;
+    border: none;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+.widget .ui-widget.ui-widget-content::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: rgba($base-color, 0.3);
+    width: calc(100% + 20px);
+}

@@ -256,22 +256,14 @@
                             </select>
                         </div>
                         <div class="sidebar-item sort-by">
-                            <h6 class="title">Sort By</h6>
-                            <div class="widget-body">
-                                <div id="slider-range"
-                                    class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
-                                    <div class="ui-slider-range ui-corner-all ui-widget-header"
-                                        style="left: 0%; width: 100%;"></div><span tabindex="0"
-                                        class="ui-slider-handle ui-corner-all ui-state-default"
-                                        style="left: 0%;"></span><span tabindex="0"
-                                        class="ui-slider-handle ui-corner-all ui-state-default"
-                                        style="left: 100%;"></span>
-                                </div>
+                            <h6 class="title">Filter by Price</h6>
+                            <div class="widget mt-4">
+                                <div id="slider-range"></div>
                                 <div class="price-range">
                                     <label for="amount">Price :</label>
-                                    <input type="text" id="amount" readonly="">
-                                    <input type="hidden" name="min_price" value="15.00">
-                                    <input type="hidden" name="max_price" value="830.00">
+                                    <input type="text" id="amount" readonly>
+                                    <input type="hidden" name="min_price" value="12.00">
+                                    <input type="hidden" name="max_price" value="120.00">
                                 </div>
                             </div>
                         </div>
@@ -789,6 +781,37 @@
     <script src="./assets/js/jquery-ui.min.js"></script>
     <script src="./assets/js/magnific-popup.min.js"></script>
     <script src="./assets/js/main.js"></script>
+
+    <script>
+        $("#slider-range").slider({
+            range: true,
+            min: 25.00,
+            max: 120.00,
+            values: [25.00, 120.00],
+            slide: function (event, ui) {
+                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+                $('input[name=min_price]').val(ui.values[0]);
+                $('input[name=max_price]').val(ui.values[1]);
+            },
+
+            change: function () {
+                var brand = [];
+                var min = $('input[name="min_price"]').val();
+                var max = $('input[name="max_price"]').val();
+
+                $('.brand-filter input:checked').each(function () {
+                    brand.push(parseInt($(this).attr('value')));
+                });
+
+                var perpage = $('select[name=per_page]').val();
+                var category_id = `30`;
+                getFilteredData(brand, min, max, category_id);
+            }
+
+        });
+
+        $("#amount").val("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
+    </script>
 </body>
 
 </html>

@@ -301,3 +301,7 @@ $(".img-link").magnificPopup({
         enabled: true,
     },
 });
+
+$(document).ready(function () {
+    $(".select2").select2();
+});
