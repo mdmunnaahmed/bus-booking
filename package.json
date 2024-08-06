@@ -1,21 +1,26 @@
 {
-  "name": "mlm-2",
+  "name": "starter",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Munna Ahmed",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "browser-sync": "^2.27.4",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
-    "gulp-cssbeautify": "^3.0.0",
-    "gulp-imagemin": "^8.0.0",
-    "gulp-sass": "^5.0.0",
-    "gulp-uglify": "^3.0.2",
-    "gulp-uglifycss": "^1.1.0",
-    "sass": "^1.39.2"
+    "gulp-cssbeautify": "^3.0.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^5.1.0"
+  },
+  "dependencies": {
+    "sass": "^1.69.0"
   }
 }
